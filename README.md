@@ -1,5 +1,7 @@
 # Xucheng Chen — Academic Personal Website
 
+Live website: <https://victorchen2004.github.io>
+
 This is the complete source for Xucheng Chen's new academic personal website.
 It preserves the substance and warm brown visual identity of the original
 Google Sites website while introducing a cleaner editorial layout and stronger

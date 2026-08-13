@@ -33,3 +33,5 @@
 - Switched the live deployment to a dedicated `gh-pages` branch because the
   initial GitHub authorization did not include workflow-management permission;
   preserved the optional workflow under `docs/` for future use.
+- Published `https://victorchen2004.github.io` and verified that the homepage,
+  portrait, `robots.txt`, and `sitemap.xml` are publicly accessible.
