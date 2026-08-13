@@ -182,9 +182,9 @@ export default function Home() {
       />
 
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Xucheng Chen — home">
-          <span className="wordmark-mark" aria-hidden="true">XC</span>
-          <span>Xucheng Chen</span>
+        <a className="wordmark" href="#top" aria-label="Victor Xucheng Chen — home">
+          <span className="wordmark-mark" aria-hidden="true">VC</span>
+          <span>Victor Xucheng Chen</span>
         </a>
         <nav className="nav-links" aria-label="Primary navigation">
           <a href="#about">About</a>
@@ -201,54 +201,111 @@ export default function Home() {
       </header>
 
       <main id="top">
-        <section className="hero" aria-labelledby="hero-title">
-          <div className="hero-copy">
-            <p className="eyebrow">Economics · Research · CUHK-Shenzhen</p>
-            <h1 id="hero-title">
-              Victor <em>Xucheng</em> Chen
-            </h1>
-            <p className="hero-chinese">陈绪成</p>
-            <p className="hero-intro">
-              I am an economics student and emerging researcher interested in
-              how institutions, social networks, finance, and human behavior
-              shape economic outcomes.
-            </p>
-            <div className="hero-actions">
-              <a className="button button-primary" href="#research">
-                Explore my research
-              </a>
-              <a
-                className="button button-secondary"
-                href="https://drive.google.com/file/d/1aXf8BXRAzMFJNdztylK_vt0avxGkXUsZ/view"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View CV <span aria-hidden="true">↗</span>
-              </a>
+        <section className="about-hero" id="about" aria-labelledby="hero-title">
+          <div className="about-hero-inner">
+            <aside className="about-profile" aria-label="Academic profile summary">
+              <Image
+                className="profile-photo"
+                src="/xucheng-chen.jpg"
+                alt="Portrait of Xucheng Chen"
+                width="1200"
+                height="1600"
+                sizes="(max-width: 620px) 90vw, (max-width: 900px) 42vw, 34vw"
+                priority
+              />
+              <div className="profile-summary">
+                <p className="profile-label">Economics Science</p>
+                <p>
+                  School of Management and Economics<br />
+                  The Chinese University of Hong Kong, Shenzhen
+                </p>
+                <p className="profile-invitation">
+                  If you have any questions about my work or suggestions for my
+                  development, I would be delighted to hear from you. You can
+                  reach me via email at:{" "}
+                  <a className="profile-email" href="mailto:xuchengchen@link.cuhk.edu.cn">
+                    <strong>xuchengchen@link.cuhk.edu.cn</strong>
+                  </a>
+                  .
+                </p>
+                <div className="profile-actions">
+                  <a className="button button-primary" href="#research">
+                    Explore research
+                  </a>
+                  <a
+                    className="button button-secondary"
+                    href="https://drive.google.com/file/d/1aXf8BXRAzMFJNdztylK_vt0avxGkXUsZ/view"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View CV <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </aside>
+
+            <div className="about-narrative">
+              <p className="about-kicker">
+                <span>01</span> About
+              </p>
+              <h1 id="hero-title">Nice to meet you here!</h1>
+              <p className="about-intro">
+                Hi, everyone! My name is <strong>Victor Xucheng Chen</strong>{" "}
+                (<span lang="zh-Hans">陈绪成</span> in Chinese). I am currently
+                studying <strong>Economics Science</strong> at the School of
+                Management and Economics, The Chinese University of Hong Kong,
+                Shenzhen.
+              </p>
+              <div className="about-body">
+                <p>
+                  My long-term aspiration is to enter academia and contribute to
+                  the field of economics. This website, launched on{" "}
+                  <strong>November 26, 2025</strong>, serves as an ongoing record
+                  of my research journey, academic experiences, and materials
+                  that I find meaningful or inspiring. I hope that documenting
+                  my own development will help me reflect, grow, and better
+                  understand how my interests evolve over time.
+                </p>
+                <p>
+                  The content on this website aims to remain as accurate as
+                  possible after proper verification. All copyrights belong to
+                  their original owners. If any material inadvertently infringes
+                  on the rights of others, please contact me immediately, and I
+                  will make corrections without delay.
+                </p>
+                <p>
+                  My research interests currently lie in{" "}
+                  <strong>applied microeconomics</strong> and{" "}
+                  <strong>applied macroeconomics</strong>, with particular
+                  curiosity toward <strong>labor economics</strong>,{" "}
+                  <strong>development economics</strong>,{" "}
+                  <strong>gender economics</strong>,{" "}
+                  <strong>educational economics</strong>, and{" "}
+                  <strong>financial economics</strong>. However, I keep an open
+                  mind — I do not rule out the possibility of pursuing other
+                  topics, and I am still actively exploring where my long-term
+                  intellectual home will be.
+                </p>
+                <p>
+                  On a more personal note, I identify as a feminist and an
+                  existentialist, believing firmly in human rights, individual
+                  dignity, and freedom from oppression. Outside of academics, I
+                  enjoy English debate, and I love music — especially Charli XCX
+                  and Lexie Liu, two artists who have shaped my perspective on
+                  creativity, identity, and self-expression.
+                </p>
+                <p>
+                  Finally, every scholar, mentor, and collaborator mentioned on
+                  this website is someone I deeply respect and admire. I am
+                  sincerely grateful for their guidance and encouragement along
+                  my journey. I would also like to express my heartfelt
+                  appreciation to my parents, family, and friends for their
+                  constant support and care — none of this would be possible
+                  without them.
+                </p>
+              </div>
             </div>
           </div>
-
-          <aside className="hero-card" aria-label="Academic profile summary">
-            <Image
-              className="profile-photo"
-              src="/xucheng-chen.jpg"
-              alt="Portrait of Xucheng Chen"
-              width="1200"
-              height="1600"
-              sizes="(max-width: 900px) 45vw, 28vw"
-              priority
-            />
-            <p className="hero-card-label">Currently</p>
-            <h2>Economics Science</h2>
-            <p>
-              School of Management and Economics<br />
-              The Chinese University of Hong Kong, Shenzhen
-            </p>
-            <div className="hero-card-rule" />
-            <a href="mailto:xuchengchen@link.cuhk.edu.cn">
-              xuchengchen@link.cuhk.edu.cn
-            </a>
-          </aside>
         </section>
 
         <section className="ticker" aria-label="Research interests">
@@ -258,38 +315,6 @@ export default function Home() {
           <span>Education</span>
           <span>Gender</span>
           <span>Finance</span>
-        </section>
-
-        <section className="section about-section" id="about">
-          <div className="section-heading">
-            <p className="section-number">01</p>
-            <h2>About</h2>
-          </div>
-          <div className="about-copy">
-            <p className="lead">
-              Nice to meet you here. I am Xucheng Chen, also known as Victor,
-              and I am currently studying Economics Science at CUHK-Shenzhen.
-            </p>
-            <div className="two-column-copy">
-              <p>
-                My long-term aspiration is to enter academia and contribute to
-                economics. This website records my research journey, academic
-                experiences, and materials that I find meaningful. Documenting
-                that journey helps me reflect on how my interests evolve.
-              </p>
-              <p>
-                My current interests span applied microeconomics and
-                macroeconomics, especially labor, development, gender,
-                education, and financial economics. I remain open to new
-                questions while searching for my long-term intellectual home.
-              </p>
-            </div>
-            <blockquote>
-              I believe in human rights, individual dignity, and freedom from
-              oppression. Beyond academics, I enjoy English debate and music—
-              especially Charli XCX and Lexie Liu.
-            </blockquote>
-          </div>
         </section>
 
         <section className="section research-section" id="research">

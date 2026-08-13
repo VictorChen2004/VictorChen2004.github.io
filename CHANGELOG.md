@@ -1,5 +1,20 @@
 # Change Log
 
+## 2026-08-14
+
+- Redesigned the opening and About areas as a single portrait-led introduction,
+  inspired by the original Google Sites layout while retaining the new site's
+  typography, navigation, and responsive behavior.
+- Replaced the oversized split-column About copy with a natural single-column
+  reading flow and a terracotta welcome heading.
+- Moved the academic affiliation, email, CV, and research actions beneath the
+  portrait so the opening section reads as one coherent profile.
+- Restored the complete original About narrative, including the launch date,
+  accuracy and copyright note, personal perspective, acknowledgements, and
+  invitation to contact.
+- Emphasized the named research fields, simplified the About label, and changed
+  the header identity to `VC` and `Victor Xucheng Chen`.
+
 ## 2026-08-13
 
 - Created a new academic personal website based on the public content of the

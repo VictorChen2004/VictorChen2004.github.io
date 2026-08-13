@@ -9,8 +9,8 @@ Google Search signals.
 
 ## Included in the website
 
-- Responsive About, Research, Research Experience, Materials, CV, and Contact
-  sections.
+- A responsive portrait-led About introduction, followed by Research, Research
+  Experience, Materials, CV, and Contact sections.
 - A web-optimized professional portrait derived from the supplied original;
   the original photograph remains unchanged outside the project.
 - Existing Google Drive and SSRN links preserved from the original website.
