@@ -1,5 +1,42 @@
 # Change Log
 
+## 2026-08-15
+
+- Removed the redundant subtitle from the Selected Writing panel so all four
+  Research category buttons use a cleaner and more consistent hierarchy.
+- Rebuilt the Research records from the August 2026 CV and supplied paper
+  notes: four Working Papers, one Work in Progress, four Selected Writing
+  entries, and four Research Assistant experiences.
+- Added a concise, result-oriented highlight to every record and placed the
+  complete contribution bullets behind a clearly labeled View Details control,
+  preserving paper links and award or conference information.
+- Added the Congo speech-recognition and technology-driven market-concentration
+  assistantships and expanded the two existing RA records with their full CV
+  content.
+- Separated each record's metadata from its research highlight with clearer
+  vertical spacing and redesigned View Details as a restrained inline control
+  with a circular plus/minus icon instead of the browser's default disclosure
+  triangle.
+- Extended each Research category color through its expanded content: softly
+  tinted list backgrounds, dark category-colored titles, dates, roles, awards,
+  detail markers, paper links, and dividers now match the parent panel while
+  body text remains neutral for readability.
+- Unified papers and RA records under the same two-column timeline: dates and
+  locations now sit together on the left, while titles and research content
+  remain on the right. Highlights use a softly tinted category-color callout,
+  and paper links now share the exact color and circular-icon treatment used by
+  View Details.
+- Replaced the remaining separate RA card markup with the exact paper-card
+  template so both areas share the same column widths and information order;
+  project titles and author or role lines now use neutral black throughout.
+- Split the Factory Parents seminar, URA support, and Curiosity Award note into
+  three lines; styled advisor and supervisor lines in bold italic category
+  colors; made highlight text bold black; and removed the repeated Research
+  Assistant role label from RA cards.
+- Simplified every one-sentence research highlight to ordinary black body text
+  beneath the metadata, removing the category-colored callout background,
+  border, padding, and bold emphasis before publication.
+
 ## 2026-08-14
 
 - Redesigned the opening and About areas as a single portrait-led introduction,
@@ -14,6 +51,42 @@
   invitation to contact.
 - Emphasized the named research fields, simplified the About label, and changed
   the header identity to `VC` and `Victor Xucheng Chen`.
+- Enlarged the contact invitation and email for easier reading.
+- Replaced the decorative italic interest strip with a left-aligned list using
+  the seven complete research-field names from the About text.
+- Rebuilt Research as a light, conventional academic publication list: removed
+  project numbering, enlarged dates and metadata, and made every project
+  summary visible by default.
+- Removed decorative section numbering from About, Research, Research
+  Experience, and Materials.
+- Divided Research into Working Papers, Work in Progress, and Selected Writing
+  so projects with different levels of maturity no longer compete in one list;
+  the initial classification is provisional pending a later CV-based review.
+- Strengthened the Research hierarchy with larger subsection headings, warm
+  rather than pure-white backing, restrained brown rules, and more space
+  between groups while preserving the conventional academic-list structure.
+- Restyled the subsection headings as prominent bold terracotta titles with
+  colons, echoing the strongest hierarchy from the original site, and shifted
+  the Research background to a soft pink-beige.
+- Converted the three Research subsections into large color-coded expandable
+  panels so visitors can reveal one category's papers on demand without facing
+  the entire research list at once.
+- Sharpened the expandable-panel typography with a Times-style academic serif
+  and removed the decorative colons, which no longer served a purpose once each
+  heading became a self-contained button.
+- Added RA Experience as a fourth expandable panel and moved the existing
+  research-assistant and project-assistant records into it without changing
+  their content.
+- Renamed the former Research Experience section to Experience and left it
+  intentionally open for future internships, teaching, leadership, or other
+  professional records.
+- Replaced the short Research deck with the owner's complete explanation of the
+  section, paper expansion and linking behavior, feedback invitation, content
+  rights, and conflict-of-interest contact request.
+- Condensed the Research introduction while preserving its instructions,
+  feedback invitation, content-rights statement, and conflict-of-interest
+  notice; forced it into a full-width single-column block and kept the Selected
+  Writing subtitle on one desktop line.
 
 ## 2026-08-13
 

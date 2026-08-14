@@ -9,8 +9,14 @@ Google Search signals.
 
 ## Included in the website
 
-- A responsive portrait-led About introduction, followed by Research, Research
+- A responsive portrait-led About introduction, followed by Research,
   Experience, Materials, CV, and Contact sections.
+- A restrained academic research list with prominent dates, concise project
+  highlights, expandable contribution details, and the original
+  research-interest terminology.
+- Research organized by maturity into Working Papers, Work in Progress, and
+  Selected Writing, with RA Experience alongside them in four large
+  color-coded expandable panels.
 - A web-optimized professional portrait derived from the supplied original;
   the original photograph remains unchanged outside the project.
 - Existing Google Drive and SSRN links preserved from the original website.
@@ -21,9 +27,10 @@ Google Search signals.
 - GitHub Pages publication from a dedicated static `gh-pages` branch.
 
 The content was reconstructed from the public website at
-`https://sites.google.com/view/xuchengchen/`. Project descriptions were lightly
+`https://sites.google.com/view/xuchengchen/` and updated against the owner's
+August 2026 CV and supplied research notes. Project highlights were lightly
 edited for clarity and brevity without intentionally changing their meaning.
-Before publication, please confirm the current education status, paper versions,
+Before publication, please confirm future-dated work, current paper versions,
 collaborator names, and conference or publication statuses.
 
 ## Preview on a computer

@@ -10,90 +10,251 @@ export const metadata: Metadata = {
     "The academic website of Xucheng Chen (Victor Chen), an economics student and researcher at CUHK-Shenzhen working across applied microeconomics, macroeconomics, labor, education, gender, development, and finance.",
 };
 
-const researchProjects = [
+type ResearchProject = {
+  category: "Working paper" | "Work in progress" | "Selected writing";
+  year: string;
+  title: string;
+  role: string;
+  collaborators?: string;
+  location: string;
+  note?: string;
+  highlight: string;
+  details: string[];
+  href?: string;
+  linkLabel?: string;
+};
+
+const researchProjects: ResearchProject[] = [
   {
     category: "Working paper",
-    year: "2025–present",
+    year: "Dec 2025–present",
     title:
       "Factory Parents, Classroom Outcomes: Occupational Networks and Peer Effects in Education",
-    role: "Author · Independent Research",
+    role: "Working Paper · Independent Research",
     collaborators: "Advisor: Prof. Emily Zheng, CUHK-Shenzhen",
-    note: "Accepted by the 2nd Chinese Educational Year Seminar, sponsored by the 29th & 30th URA",
-    summary:
-      "Using the random assignment of students to classrooms in the China Education Panel Survey, this study examines how exposure to classmates from production-worker families affects academic outcomes. The findings connect classroom occupational composition to parental social-capital networks, school engagement, and educational inequality.",
+    location: "Shenzhen, China",
+    note:
+      "Accepted by the 2nd Chinese Educational Year Seminar\nSupported by the 29th & 30th URA\nCuriosity Research Award",
+    highlight:
+      "Using random classroom assignment, the study finds that a ten-percentage-point increase in peers from production-worker families reduces standardized academic scores by approximately 0.21 standard deviations.",
+    details: [
+      "We study how exposure to classmates from manufacturing and production-worker families affects academic achievement in urban Chinese middle schools. Using the random assignment of students to classrooms within school-grade cohorts in the China Education Panel Survey (CEPS), we find that a ten-percentage-point increase in the share of peers with production-worker parents reduces standardized academic scores by approximately 0.21 standard deviations.",
+      "The effect is robust across specifications and appears in mathematics, Chinese, and English. Parent questionnaire data show declines in engagement with children’s friendship networks, inter-family connections, peer-relationship communication, school discussion, confidence in children’s academic futures, and parent-initiated teacher contact.",
+      "Parents in classrooms with more working-class families also report lower evaluations of the educational environment. Falsification tests using business and service-sector workers yield null effects, pointing to the role of occupationally shaped social-capital networks in educational inequality.",
+    ],
   },
   {
     category: "Working paper",
-    year: "2025–present",
-    title:
-      "The Macroeconomic Impact of SME Lending: Interaction of Credit and Entrepreneurial Risk-Preference",
-    role: "Author",
-    collaborators:
-      "With Shaoshuang Yang (corresponding author and supervisor), CUHK-Shenzhen",
-    summary:
-      "An empirical study of a 4.27-million-observation merchant–month panel investigating how credit lines, entrepreneurial risk preferences, and firm size jointly shape sales growth. The project combines fixed-effects models, interaction analysis, and event-style measures of downturn and quasi-exit.",
+    year: "May 2025–present",
+    title: "The Macroeconomic Impact of SME Lending",
+    role: "Working Paper · Undergraduate Author",
+    collaborators: "With Prof. Shaoshuang Yang, CUHK-Shenzhen",
+    location: "Shenzhen, China",
+    highlight:
+      "A 4.27-million-observation merchant–month panel reveals how credit constraints, firm size, and entrepreneurial risk preferences jointly shape SME growth and volatility.",
+    details: [
+      "Co-authored an empirical paper using a 4.27-million-observation merchant–month panel to study how SME credit lines, entrepreneurial risk preferences, and firm size jointly shape sales growth on a large digital-payment platform.",
+      "Constructed a linked merchant-level dataset from internal credit, transaction, wealth, and loan tables covering approximately 100,000 merchants; engineered credit limits, utilization ratios, liquidity-constraint indicators, growth measures, and volatility statistics.",
+      "Designed and implemented the Stata empirical strategy, including AR(1) persistence tests, fixed-effects growth regressions with province and year fixed effects, and interactions among risk preference, firm size, and credit conditions.",
+      "Built event-style measures of downturn and quasi-exit, including a 90% sales drop and three-month low-activity spells, and documented how risk tolerance and credit constraints relate to both faster growth and higher volatility among larger SMEs.",
+    ],
     href: "https://drive.google.com/file/d/10iCuUzlnKLX-rwIK2E_3p3-wIJR4wDCJ/view",
     linkLabel: "Paper · 26 Nov 2025",
   },
   {
     category: "Working paper",
-    year: "2025–present",
+    year: "May 2025–present",
     title: "Retail Money Flows and Stock Returns in China",
-    role: "Author",
-    collaborators:
-      "With Nuo Chen, Chuan Shi, and Jianrong Wei",
-    summary:
-      "This paper develops a tick-level retail money-flow measure for China’s stock market using order-book data from 2015–2024. It documents a robust negative relationship between retail inflows and subsequent returns, with stronger predictability when retail attention is elevated.",
+    role: "Working Paper · Undergraduate Author",
+    collaborators: "With Prof. Chuan Shi, CUHK-Shenzhen",
+    location: "Shenzhen, China",
+    highlight:
+      "Chinese high-frequency data show robust stock-return predictability from small-order net inflows, including significant alpha after controlling for salient behavioral pricing factors.",
+    details: [
+      "Contributed to a quantitative asset-pricing paper on the predictive power of small-order net inflows using Chinese tick-by-tick transaction data from 2018–2024; constructed flow indicators and calibrated trade-direction and size-threshold definitions.",
+      "Conducted Fama–MacBeth regressions across multiple size thresholds and net-flow estimation methods, and implemented univariate and double portfolio sorts to test representative strategies.",
+      "Performed orthogonalization to control for confounding effects and examined interactions between small-order signals and behavioral pricing factors such as salience, documenting significant alpha in double-sorted portfolios.",
+      "Independently wrote core methodology, data-construction, and empirical-results sections and developed the analytical code in Python and R for factor modeling, signal engineering, and high-frequency data cleaning.",
+    ],
     href: "https://drive.google.com/file/d/1b4wtSL_Q2i9IbBTDoFE8WYkNQaI-QWYy/view",
     linkLabel: "Paper · 26 Nov 2025",
   },
   {
-    category: "Research project",
-    year: "Sep–Dec 2025",
-    title:
-      "When Structure Beats Flexibility: A Comparative Study of TGARCH and LSTM Forecasting in Bitcoin Markets",
-    role: "Undergraduate Researcher · Independent Research",
-    collaborators: "Advisor: Prof. Haichun Ye, CUHK-Shenzhen",
-    summary:
-      "A unified comparison of econometric volatility models and LSTM networks using daily Bitcoin data from 2015–2025. A 500-day out-of-sample framework shows how explicit conditional-variance structure can outperform nonlinear mean modeling in volatility forecasting.",
-  },
-  {
-    category: "Awarded paper",
-    year: "Jul 2025",
+    category: "Working paper",
+    year: "Jun–Aug 2025",
     title:
       "Beyond Patents: R&D, Capital, and the Productivity Puzzle in Early-Stage High-Tech Firms",
-    role: "Author · Independent Research",
-    collaborators: "Supervisor: Prof. Myungun Kim, Cambridge, United Kingdom",
+    role: "Working Paper · Undergraduate Independent Research",
+    collaborators: "Advisor: Prof. Myungun Kim, University of Cambridge",
+    location: "Cambridge, United Kingdom (Remote)",
     note: "Best Paper · Cambridge Online Summer Research Programme 2025",
-    summary:
-      "Using proprietary data on early-stage high-tech startups in China, this study separates the roles of patents and R&D expenditure in firm performance. It finds limited direct productivity effects from patents but a more consistent positive association between R&D input and performance.",
-    href: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5365829",
-    linkLabel: "View on SSRN",
+    highlight:
+      "The study separates the signaling value of patents from the performance effects of R&D spending in early-stage Chinese high-tech firms.",
+    details: [
+      "Conducted an independent empirical study of innovation and productivity in Chinese high-tech startups using a proprietary 2020–2024 dataset of patent records, R&D expenditures, and firm-performance indicators.",
+      "Used quantitative analysis and mechanism-based reasoning to examine the signaling role of patents and the performance impact of R&D investment, identifying heterogeneity across industries and regions.",
+      "Received the programme’s Best Paper award and presented the findings at its academic research conference.",
+    ],
+    href: "https://doi.org/10.48550/arXiv.2507.18227",
+    linkLabel: "Open paper on arXiv",
   },
   {
-    category: "Conference paper",
+    category: "Work in progress",
+    year: "Sep 2026–present",
+    title: "Mobile Internet and Crime: Evidence from China’s 4G Rollout",
+    role: "Working Paper · Undergraduate Author",
+    collaborators: "With Dr. Chenxuan Chen, Peking University",
+    location: "Shenzhen, China",
+    highlight:
+      "The project links China’s staggered 4G rollout to criminal-conviction records to study how mobile internet access changes local crime.",
+    details: [
+      "Exploit the staggered rollout of 4G base stations across Chinese cities and counties in a difference-in-differences framework to identify the causal effect of mobile internet access on local crime rates.",
+      "Construct a panel dataset linking 4G infrastructure deployment records with criminal-conviction data from PKU LawSec (北大法宝), a comprehensive repository of Chinese court judgments.",
+      "Document heterogeneous effects across property crimes, violent offenses, and cyber-related criminal activity, alongside the overall relationship between expanded 4G coverage and local crime rates.",
+      "Investigate mechanisms including information diffusion, lower coordination costs among criminal networks, and the reallocation of economic opportunity.",
+    ],
+  },
+  {
+    category: "Selected writing",
+    year: "Sep–Dec 2025",
+    title:
+      "A Bayesian Game of Online Accusations",
+    role: "ECON3160 Game Theory Course Project",
+    collaborators: "Advisor: Prof. Yangbo Song, CUHK-Shenzhen",
+    location: "Shenzhen, China",
+    highlight:
+      "The model shows how platform amplification and weak reputational penalties can sustain digital witch-hunt equilibria even when guilt is highly uncertain.",
+    details: [
+      "Developed a Bayesian game in which a Key Opinion Leader with noisy private information decides whether to accuse a target, while a continuum of users who observe only the accusation choose whether to join a collective attack or exercise restraint.",
+      "Characterized Perfect Bayesian Equilibria under pooling and separating accusation strategies, identifying conditions under which platform amplification and weak reputational penalties generate self-reinforcing digital witch-hunt equilibria despite substantial uncertainty about guilt.",
+      "Extended the model to competing KOLs with independent signals and pile-on complementarities, as well as dynamic reputational penalties that accumulate over time, showing how corroboration, attention competition, and forward-looking discipline reshape accusation standards and crowd behavior.",
+    ],
+  },
+  {
+    category: "Selected writing",
+    year: "Sep–Dec 2025",
+    title:
+      "When Structure Beats Flexibility: A Comparative Study of Forecasting in Bitcoin Markets",
+    role: "Undergraduate Independent Research",
+    collaborators: "Advisor: Prof. Haichun Ye, CUHK-Shenzhen",
+    location: "Shenzhen, China",
+    highlight:
+      "In a controlled 500-day out-of-sample comparison, TGARCH’s advantage over LSTM is concentrated in volatility forecasting rather than return prediction.",
+    details: [
+      "Compared AR(1)–GARCH and TGARCH econometric models with LSTM neural networks for forecasting Bitcoin returns and volatility using daily 2015–2025 data in EViews and Python.",
+      "Established key cryptocurrency-market stylized facts and implemented an ARMA–(T)GARCH selection and diagnostic pipeline using ADF tests, ARCH–LM tests, BIC-based selection, and post-estimation Q-statistics.",
+      "Designed a transparent 500-day out-of-sample framework with identical information sets across models, showing that TGARCH’s predictive edge arises from explicitly structured conditional-variance dynamics, with the largest gains in volatility forecasting.",
+    ],
+  },
+  {
+    category: "Selected writing",
     year: "Sep 2024–Mar 2025",
     title:
       "Sexual Minorities’ Perspectives on Feminism: A Dialogue Between Gender and Sexuality",
-    role: "Author · Academic English course paper",
-    collaborators: "Accepted by the Undergraduate Research Conference",
-    summary:
-      "A qualitative study using semi-structured interviews, inductive thematic coding, and intersectionality theory to examine identity-based alignment, coalition-building, and social preferences.",
+    role: "Undergraduate Independent Research",
+    collaborators: "Advisor: Prof. Shirley Xiao, CUHK-Shenzhen",
+    location: "Shenzhen, China",
+    note: "Accepted by the CUHK-Shenzhen Undergraduate Research Conference 2024",
+    highlight:
+      "Interviews and intersectionality-based analysis examine how overlapping gender and sexual identities shape coalition-building and social preferences.",
+    details: [
+      "Investigated how overlapping identities shape group alignment and social preferences through semi-structured interviews and inductive thematic coding.",
+      "Analyzed structural and normative constraints on identity-based coalition-building using intersectionality theory and comparative case analysis.",
+      "Derived implications for preference formation, collective-action dynamics, and the design of more inclusive social policies.",
+    ],
     href: "https://drive.google.com/file/d/1k3uX-1eUMcWRaJUmmeTaLarc_7PFkzBc/view",
     linkLabel: "Read paper",
+  },
+  {
+    category: "Selected writing",
+    year: "Sep 2024",
+    title:
+      "Research on Production Process Decision-making Based on Defect Rate Optimization",
+    role: "Undergraduate Author",
+    location: "Shenzhen, China",
+    note:
+      "Second Prize · Guangdong Contemporary Undergraduate Mathematical Contest in Modeling",
+    highlight:
+      "A production-chain optimization model combines one-sided sampling tests, genetic algorithms, and Monte Carlo simulation to balance quality assurance with cost.",
+    details: [
+      "Developed a sampling-inspection model using one-sided hypothesis testing and statistical distributions, minimizing inspections while ensuring quality.",
+      "Built a cost–revenue optimization model for the full production chain in Python, incorporating enumeration and genetic algorithms for decision-making.",
+      "Applied Monte Carlo simulations to estimate defect rates under uncertainty and adjusted strategies accordingly.",
+      "Produced visualized outputs and evaluated trade-offs between precision and computational cost.",
+    ],
+  },
+];
+
+const researchGroups = [
+  {
+    title: "Working Papers",
+    tone: "terracotta",
+    projects: researchProjects.filter(
+      (project) => project.category === "Working paper",
+    ),
+  },
+  {
+    title: "Work in Progress",
+    tone: "sienna",
+    projects: researchProjects.filter(
+      (project) => project.category === "Work in progress",
+    ),
+  },
+  {
+    title: "Selected Writing",
+    tone: "rosewood",
+    projects: researchProjects.filter(
+      (project) => project.category === "Selected writing",
+    ),
   },
 ];
 
 const experience = [
   {
+    dates: "May 2026–present",
+    title: "Speech Recognition and Treatment-Compliance Analysis in Congo",
+    role: "Research Assistant",
+    organization:
+      "Supervised by Prof. Clotaire Weigel, University of California, Berkeley",
+    location: "Berkeley, United States",
+    highlight:
+      "Built an end-to-end speech-processing workflow for long, low-resource field-sermon recordings and prepared treatment-compliance coding for downstream analysis.",
+    details: [
+      "Developed a workflow covering long-recording chunking, automatic speech recognition, language detection, and preparation for treatment-compliance analysis.",
+      "Tested Whisper and Meta MMS for French and Tshiluba-related audio; evaluated a Luganda proxy when direct Tshiluba support was unavailable and documented model uncertainty and limitations.",
+      "Translated administrative, collective, and individual treatment messages into coding dimensions covering tax communication, justice and poverty, prosperity, and individual responsibility.",
+    ],
+  },
+  {
+    dates: "Jul–Sep 2025",
+    title: "Technology-Driven Market Concentration through Idea Allocation",
+    role: "Research Assistant",
+    organization:
+      "Supervised by Prof. Shaoshuang Yang, CUHK-Shenzhen, and Prof. Yueyuan Ma, University of California, Santa Barbara",
+    location: "Shenzhen, China",
+    highlight:
+      "Converted patent-citation and market-concentration methods from the literature into reproducible Stata and graph-analysis workflows.",
+    details: [
+      "Helped construct Herfindahl–Hirschman Index measures of market concentration and translated established algorithms from the literature into reproducible Stata code.",
+      "Processed USPTO patent data to calculate backward- and forward-citation indices and reviewed patent documents, citation records, and related literature to characterize novelty and idea quality.",
+      "Built a citation graph linking citing and cited patents, implemented graph-based centralization and decentralization measures, proposed algorithmic refinements, and documented the empirical workflow.",
+    ],
+  },
+  {
     dates: "Jun–Aug 2025",
     title:
       "Collaborative Growth and Global Win-Win: An Overview of China’s Key Industry Clusters Going Global",
-    role: "Project Assistant & Author",
+    role: "Research Assistant · Report Author",
     organization:
-      "Center for China’s Economic and Outbound Strategy, Shenzhen Finance Institute, CUHK-Shenzhen",
-    description:
-      "Co-authored a research report on the overseas expansion of China’s pan-cultural industry cluster, synthesizing more than 300 reports and case studies. Produced cross-industry analysis, economic visualizations, policy recommendations, and comparisons of Chinese and international firms across the value chain.",
+      "Supervised by Prof. Jian Wang and Prof. Jieshuang He, CUHK-Shenzhen · Center for China’s Economic and Outbound Strategy, Shenzhen Finance Institute",
+    location: "Shenzhen, China",
+    highlight:
+      "Synthesized more than 300 reports and cases into a strategic account of how China’s pan-cultural industry cluster expands globally.",
+    details: [
+      "Co-authored a comprehensive report on outbound-expansion strategies in China’s pan-cultural industry cluster, identifying success patterns, structural challenges, and policy recommendations from more than 300 reports and case studies.",
+      "Compared the global expansion paths of Chinese and foreign firms across upstream, midstream, and downstream sectors; produced economic visualizations and integrated cross-industry findings into a unified narrative.",
+      "Worked with the Global Relations Project Team from Southern California to place the findings in a broader international context.",
+    ],
   },
   {
     dates: "Aug 2024–Mar 2025",
@@ -101,8 +262,14 @@ const experience = [
       "The Obstacles Faced by Female Entrepreneurs When Attempting to Recruit Talent",
     role: "Research Assistant",
     organization: "Supervised by Prof. Zhongchen Hu, CUHK-Shenzhen",
-    description:
-      "Conducted a literature review and supported an online LinkedIn field experiment designed to measure how otherwise comparable firms receive different responses depending on the founder’s gender.",
+    location: "Shenzhen, China",
+    highlight:
+      "Supported a LinkedIn field experiment comparing employer responses to otherwise identical firms that differed only in the founder’s gender.",
+    details: [
+      "Reviewed the literature on recruitment barriers and the internalization of discrimination in hiring processes.",
+      "Conducted and operated online field experiments through LinkedIn and maintained platform profiles to protect the validity and integrity of the design.",
+      "Collected employer-response data for firms identical in their basic characteristics except for the founder’s gender, enabling measurement of women’s employment conditions in the relevant industry.",
+    ],
   },
 ];
 
@@ -246,7 +413,7 @@ export default function Home() {
 
             <div className="about-narrative">
               <p className="about-kicker">
-                <span>01</span> About
+                About
               </p>
               <h1 id="hero-title">Nice to meet you here!</h1>
               <p className="about-intro">
@@ -308,81 +475,157 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="ticker" aria-label="Research interests">
-          <span>Applied Microeconomics</span>
-          <span>Labor Economics</span>
-          <span>Development</span>
-          <span>Education</span>
-          <span>Gender</span>
-          <span>Finance</span>
+        <section className="research-interests" aria-labelledby="research-interests-title">
+          <div className="research-interests-inner">
+            <h2 id="research-interests-title">Research interests</h2>
+            <ul>
+              <li>Applied Microeconomics</li>
+              <li>Applied Macroeconomics</li>
+              <li>Labor Economics</li>
+              <li>Development Economics</li>
+              <li>Gender Economics</li>
+              <li>Educational Economics</li>
+              <li>Financial Economics</li>
+            </ul>
+          </div>
         </section>
 
-        <section className="section research-section" id="research">
-          <div className="section-heading section-heading-light">
-            <p className="section-number">02</p>
-            <h2>Research</h2>
-            <p className="section-deck">
-              Work in progress across education, firms, financial markets, and
-              political economy.
-            </p>
-          </div>
+        <section className="research-section" id="research">
+          <div className="research-section-inner">
+            <header className="research-heading">
+              <h2>Research</h2>
+              <p>
+                This section records my research projects and papers. Click a
+                category to view each project, including my work and
+                contributions. When a paper is available, use its highlighted
+                link to open the stated version. Suggestions and guidance are
+                always welcome. I retain the rights to the original content on
+                this website; please contact me if you identify any potential
+                conflict of interest.
+              </p>
+            </header>
 
-          <div className="research-list">
-            {researchProjects.map((project, index) => (
-              <article className="research-card" key={project.title}>
-                <div className="research-index">{String(index + 1).padStart(2, "0")}</div>
-                <div className="research-main">
-                  <div className="research-meta">
-                    <span>{project.category}</span>
-                    <span>{project.year}</span>
+            <div className="research-groups">
+              {researchGroups.map((group) => (
+                <details
+                  className={`research-group research-group-${group.tone}`}
+                  key={group.title}
+                >
+                  <summary className="research-group-heading">
+                    <span className="research-group-title">
+                      <span>{group.title}</span>
+                    </span>
+                  </summary>
+                  <div className="research-list">
+                    {group.projects.map((project) => (
+                      <article className="research-card" key={project.title}>
+                        <div className="research-card-side">
+                          <p className="research-year">{project.year}</p>
+                          <p className="research-side-location">
+                            {project.location}
+                          </p>
+                        </div>
+                        <div className="research-card-copy">
+                          <h4>{project.title}</h4>
+                          <div className="research-meta">
+                            <p className="research-role">{project.role}</p>
+                            {project.collaborators && (
+                              <p
+                                className={
+                                  project.collaborators.startsWith("Advisor:")
+                                    ? "research-advisor"
+                                    : "research-collaborators"
+                                }
+                              >
+                                {project.collaborators}
+                              </p>
+                            )}
+                            {project.note && (
+                              <p className="research-note">{project.note}</p>
+                            )}
+                          </div>
+                          <p className="research-highlight">{project.highlight}</p>
+                          <details className="project-details">
+                            <summary className="project-details-toggle">
+                              <span className="project-details-icon" aria-hidden="true" />
+                              <span>View details</span>
+                            </summary>
+                            <div className="project-details-content">
+                              <ul>
+                                {project.details.map((detail) => (
+                                  <li key={detail}>{detail}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </details>
+                          {project.href && (
+                            <a
+                              className="text-link"
+                              href={project.href}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <span className="text-link-icon" aria-hidden="true">↗</span>
+                              <span className="text-link-label">{project.linkLabel}</span>
+                            </a>
+                          )}
+                        </div>
+                      </article>
+                    ))}
                   </div>
-                  <h3>{project.title}</h3>
-                  <p className="research-role">{project.role}</p>
-                  <p className="research-collaborators">{project.collaborators}</p>
-                  {project.note && <p className="research-note">{project.note}</p>}
-                  <details>
-                    <summary>Project overview</summary>
-                    <p>{project.summary}</p>
-                  </details>
-                  {project.href && (
-                    <a
-                      className="text-link"
-                      href={project.href}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {project.linkLabel} <span aria-hidden="true">↗</span>
-                    </a>
-                  )}
+                </details>
+              ))}
+              <details className="research-group research-group-olive">
+                <summary className="research-group-heading">
+                  <span className="research-group-title">RA Experience</span>
+                </summary>
+                <div className="research-list research-assistant-list">
+                  <div className="timeline">
+                    {experience.map((item) => (
+                      <article className="research-card" key={item.title}>
+                        <div className="research-card-side">
+                          <p className="research-year">{item.dates}</p>
+                          <p className="research-side-location">{item.location}</p>
+                        </div>
+                        <div className="research-card-copy">
+                          <h3>{item.title}</h3>
+                          <div className="research-meta">
+                            <p className="research-advisor">
+                              {item.organization}
+                            </p>
+                          </div>
+                          <p className="research-highlight">{item.highlight}</p>
+                          <details className="project-details">
+                            <summary className="project-details-toggle">
+                              <span className="project-details-icon" aria-hidden="true" />
+                              <span>View details</span>
+                            </summary>
+                            <div className="project-details-content">
+                              <ul>
+                                {item.details.map((detail) => (
+                                  <li key={detail}>{detail}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          </details>
+                        </div>
+                      </article>
+                    ))}
+                  </div>
                 </div>
-              </article>
-            ))}
+              </details>
+            </div>
           </div>
         </section>
 
         <section className="section experience-section" id="experience">
           <div className="section-heading">
-            <p className="section-number">03</p>
-            <h2>Research experience</h2>
-          </div>
-          <div className="timeline">
-            {experience.map((item) => (
-              <article className="timeline-item" key={item.title}>
-                <div className="timeline-date">{item.dates}</div>
-                <div className="timeline-copy">
-                  <p className="timeline-role">{item.role}</p>
-                  <h3>{item.title}</h3>
-                  <p className="timeline-organization">{item.organization}</p>
-                  <p>{item.description}</p>
-                </div>
-              </article>
-            ))}
+            <h2>Experience</h2>
           </div>
         </section>
 
         <section className="section materials-section" id="materials">
           <div className="section-heading">
-            <p className="section-number">04</p>
             <h2>Materials</h2>
             <p className="section-deck">
               Selected presentations and teaching materials that I have
