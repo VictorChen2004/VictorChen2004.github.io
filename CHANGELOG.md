@@ -2,6 +2,9 @@
 
 ## 2026-08-15
 
+- Added the supplied Google Search Console ownership token as a homepage meta
+  tag. Documented URL-prefix verification because the default `github.io`
+  subdomain does not expose owner-controlled DNS records.
 - Converted the three Experience areas and both Materials groups into large,
   color-coded expandable panels that match the established Research
   interaction while preserving the full internal layouts.

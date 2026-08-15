@@ -106,11 +106,14 @@ is intentionally not presented as a personal profile.
 ## Google discovery checklist
 
 The site already exposes its canonical URL, crawl permissions, identity data,
-and sitemap at `https://victorchen2004.github.io/sitemap.xml`. The remaining
-owner-only step is Google Search Console:
+Google verification meta tag, and sitemap at
+`https://victorchen2004.github.io/sitemap.xml`. Because `github.io` is GitHub's
+domain rather than an owner-managed custom domain, a DNS TXT record cannot be
+added for this subdomain. Use the URL-prefix property in Google Search Console:
 
-1. Add the URL-prefix property `https://victorchen2004.github.io/` and complete
-   ownership verification with the HTML file or meta tag Google provides.
+1. Add the URL-prefix property `https://victorchen2004.github.io/` and choose
+   the HTML tag verification method. The supplied verification token is already
+   published in the homepage metadata.
 2. Submit `sitemap.xml` in the Sitemaps report.
 3. Inspect the homepage URL and choose **Request indexing** once. Repeating the
    request does not accelerate crawling.
