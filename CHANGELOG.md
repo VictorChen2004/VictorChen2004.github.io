@@ -2,6 +2,23 @@
 
 ## 2026-08-15
 
+- Corrected Research typography rules so every paper advisor or collaborator
+  line uses its category color in normal-weight italic, while every RA
+  supervisor line is category-colored, bold, and non-italic.
+- Restored category-tinted highlight callouts beneath every research record,
+  with a matching left rule and neutral black body copy.
+- Rebuilt Materials as two prominent sections: Paper Presentations and
+  Materials I Compiled and Used to Teach. Added real cover previews for all
+  five original Drive materials, expanded their descriptions, retained their
+  public links, and preserved the original update, permissions, copyright,
+  feedback, and conflict-of-interest notice in clearer language.
+- Filled the previously empty Experience section from the July 2026 CV with
+  seven complete teaching, mentoring, academic-club, student-media, debate,
+  EPC, and Ling College records; added scale indicators, fourteen honors and
+  awards, and a concise research-toolkit and languages panel.
+- Added the GitHub profile to Contact, expanded Person structured data with a
+  descriptive job title and awards, and refreshed the sitemap modification
+  date with the portrait as an image entry.
 - Replaced the external Google Drive CV link with the supplied six-page PDF,
   hosted directly under the website's `public/cv` assets and labeled as the
   July 2026 version using the PDF's embedded 11 July 2026 timestamp. Kept the

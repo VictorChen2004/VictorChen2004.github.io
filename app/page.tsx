@@ -209,7 +209,7 @@ const researchGroups = [
   },
 ];
 
-const experience = [
+const researchAssistantExperience = [
   {
     dates: "May 2026–present",
     title: "Speech Recognition and Treatment-Compliance Analysis in Congo",
@@ -273,41 +273,255 @@ const experience = [
   },
 ];
 
-const materials = [
+type Material = {
+  label: string;
+  title: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  href: string;
+};
+
+const materialSections: { title: string; deck: string; items: Material[] }[] = [
   {
-    type: "Course presentation",
-    title: "Getting Ahead in the Communist Party",
-    description:
-      "A Chinese Economy course presentation on the advancement of Central Committee members in China, based on research by Victor Shih and co-authors.",
-    href: "https://drive.google.com/file/d/1u9da43kVG5i8SrbUvir92hv4Q1Ntb24e/view",
+    title: "Paper Presentations",
+    deck:
+      "Course presentations and reading-panel materials through which I worked closely with influential ideas in political economy, AI, and empirical economics.",
+    items: [
+      {
+        label: "Chinese Economy · September 2025",
+        title: "Presentation for Chinese Economy Course",
+        description:
+          "In this presentation, we studied Getting Ahead in the Communist Party: Explaining the Advancement of Central Committee Members in China (2012), written by Victor Shih and co-authors. We followed the paper from its introduction and motivation through its conclusion, while also discussing possible updates and related trends in contemporary China.",
+        image: "/materials/chinese-economy.png",
+        imageAlt:
+          "Cover slide for a presentation on Getting Ahead in the Communist Party",
+        href: "https://drive.google.com/file/d/1u9da43kVG5i8SrbUvir92hv4Q1Ntb24e/view",
+      },
+      {
+        label: "AI Paper Study Panel · 2024",
+        title: "Presentation for AI Paper Study Panel",
+        description:
+          "I presented AI Can Help People Feel Heard, but an AI Label Diminishes This Impact, by Yidan Yin, Nan Jia, and Cheryl J. Wakslak. I particularly enjoyed this paper: it offers a thoughtful perspective on the relationship between AI and human beings and develops a clever way to quantify that relationship. Its conclusion has continued to resonate with me in daily life.",
+        image: "/materials/ai-paper-study.png",
+        imageAlt:
+          "Cover slide for a presentation on AI labels and perceived understanding",
+        href: "https://drive.google.com/file/d/17V3ixmgMdEnShVKJaiIHxeD6KrX13tMZ/view",
+      },
+      {
+        label: "Econometrics & Instrumental Variables · December 2024",
+        title: "Presentation for Econometrics and IV Course",
+        description:
+          "I presented The Colonial Origins of Comparative Development: An Empirical Investigation, by Daron Acemoglu, Simon Johnson, and James A. Robinson. I was especially impressed by the paper’s instrumental-variable design and explained its intuition and basic logic to develop a clearer understanding of how an IV should be chosen.",
+        image: "/materials/colonial-origins.png",
+        imageAlt:
+          "Cover slide for a presentation on the colonial origins of comparative development",
+        href: "https://drive.google.com/file/d/19fJ8uhVBgF9Uwo_Z2ORYQtc0ZciDEdZF/view",
+      },
+    ],
   },
   {
-    type: "Paper study panel",
-    title: "AI Can Help People Feel Heard",
-    description:
-      "A presentation on the relationship between AI-mediated responses, perceived understanding, and the effect of disclosing an AI label.",
-    href: "https://drive.google.com/file/d/17V3ixmgMdEnShVKJaiIHxeD6KrX13tMZ/view",
+    title: "Materials I Compiled and Used to Teach",
+    deck:
+      "Lecture and tutorial resources prepared for Introductory Econometrics while serving as a Teaching Assistant in Spring 2025.",
+    items: [
+      {
+        label: "ECON3121 · Midterm Review · Spring 2025",
+        title: "Midterm Review for Introductory Econometrics",
+        description:
+          "These are the materials I compiled and used to teach the midterm review session for ECON3121. The slides consolidate the central concepts, equations, and empirical intuition students needed for the first half of the course.",
+        image: "/materials/econometrics-midterm.png",
+        imageAlt: "Cover slide for the ECON3121 midterm review",
+        href: "https://drive.google.com/file/d/1_1_FkNhwZai4Nu22oMPqKo0Mff7r8pyC/view",
+      },
+      {
+        label: "ECON3121 · Final Review · Spring 2025",
+        title: "Final Review for Introductory Econometrics",
+        description:
+          "I also compiled and taught the final review in the same semester. This companion deck brings together the later course topics and provides a structured route through the material before the final examination.",
+        image: "/materials/econometrics-final.png",
+        imageAlt: "Cover slide for the ECON3121 final review",
+        href: "https://drive.google.com/file/d/1NCFK4npkOHnfPF6ukA1ZnRKrnfTUiv2n/view",
+      },
+    ],
+  },
+];
+
+const experienceGroups = [
+  {
+    title: "Teaching & Mentorship",
+    intro:
+      "Teaching is where I turn technical material into explanations, exercises, and conversations that other students can genuinely use.",
+    items: [
+      {
+        dates: "Sep 2024–present",
+        title: "Teaching Assistant",
+        role: "Microeconomics · Financial Management · Econometrics",
+        organization:
+          "School of Management and Economics, CUHK-Shenzhen",
+        details: [
+          "Held 110+ office hours, answered 600+ student questions, and graded 300+ assignments.",
+          "Led 40+ tutorials supported by more than 700 pages of LaTeX slides; taught data analysis in Excel and helped compile Econometrics lecture materials throughout the semester.",
+          "Produced supplementary financial-concept video lectures that reached more than 3,000 viewers nationwide.",
+          "Led weekly Microeconomics tutorials for as many as 85 students and was recognized by peers as a popular and effective Undergraduate Student Teaching Fellow.",
+        ],
+      },
+      {
+        dates: "Jan 2025–Feb 2026",
+        title: "Academic Mentor & Student Lecturer",
+        role:
+          "SME Academic Advisory Programme · 2026 Winter Camp for High School Students",
+        organization:
+          "School of Management and Economics, CUHK-Shenzhen",
+        details: [
+          "Served in the mentor group for 100+ first-year students and contributed to establishing a new advisory programme for Economics majors.",
+          "Held Academic Advisory meetings on exchange applications, academic writing, and course selection.",
+          "Provided one-to-one guidance, collected student feedback on course design, and helped support the establishment of two new courses.",
+        ],
+      },
+    ],
   },
   {
-    type: "Econometrics presentation",
-    title: "The Colonial Origins of Comparative Development",
-    description:
-      "A presentation explaining the intuition, identification strategy, and instrumental-variable design of Acemoglu, Johnson, and Robinson.",
-    href: "https://drive.google.com/file/d/19fJ8uhVBgF9Uwo_Z2ORYQtc0ZciDEdZF/view",
+    title: "Academic Leadership & Communication",
+    intro:
+      "Beyond the classroom, I organize academic communities and translate economic research for wider student audiences.",
+    items: [
+      {
+        dates: "Mar 2024–present",
+        title: "Vice President & Head of Academic Department",
+        role: "CUHK-Shenzhen Economics Club",
+        organization: "School of Management and Economics",
+        details: [
+          "Organized large-scale Microeconomics and Econometrics review sessions across three semesters, including an English-language Microeconomics lecture attended by 400+ local and international students.",
+          "Designed and delivered 120+ LaTeX slides for an Econometrics session, supplementing core materials and introducing foundational Stata commands.",
+          "Coordinated more than 10 paper-reading seminars and presented analytical commentary on influential research, including Angrist’s 1996 instrumental-variables paper.",
+        ],
+      },
+      {
+        dates: "Sep 2023–present",
+        title: "Editor & Student Reporter",
+        role: "CUHK-Shenzhen SME News",
+        organization: "School of Management and Economics",
+        details: [
+          "Reported on Open Day forums, faculty interviews, alumni profiles, and other key SME events from an economic perspective.",
+          "Coordinated with professors and academic departments to present research and teaching philosophies accurately and accessibly.",
+          "Interviewed scholars working in behavioral and development economics and translated their academic ideas into engaging stories for student readers.",
+        ],
+      },
+    ],
   },
   {
-    type: "Teaching material",
-    title: "ECON3121 Midterm Review Lectures",
-    description:
-      "Review-session materials prepared while serving as a teaching assistant for Introductory Econometrics in Spring 2025.",
-    href: "https://drive.google.com/file/d/1_1_FkNhwZai4Nu22oMPqKo0Mff7r8pyC/view",
+    title: "Debate & Campus Leadership",
+    intro:
+      "Debate and student leadership have trained me to communicate under pressure, listen across perspectives, and take responsibility for a community.",
+    items: [
+      {
+        dates: "Oct 2023–present",
+        title: "Selected Member",
+        role: "CUHK-Shenzhen English Debate Team",
+        organization: "British Parliamentary Debate",
+        details: [
+          "Represented CUHK-Shenzhen in intercollegiate BP-format tournaments on public policy, political economy, and business issues.",
+          "Reached the semifinal of the 2023 Novice Debate Challenge and was selected as an official team member; placed first in group at the 2024 Macau Debate Open.",
+          "At the 2025 Greater Bay Area Novice Championship, reached the semifinal, placed first in group, and received 4th Best Speaker in the Open Group.",
+          "Placed first in group at the 2025 Guangdong Debate Challenge on motions involving company structure, startups and SMEs, monetary policy, and tariffs.",
+        ],
+      },
+      {
+        dates: "Aug 2023 & Aug 2025",
+        title: "Student Representative, Mentor & Class Leader",
+        role: "English Pre-sessional Course",
+        organization: "Office of Student Affairs, CUHK-Shenzhen",
+        details: [
+          "Selected through competitive English assessments as the official student representative in both 2023 and 2025.",
+          "Delivered English keynote speeches to more than 600 participants in 2023 and 800 in 2025, with coverage in official university media.",
+          "Led a cohort of 30 first-year students through academic and campus orientation and served as a bilingual liaison among students, instructors, and administrators.",
+        ],
+      },
+      {
+        dates: "Sep 2023–present",
+        title: "First Lesson Host & Committee Member",
+        role: "Ling College, CUHK-Shenzhen",
+        organization: "Residential College Community",
+        details: [
+          "Hosted the college-wide First Lesson and welcomed the residential community at the beginning of the academic year.",
+          "Organize student events and peer-support initiatives, including the Studying for 21 Days programme designed to encourage perseverance and durable study habits.",
+        ],
+      },
+    ],
+  },
+];
+
+const honors = [
+  {
+    year: "2026",
+    title: "30th Undergraduate Research Award",
+    detail: "CUHK-Shenzhen",
   },
   {
-    type: "Teaching material",
-    title: "ECON3121 Final Review Session",
-    description:
-      "Final-exam review materials prepared for the same Introductory Econometrics course.",
-    href: "https://drive.google.com/file/d/1NCFK4npkOHnfPF6ukA1ZnRKrnfTUiv2n/view",
+    year: "2025",
+    title: "National Scholarship",
+    detail: "Highest national honor for undergraduates in China",
+  },
+  {
+    year: "2025",
+    title: "University Honors",
+    detail: "Excellent Student Award",
+  },
+  {
+    year: "2025",
+    title: "29th Undergraduate Research Award",
+    detail: "CUHK-Shenzhen",
+  },
+  {
+    year: "2025",
+    title: "Curiosity Research Award",
+    detail: "CUHK-Shenzhen",
+  },
+  {
+    year: "2025",
+    title: "Best Paper",
+    detail: "Cambridge Online Summer Research Programme",
+  },
+  {
+    year: "2025",
+    title: "4th Best Speaker & Semifinalist",
+    detail: "Greater Bay Area Novice Championship · Open Group",
+  },
+  {
+    year: "2025",
+    title: "Ling College Volunteer Award",
+    detail: "Ling College Scholarships Award",
+  },
+  {
+    year: "2025",
+    title: "Annual Hot Search Award",
+    detail: "SME News",
+  },
+  {
+    year: "2025",
+    title: "Person of the Year",
+    detail: "Profiled by Lakeside Magazine",
+  },
+  {
+    year: "2024",
+    title: "Second Prize",
+    detail: "Guangdong Contemporary Undergraduate Mathematical Contest in Modeling",
+  },
+  {
+    year: "Ongoing",
+    title: "SME Academic Performance Scholarship",
+    detail: "Every academic year · Top 2% in SME",
+  },
+  {
+    year: "Ongoing",
+    title: "Dean’s List",
+    detail: "Every academic year",
+  },
+  {
+    year: "2023–2026",
+    title: "Ling Inspirational & Bowen II Scholarships",
+    detail: "Multi-year scholarship support",
   },
 ];
 
@@ -317,8 +531,12 @@ const personSchema = {
   name: "Xucheng Chen",
   alternateName: ["Victor Xucheng Chen", "Victor Chen", "Chen Xucheng", "陈绪成"],
   url: SITE_URL,
+  mainEntityOfPage: SITE_URL,
   image: `${SITE_URL}/xucheng-chen.jpg`,
   email: "mailto:xuchengchen@link.cuhk.edu.cn",
+  jobTitle: "Economics Researcher and Student",
+  description:
+    "Xucheng Chen (Victor Chen) is an Economics Science student and undergraduate researcher at CUHK-Shenzhen.",
   affiliation: {
     "@type": "CollegeOrUniversity",
     name: "The Chinese University of Hong Kong, Shenzhen",
@@ -334,6 +552,7 @@ const personSchema = {
     "Economics of Education",
     "Financial Economics",
   ],
+  award: honors.map((honor) => `${honor.title} (${honor.year})`),
   sameAs: [
     "https://github.com/VictorChen2004",
     "https://sites.google.com/view/xuchengchen/",
@@ -533,13 +752,7 @@ export default function Home() {
                           <div className="research-meta">
                             <p className="research-role">{project.role}</p>
                             {project.collaborators && (
-                              <p
-                                className={
-                                  project.collaborators.startsWith("Advisor:")
-                                    ? "research-advisor"
-                                    : "research-collaborators"
-                                }
-                              >
+                              <p className="research-advisor">
                                 {project.collaborators}
                               </p>
                             )}
@@ -584,7 +797,7 @@ export default function Home() {
                 </summary>
                 <div className="research-list research-assistant-list">
                   <div className="timeline">
-                    {experience.map((item) => (
+                    {researchAssistantExperience.map((item) => (
                       <article className="research-card" key={item.title}>
                         <div className="research-card-side">
                           <p className="research-year">{item.dates}</p>
@@ -593,7 +806,7 @@ export default function Home() {
                         <div className="research-card-copy">
                           <h3>{item.title}</h3>
                           <div className="research-meta">
-                            <p className="research-advisor">
+                            <p className="research-supervisor">
                               {item.organization}
                             </p>
                           </div>
@@ -621,35 +834,168 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section experience-section" id="experience">
-          <div className="section-heading">
-            <h2>Experience</h2>
+        <section className="experience-section" id="experience">
+          <div className="experience-inner">
+            <header className="experience-heading">
+              <div>
+                <p className="eyebrow">Teaching · Leadership · Service</p>
+                <h2>Experience</h2>
+              </div>
+              <p>
+                My work outside individual research centers on teaching,
+                academic community-building, public communication, and student
+                leadership. The figures below summarize the scale of that work;
+                the records that follow preserve the substance of my CV.
+              </p>
+            </header>
+
+            <div className="experience-stats" aria-label="Experience highlights">
+              <div><strong>110+</strong><span>office hours</span></div>
+              <div><strong>40+</strong><span>tutorials led</span></div>
+              <div><strong>700+</strong><span>pages of teaching slides</span></div>
+              <div><strong>3,000+</strong><span>video-lecture viewers</span></div>
+            </div>
+
+            <div className="experience-groups">
+              {experienceGroups.map((group) => (
+                <section className="experience-group" key={group.title}>
+                  <header className="experience-group-heading">
+                    <div>
+                      <h3>{group.title}</h3>
+                      <p>{group.intro}</p>
+                    </div>
+                  </header>
+                  <div className="experience-list">
+                    {group.items.map((item) => (
+                      <article className="experience-card" key={item.title}>
+                        <div className="experience-card-side">
+                          <p>{item.dates}</p>
+                          <span>Shenzhen, China</span>
+                        </div>
+                        <div className="experience-card-copy">
+                          <p className="experience-role">{item.role}</p>
+                          <h4>{item.title}</h4>
+                          <p className="experience-organization">
+                            {item.organization}
+                          </p>
+                          <ul>
+                            {item.details.map((detail) => (
+                              <li key={detail}>{detail}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </div>
+
+            <section className="honors-section" aria-labelledby="honors-title">
+              <header className="honors-heading">
+                <p className="eyebrow">Selected recognition</p>
+                <h3 id="honors-title">Honors & Awards</h3>
+                <p>
+                  Recognition across academic performance, research, debate,
+                  modeling, student media, and service.
+                </p>
+              </header>
+              <div className="honors-grid">
+                {honors.map((honor) => (
+                  <article className="honor-card" key={`${honor.year}-${honor.title}`}>
+                    <p>{honor.year}</p>
+                    <h4>{honor.title}</h4>
+                    <span>{honor.detail}</span>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            <aside className="skills-band" aria-label="Skills and languages">
+              <div>
+                <p>Research toolkit</p>
+                <span>
+                  Microsoft Office · Stata · Python (NumPy, Pandas, Matplotlib) ·
+                  R · LaTeX · EViews · MATLAB · Jupyter · Web Scraping ·
+                  Machine Learning · NLP · Speech Recognition
+                </span>
+              </div>
+              <div>
+                <p>Languages & interests</p>
+                <span>
+                  Mandarin Chinese · English (full professional proficiency) ·
+                  Writing (city-level first prize) · English & Mandarin Debate ·
+                  Badminton · Feminist & Existentialist Philosophy
+                </span>
+              </div>
+            </aside>
           </div>
         </section>
 
-        <section className="section materials-section" id="materials">
-          <div className="section-heading">
-            <h2>Materials</h2>
-            <p className="section-deck">
-              Selected presentations and teaching materials that I have
-              prepared along the way.
-            </p>
-          </div>
-          <div className="materials-grid">
-            {materials.map((material) => (
-              <a
-                className="material-card"
-                href={material.href}
-                target="_blank"
-                rel="noreferrer"
-                key={material.title}
-              >
-                <p>{material.type}</p>
-                <h3>{material.title}</h3>
-                <span>{material.description}</span>
-                <strong>Open material ↗</strong>
-              </a>
-            ))}
+        <section className="materials-section" id="materials">
+          <div className="materials-inner">
+            <header className="materials-heading">
+              <p className="eyebrow">Presentations · Slides · Teaching</p>
+              <h2>Materials</h2>
+              <p>
+                This section collects materials I found especially interesting,
+                together with presentations and teaching resources I prepared.
+                The collection may be incomplete and will be updated over time.
+                Please do not redistribute or cite my original slides or notes
+                without permission; copyright in cited papers and other
+                third-party works remains with their original owners. Comments,
+                suggestions, and notices of possible conflicts of interest are
+                always welcome.
+              </p>
+            </header>
+
+            <div className="material-sections">
+              {materialSections.map((section) => (
+                <section className="material-section" key={section.title}>
+                  <header className="material-section-heading">
+                    <div>
+                      <h3>{section.title}</h3>
+                      <p>{section.deck}</p>
+                    </div>
+                  </header>
+                  <div className="material-features">
+                    {section.items.map((material) => (
+                      <article className="material-feature" key={material.title}>
+                        <a
+                          className="material-preview"
+                          href={material.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label={`Open ${material.title}`}
+                        >
+                          <Image
+                            src={material.image}
+                            alt={material.imageAlt}
+                            width="1024"
+                            height="768"
+                            sizes="(max-width: 900px) 90vw, 47vw"
+                          />
+                          <span>Open full material ↗</span>
+                        </a>
+                        <div className="material-copy">
+                          <p className="material-label">{material.label}</p>
+                          <h4>{material.title}</h4>
+                          <p>{material.description}</p>
+                          <a
+                            className="material-link"
+                            href={material.href}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            View presentation <span aria-hidden="true">↗</span>
+                          </a>
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -660,12 +1006,22 @@ export default function Home() {
             If you have questions about my work, comments on a paper, or ideas
             worth exploring together, I would be delighted to hear from you.
           </p>
-          <a
-            className="button button-light"
-            href="mailto:xuchengchen@link.cuhk.edu.cn"
-          >
-            Send me an email
-          </a>
+          <div className="contact-actions">
+            <a
+              className="button button-light"
+              href="mailto:xuchengchen@link.cuhk.edu.cn"
+            >
+              Send me an email
+            </a>
+            <a
+              className="button button-light"
+              href="https://github.com/VictorChen2004"
+              target="_blank"
+              rel="me noreferrer"
+            >
+              GitHub profile ↗
+            </a>
+          </div>
         </section>
       </main>
 

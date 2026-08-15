@@ -9,9 +9,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: SITE_URL,
-      lastModified: new Date("2026-08-13"),
+      lastModified: new Date("2026-08-15"),
       changeFrequency: "monthly",
       priority: 1,
+      images: [`${SITE_URL}/xucheng-chen.jpg`],
     },
   ];
 }

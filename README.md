@@ -17,6 +17,12 @@ Google Search signals.
 - Research organized by maturity into Working Papers, Work in Progress, and
   Selected Writing, with RA Experience alongside them in four large
   color-coded expandable panels.
+- A CV-backed Experience portfolio covering teaching, academic leadership,
+  student media, debate, mentoring, campus leadership, all listed honors and
+  awards, and a compact skills record.
+- A two-part Materials exhibition with five locally hosted cover previews,
+  full original descriptions, and direct links to each presentation or
+  teaching deck.
 - A web-optimized professional portrait derived from the supplied original;
   the original photograph remains unchanged outside the project.
 - A locally hosted six-page CV, clearly labeled as the July 2026 version, so
@@ -26,7 +32,7 @@ Google Search signals.
 - Search metadata for `Xucheng Chen`, `Victor Xucheng Chen`, `Chen Xucheng`, and
   `陈绪成`.
 - Schema.org `Person` data, crawl permissions, canonical URL, social-preview
-  metadata, and an XML sitemap.
+  metadata, honor data, and an image-aware XML sitemap.
 - GitHub Pages publication from a dedicated static `gh-pages` branch.
 
 The content was reconstructed from the public website at
@@ -77,6 +83,11 @@ the public address `https://victorchen2004.github.io`.
 
 Whenever biography, dates, paper status, or links change, update both the page
 and `CHANGELOG.md` so future collaborators can understand what changed.
+
+The material preview images under `public/materials` are cached cover images
+from the owner's public Google Drive decks. Their links continue to point to
+the original Drive files; if a deck is replaced, refresh both its preview and
+its description.
 
 The current downloadable CV is `public/cv/xucheng-chen-cv-july-2026.pdf`. Its
 version label follows the PDF file's embedded creation and modification date
