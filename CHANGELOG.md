@@ -2,6 +2,17 @@
 
 ## 2026-08-15
 
+- Replaced the external Google Drive CV link with the supplied six-page PDF,
+  hosted directly under the website's `public/cv` assets and labeled as the
+  July 2026 version using the PDF's embedded 11 July 2026 timestamp. Kept the
+  button label concise and placed the version note immediately below it so the
+  two profile actions remain visually balanced on mobile screens.
+- Replaced the `Beyond Patents` arXiv navigation with its verified SSRN
+  preprint page and displayed the SSRN posting date (11 August 2025).
+- Searched for a Google Scholar author profile using the owner's name,
+  affiliation, email, and paper title. No unique public profile URL could be
+  verified, so no potentially incorrect Scholar link was added to Contact or
+  structured identity data.
 - Removed the redundant subtitle from the Selected Writing panel so all four
   Research category buttons use a cleaner and more consistent hierarchy.
 - Rebuilt the Research records from the August 2026 CV and supplied paper

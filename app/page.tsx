@@ -95,8 +95,8 @@ const researchProjects: ResearchProject[] = [
       "Used quantitative analysis and mechanism-based reasoning to examine the signaling role of patents and the performance impact of R&D investment, identifying heterogeneity across industries and regions.",
       "Received the programme’s Best Paper award and presented the findings at its academic research conference.",
     ],
-    href: "https://doi.org/10.48550/arXiv.2507.18227",
-    linkLabel: "Open paper on arXiv",
+    href: "https://ssrn.com/abstract=5365829",
+    linkLabel: "SSRN preprint · 11 Aug 2025",
   },
   {
     category: "Work in progress",
@@ -399,14 +399,17 @@ export default function Home() {
                   <a className="button button-primary" href="#research">
                     Explore research
                   </a>
-                  <a
-                    className="button button-secondary"
-                    href="https://drive.google.com/file/d/1aXf8BXRAzMFJNdztylK_vt0avxGkXUsZ/view"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    View CV <span aria-hidden="true">↗</span>
-                  </a>
+                  <span className="cv-action">
+                    <a
+                      className="button button-secondary"
+                      href="/cv/xucheng-chen-cv-july-2026.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View CV <span aria-hidden="true">↗</span>
+                    </a>
+                    <span className="cv-version">Updated July 2026</span>
+                  </span>
                 </div>
               </div>
             </aside>

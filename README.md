@@ -19,7 +19,10 @@ Google Search signals.
   color-coded expandable panels.
 - A web-optimized professional portrait derived from the supplied original;
   the original photograph remains unchanged outside the project.
-- Existing Google Drive and SSRN links preserved from the original website.
+- A locally hosted six-page CV, clearly labeled as the July 2026 version, so
+  visitors do not depend on an external Drive link.
+- Existing Google Drive paper links preserved, with the verified `Beyond
+  Patents` record linked directly to its SSRN preprint page.
 - Search metadata for `Xucheng Chen`, `Victor Xucheng Chen`, `Chen Xucheng`, and
   `陈绪成`.
 - Schema.org `Person` data, crawl permissions, canonical URL, social-preview
@@ -28,7 +31,7 @@ Google Search signals.
 
 The content was reconstructed from the public website at
 `https://sites.google.com/view/xuchengchen/` and updated against the owner's
-August 2026 CV and supplied research notes. Project highlights were lightly
+2026 CV materials and supplied research notes. Project highlights were lightly
 edited for clarity and brevity without intentionally changing their meaning.
 Before publication, please confirm future-dated work, current paper versions,
 collaborator names, and conference or publication statuses.
@@ -74,6 +77,16 @@ the public address `https://victorchen2004.github.io`.
 
 Whenever biography, dates, paper status, or links change, update both the page
 and `CHANGELOG.md` so future collaborators can understand what changed.
+
+The current downloadable CV is `public/cv/xucheng-chen-cv-july-2026.pdf`. Its
+version label follows the PDF file's embedded creation and modification date
+(11 July 2026), rather than the website deployment date.
+
+Google Scholar author-profile links should be added to the Contact section and
+the Schema.org `sameAs` list only after the exact public profile URL is
+confirmed. As of the 15 August 2026 check, web and Google Scholar searches did
+not return a unique, verifiable profile for this author; a generic search URL
+is intentionally not presented as a personal profile.
 
 ## Optional custom domain
 
