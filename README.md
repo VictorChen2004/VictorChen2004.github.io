@@ -99,6 +99,25 @@ confirmed. As of the 15 August 2026 check, web and Google Scholar searches did
 not return a unique, verifiable profile for this author; a generic search URL
 is intentionally not presented as a personal profile.
 
+## Google discovery checklist
+
+The site already exposes its canonical URL, crawl permissions, identity data,
+and sitemap at `https://victorchen2004.github.io/sitemap.xml`. The remaining
+owner-only step is Google Search Console:
+
+1. Add the URL-prefix property `https://victorchen2004.github.io/` and complete
+   ownership verification with the HTML file or meta tag Google provides.
+2. Submit `sitemap.xml` in the Sitemaps report.
+3. Inspect the homepage URL and choose **Request indexing** once. Repeating the
+   request does not accelerate crawling.
+4. Link the GitHub Pages site from the public GitHub profile and the former
+   Google Sites homepage so search engines can associate the same name,
+   affiliation, and canonical destination across public pages.
+
+Search Console submission can improve discovery but cannot guarantee immediate
+ranking. Keep the owner name and affiliation consistent on institutional,
+paper, conference, and future Google Scholar pages.
+
 ## Optional custom domain
 
 For a domain such as `xuchengchen.com`, configure the domain in GitHub Pages and
