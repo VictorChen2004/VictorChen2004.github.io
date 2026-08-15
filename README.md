@@ -19,10 +19,14 @@ Google Search signals.
   color-coded expandable panels.
 - A CV-backed Experience portfolio covering teaching, academic leadership,
   student media, debate, mentoring, campus leadership, all listed honors and
-  awards, and a compact skills record.
+  awards, and a compact skills record. Honors remain visible while the three
+  experience areas open from large color-coded panels.
 - A two-part Materials exhibition with five locally hosted cover previews,
   full original descriptions, and direct links to each presentation or
-  teaching deck.
+  teaching deck; both material groups use expandable color-coded panels.
+- Course-specific actions in the Teaching Assistant record: visitors can jump
+  to the public Econometrics decks or request Microeconomics and Financial
+  Management materials by email.
 - A web-optimized professional portrait derived from the supplied original;
   the original photograph remains unchanged outside the project.
 - A locally hosted six-page CV, clearly labeled as the July 2026 version, so

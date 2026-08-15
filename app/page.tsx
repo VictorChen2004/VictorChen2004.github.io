@@ -359,6 +359,25 @@ const experienceGroups = [
         role: "Microeconomics · Financial Management · Econometrics",
         organization:
           "School of Management and Economics, CUHK-Shenzhen",
+        materialNote:
+          "Selected Econometrics review materials are available in the Materials section. Other teaching materials can be shared upon request.",
+        courses: [
+          {
+            name: "Microeconomics",
+            action: "Available upon request",
+            href: "mailto:xuchengchen@link.cuhk.edu.cn?subject=Microeconomics%20teaching%20materials%20request",
+          },
+          {
+            name: "Financial Management",
+            action: "Available upon request",
+            href: "mailto:xuchengchen@link.cuhk.edu.cn?subject=Financial%20Management%20teaching%20materials%20request",
+          },
+          {
+            name: "Econometrics",
+            action: "See materials below",
+            href: "#materials",
+          },
+        ],
         details: [
           "Held 110+ office hours, answered 600+ student questions, and graded 300+ assignments.",
           "Led 40+ tutorials supported by more than 700 pages of LaTeX slides; taught data analysis in Excel and helped compile Econometrics lecture materials throughout the semester.",
@@ -856,41 +875,6 @@ export default function Home() {
               <div><strong>3,000+</strong><span>video-lecture viewers</span></div>
             </div>
 
-            <div className="experience-groups">
-              {experienceGroups.map((group) => (
-                <section className="experience-group" key={group.title}>
-                  <header className="experience-group-heading">
-                    <div>
-                      <h3>{group.title}</h3>
-                      <p>{group.intro}</p>
-                    </div>
-                  </header>
-                  <div className="experience-list">
-                    {group.items.map((item) => (
-                      <article className="experience-card" key={item.title}>
-                        <div className="experience-card-side">
-                          <p>{item.dates}</p>
-                          <span>Shenzhen, China</span>
-                        </div>
-                        <div className="experience-card-copy">
-                          <p className="experience-role">{item.role}</p>
-                          <h4>{item.title}</h4>
-                          <p className="experience-organization">
-                            {item.organization}
-                          </p>
-                          <ul>
-                            {item.details.map((detail) => (
-                              <li key={detail}>{detail}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      </article>
-                    ))}
-                  </div>
-                </section>
-              ))}
-            </div>
-
             <section className="honors-section" aria-labelledby="honors-title">
               <header className="honors-heading">
                 <p className="eyebrow">Selected recognition</p>
@@ -910,6 +894,54 @@ export default function Home() {
                 ))}
               </div>
             </section>
+
+            <div className="experience-groups">
+              {experienceGroups.map((group) => (
+                <details className="experience-group" key={group.title}>
+                  <summary className="experience-group-heading">
+                    <div>
+                      <h3>{group.title}</h3>
+                      <p>{group.intro}</p>
+                    </div>
+                  </summary>
+                  <div className="experience-list">
+                    {group.items.map((item) => (
+                      <article className="experience-card" key={item.title}>
+                        <div className="experience-card-side">
+                          <p>{item.dates}</p>
+                          <span>Shenzhen, China</span>
+                        </div>
+                        <div className="experience-card-copy">
+                          <p className="experience-role">{item.role}</p>
+                          <h4>{item.title}</h4>
+                          <p className="experience-organization">
+                            {item.organization}
+                          </p>
+                          {item.courses && (
+                            <div className="teaching-materials">
+                              <p>{item.materialNote}</p>
+                              <div className="course-buttons">
+                                {item.courses.map((course) => (
+                                  <a href={course.href} key={course.name}>
+                                    <strong>{course.name}</strong>
+                                    <span>{course.action} ↗</span>
+                                  </a>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                          <ul>
+                            {item.details.map((detail) => (
+                              <li key={detail}>{detail}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </details>
+              ))}
+            </div>
 
             <aside className="skills-band" aria-label="Skills and languages">
               <div>
@@ -951,13 +983,13 @@ export default function Home() {
 
             <div className="material-sections">
               {materialSections.map((section) => (
-                <section className="material-section" key={section.title}>
-                  <header className="material-section-heading">
+                <details className="material-section" key={section.title}>
+                  <summary className="material-section-heading">
                     <div>
                       <h3>{section.title}</h3>
                       <p>{section.deck}</p>
                     </div>
-                  </header>
+                  </summary>
                   <div className="material-features">
                     {section.items.map((material) => (
                       <article className="material-feature" key={material.title}>
@@ -993,7 +1025,7 @@ export default function Home() {
                       </article>
                     ))}
                   </div>
-                </section>
+                </details>
               ))}
             </div>
           </div>

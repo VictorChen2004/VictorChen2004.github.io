@@ -2,6 +2,15 @@
 
 ## 2026-08-15
 
+- Converted the three Experience areas and both Materials groups into large,
+  color-coded expandable panels that match the established Research
+  interaction while preserving the full internal layouts.
+- Moved Honors & Awards ahead of the expandable Experience panels and kept all
+  fourteen distinctions permanently visible.
+- Split the Teaching Assistant portfolio into Microeconomics, Financial
+  Management, and Econometrics actions. Added direct email requests for the
+  first two and a jump to the public Econometrics materials for the third,
+  together with a clear availability note.
 - Corrected Research typography rules so every paper advisor or collaborator
   line uses its category color in normal-weight italic, while every RA
   supervisor line is category-colored, bold, and non-italic.

@@ -814,7 +814,7 @@ summary:focus-visible {
 
 .experience-groups {
   display: grid;
-  gap: clamp(3rem, 6vw, 5.5rem);
+  gap: clamp(1.1rem, 2.2vw, 1.75rem);
 }
 
 .experience-group {
@@ -830,12 +830,52 @@ summary:focus-visible {
 }
 
 .experience-group-heading {
-  align-items: end;
+  align-items: center;
   background: var(--experience-color);
+  border-radius: 8px;
   color: var(--white);
+  cursor: pointer;
   display: grid;
-  grid-template-columns: 1fr;
+  gap: 1rem 2rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  list-style: none;
+  min-height: clamp(145px, 15vw, 190px);
   padding: clamp(2rem, 4vw, 3.2rem);
+  transition: filter 180ms ease, transform 180ms ease;
+}
+
+.experience-group-heading::-webkit-details-marker {
+  display: none;
+}
+
+.experience-group-heading:hover {
+  filter: brightness(0.96);
+  transform: translateY(-2px);
+}
+
+.experience-group-heading::after {
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--white) 65%, transparent);
+  border-radius: 50%;
+  content: "+";
+  display: flex;
+  font-family: var(--sans);
+  font-size: 1.8rem;
+  font-weight: 400;
+  grid-column: 2;
+  grid-row: 1;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  width: 48px;
+}
+
+.experience-group[open] > .experience-group-heading {
+  border-radius: 8px 8px 0 0;
+}
+
+.experience-group[open] > .experience-group-heading::after {
+  content: "−";
 }
 
 .experience-group-heading h3 {
@@ -915,6 +955,63 @@ summary:focus-visible {
   margin: 0.55rem 0 1.45rem;
 }
 
+.teaching-materials {
+  background: color-mix(in srgb, var(--experience-color) 8%, var(--paper));
+  border-left: 4px solid var(--experience-color);
+  margin: 0 0 1.7rem;
+  padding: 1.1rem;
+}
+
+.teaching-materials > p {
+  color: var(--muted);
+  font-family: var(--serif);
+  line-height: 1.55;
+  margin: 0 0 1rem;
+}
+
+.course-buttons {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.course-buttons a {
+  background: var(--white);
+  border: 1px solid color-mix(in srgb, var(--experience-color) 48%, var(--line));
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  justify-content: space-between;
+  min-height: 92px;
+  padding: 0.9rem;
+  transition: background 170ms ease, color 170ms ease, transform 170ms ease;
+}
+
+.course-buttons a:hover {
+  background: var(--experience-color);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.course-buttons strong {
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.course-buttons span {
+  color: var(--experience-color);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.course-buttons a:hover span {
+  color: var(--white);
+}
+
 .experience-card ul {
   display: grid;
   gap: 0.8rem;
@@ -932,7 +1029,7 @@ summary:focus-visible {
   display: grid;
   gap: clamp(2.5rem, 5vw, 5rem);
   grid-template-columns: minmax(250px, 0.5fr) minmax(0, 1.5fr);
-  margin-top: clamp(4rem, 8vw, 7rem);
+  margin: 0 0 clamp(4rem, 7vw, 6rem);
   padding: clamp(2.5rem, 5vw, 4.5rem);
 }
 
@@ -1048,20 +1145,65 @@ summary:focus-visible {
 
 .material-sections {
   display: grid;
+  gap: clamp(1.1rem, 2.2vw, 1.75rem);
+  margin-top: clamp(1.1rem, 2.2vw, 1.75rem);
 }
 
 .material-section {
-  border-bottom: 1px solid color-mix(in srgb, var(--brown) 30%, var(--line));
+  --material-color: var(--terracotta);
 }
 
 .material-section-heading {
-  background: var(--terracotta);
+  align-items: center;
+  background: var(--material-color);
+  border-radius: 8px;
   color: var(--white);
+  cursor: pointer;
+  display: grid;
+  gap: 1rem 2rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  list-style: none;
+  min-height: clamp(150px, 16vw, 205px);
   padding: clamp(2rem, 4vw, 3.4rem);
+  transition: filter 180ms ease, transform 180ms ease;
 }
 
-.material-section:nth-child(2) .material-section-heading {
-  background: var(--brown);
+.material-section:nth-child(2) {
+  --material-color: var(--brown);
+}
+
+.material-section-heading::-webkit-details-marker {
+  display: none;
+}
+
+.material-section-heading:hover {
+  filter: brightness(0.96);
+  transform: translateY(-2px);
+}
+
+.material-section-heading::after {
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--white) 65%, transparent);
+  border-radius: 50%;
+  content: "+";
+  display: flex;
+  font-family: var(--sans);
+  font-size: 1.8rem;
+  font-weight: 400;
+  grid-column: 2;
+  grid-row: 1;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  width: 48px;
+}
+
+.material-section[open] > .material-section-heading {
+  border-radius: 8px 8px 0 0;
+}
+
+.material-section[open] > .material-section-heading::after {
+  content: "−";
 }
 
 .material-section-heading h3 {
@@ -1084,6 +1226,8 @@ summary:focus-visible {
 
 .material-features {
   background: color-mix(in srgb, var(--rose-paper) 75%, var(--white));
+  border: 1px solid color-mix(in srgb, var(--material-color) 35%, var(--line));
+  border-top: 0;
 }
 
 .material-feature {
@@ -1373,7 +1517,8 @@ footer a {
 
   .experience-card,
   .honors-grid,
-  .skills-band {
+  .skills-band,
+  .course-buttons {
     grid-template-columns: 1fr;
   }
 
@@ -1389,6 +1534,34 @@ footer a {
   .experience-stats div {
     min-height: 135px;
     padding: 1.15rem;
+  }
+
+  .experience-group-heading,
+  .material-section-heading {
+    min-height: 125px;
+    padding: 1.5rem 1.25rem;
+  }
+
+  .experience-group-heading h3,
+  .material-section-heading h3 {
+    font-size: clamp(2.1rem, 10vw, 3.15rem);
+  }
+
+  .experience-group-heading::after,
+  .material-section-heading::after {
+    font-size: 1.45rem;
+    height: 40px;
+    width: 40px;
+  }
+
+  .experience-group-heading p,
+  .material-section-heading p {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .course-buttons a {
+    min-height: 82px;
   }
 
   .experience-section,
