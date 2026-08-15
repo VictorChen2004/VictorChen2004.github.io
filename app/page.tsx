@@ -5,9 +5,11 @@ const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://victorchen2004.github.io";
 
 export const metadata: Metadata = {
-  title: { absolute: "Xucheng Chen | Economics Researcher at CUHK-Shenzhen" },
+  title: {
+    absolute: "Victor Xucheng Chen | Economics Researcher at CUHK-Shenzhen",
+  },
   description:
-    "The academic website of Xucheng Chen (Victor Chen), an economics student and researcher at CUHK-Shenzhen working across applied microeconomics, macroeconomics, labor, education, gender, development, and finance.",
+    "The academic website of Victor Xucheng Chen, also known as Victor Chen and Xucheng Chen, an economics student and researcher at CUHK-Shenzhen working across applied microeconomics, macroeconomics, labor, education, gender, development, and finance.",
 };
 
 type ResearchProject = {
@@ -282,11 +284,9 @@ type Material = {
   href: string;
 };
 
-const materialSections: { title: string; deck: string; items: Material[] }[] = [
+const materialSections: { title: string; items: Material[] }[] = [
   {
     title: "Paper Presentations",
-    deck:
-      "Course presentations and reading-panel materials through which I worked closely with influential ideas in political economy, AI, and empirical economics.",
     items: [
       {
         label: "Chinese Economy · September 2025",
@@ -322,8 +322,6 @@ const materialSections: { title: string; deck: string; items: Material[] }[] = [
   },
   {
     title: "Materials I Compiled and Used to Teach",
-    deck:
-      "Lecture and tutorial resources prepared for Introductory Econometrics while serving as a Teaching Assistant in Spring 2025.",
     items: [
       {
         label: "ECON3121 · Midterm Review · Spring 2025",
@@ -545,17 +543,17 @@ const honors = [
 ];
 
 const personSchema = {
-  "@context": "https://schema.org",
   "@type": "Person",
-  name: "Xucheng Chen",
-  alternateName: ["Victor Xucheng Chen", "Victor Chen", "Chen Xucheng", "陈绪成"],
+  "@id": `${SITE_URL}/#person`,
+  name: "Victor Xucheng Chen",
+  alternateName: ["Victor Chen", "Xucheng Chen", "Chen Xucheng", "陈绪成"],
   url: SITE_URL,
-  mainEntityOfPage: SITE_URL,
+  mainEntityOfPage: { "@id": `${SITE_URL}/#profile` },
   image: `${SITE_URL}/xucheng-chen.jpg`,
   email: "mailto:xuchengchen@link.cuhk.edu.cn",
   jobTitle: "Economics Researcher and Student",
   description:
-    "Xucheng Chen (Victor Chen) is an Economics Science student and undergraduate researcher at CUHK-Shenzhen.",
+    "Victor Xucheng Chen, also known as Victor Chen and Xucheng Chen, is an Economics Science student and undergraduate researcher at CUHK-Shenzhen.",
   affiliation: {
     "@type": "CollegeOrUniversity",
     name: "The Chinese University of Hong Kong, Shenzhen",
@@ -578,12 +576,34 @@ const personSchema = {
   ],
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: "Victor Xucheng Chen",
+      alternateName: ["Victor Chen", "Xucheng Chen"],
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": `${SITE_URL}/#profile`,
+      url: SITE_URL,
+      name: "Victor Xucheng Chen — Academic Profile",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      mainEntity: { "@id": `${SITE_URL}/#person` },
+    },
+    personSchema,
+  ],
+};
+
 export default function Home() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       <header className="site-header">
@@ -609,15 +629,18 @@ export default function Home() {
         <section className="about-hero" id="about" aria-labelledby="hero-title">
           <div className="about-hero-inner">
             <aside className="about-profile" aria-label="Academic profile summary">
-              <Image
-                className="profile-photo"
-                src="/xucheng-chen.jpg"
-                alt="Portrait of Xucheng Chen"
-                width="1200"
-                height="1600"
-                sizes="(max-width: 620px) 90vw, (max-width: 900px) 42vw, 34vw"
-                priority
-              />
+              <div className="profile-portrait">
+                <Image
+                  className="profile-photo"
+                  src="/xucheng-chen.jpg"
+                  alt="Portrait of Victor Xucheng Chen"
+                  width="1200"
+                  height="1600"
+                  sizes="(max-width: 620px) 90vw, (max-width: 900px) 42vw, 34vw"
+                  priority
+                />
+                <p className="profile-name">Victor Xucheng Chen</p>
+              </div>
               <div className="profile-summary">
                 <p className="profile-label">Economics Science</p>
                 <p>
@@ -658,8 +681,9 @@ export default function Home() {
               </p>
               <h1 id="hero-title">Nice to meet you here!</h1>
               <p className="about-intro">
-                Hi, everyone! My name is <strong>Victor Xucheng Chen</strong>{" "}
-                (<span lang="zh-Hans">陈绪成</span> in Chinese). I am currently
+                Hi, everyone! My name is <strong>Victor Xucheng Chen</strong>,
+                also known as <strong>Victor Chen</strong> ({" "}
+                <span lang="zh-Hans">陈绪成</span> in Chinese). I am currently
                 studying <strong>Economics Science</strong> at the School of
                 Management and Economics, The Chinese University of Hong Kong,
                 Shenzhen.
@@ -967,8 +991,10 @@ export default function Home() {
         <section className="materials-section" id="materials">
           <div className="materials-inner">
             <header className="materials-heading">
-              <p className="eyebrow">Presentations · Slides · Teaching</p>
-              <h2>Materials</h2>
+              <div>
+                <p className="eyebrow">Presentations · Slides · Teaching</p>
+                <h2>Materials</h2>
+              </div>
               <p>
                 This section collects materials I found especially interesting,
                 together with presentations and teaching resources I prepared.
@@ -985,10 +1011,7 @@ export default function Home() {
               {materialSections.map((section) => (
                 <details className="material-section" key={section.title}>
                   <summary className="material-section-heading">
-                    <div>
-                      <h3>{section.title}</h3>
-                      <p>{section.deck}</p>
-                    </div>
+                    <h3>{section.title}</h3>
                   </summary>
                   <div className="material-features">
                     {section.items.map((material) => (
@@ -1033,7 +1056,7 @@ export default function Home() {
 
         <section className="contact-section" id="contact">
           <p className="eyebrow">Suggestions and conversations are welcome</p>
-          <h2>Let’s talk economics.</h2>
+          <h2>Let’s talk about the future.</h2>
           <p>
             If you have questions about my work, comments on a paper, or ideas
             worth exploring together, I would be delighted to hear from you.

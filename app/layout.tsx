@@ -7,14 +7,15 @@ const SITE_URL =
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Xucheng Chen | Economics Researcher",
-    template: "%s | Xucheng Chen",
+    default: "Victor Xucheng Chen | Economics Researcher",
+    template: "%s | Victor Xucheng Chen",
   },
   description:
-    "Academic website of Xucheng Chen (Victor Chen), an economics student and researcher at CUHK-Shenzhen.",
+    "Academic website of Victor Xucheng Chen, also known as Victor Chen and Xucheng Chen, an economics student and researcher at CUHK-Shenzhen.",
   keywords: [
     "Xucheng Chen",
     "Victor Xucheng Chen",
+    "Victor Chen",
     "Chen Xucheng",
     "陈绪成",
     "CUHK-Shenzhen",
@@ -25,8 +26,8 @@ export const metadata: Metadata = {
     "Education Economics",
     "Financial Economics",
   ],
-  authors: [{ name: "Xucheng Chen", url: SITE_URL }],
-  creator: "Xucheng Chen",
+  authors: [{ name: "Victor Xucheng Chen", url: SITE_URL }],
+  creator: "Victor Xucheng Chen",
   alternates: { canonical: "/" },
   robots: {
     index: true,
@@ -44,23 +45,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: "profile",
     url: SITE_URL,
-    title: "Xucheng Chen | Economics Researcher at CUHK-Shenzhen",
+    title: "Victor Xucheng Chen | Economics Researcher at CUHK-Shenzhen",
     description:
       "Research in applied microeconomics, education, labor, development, gender, finance, and macroeconomics.",
-    siteName: "Xucheng Chen",
+    siteName: "Victor Xucheng Chen",
     locale: "en_US",
     images: [
       {
         url: "/og.png",
         width: 1536,
         height: 1024,
-        alt: "Xucheng Chen — Economics at CUHK-Shenzhen",
+        alt: "Victor Xucheng Chen — Economics at CUHK-Shenzhen",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Xucheng Chen | Economics Researcher",
+    title: "Victor Xucheng Chen | Economics Researcher",
     description:
       "Research in applied microeconomics, education, labor, development, gender, finance, and macroeconomics.",
     images: ["/og.png"],

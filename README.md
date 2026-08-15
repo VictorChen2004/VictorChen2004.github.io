@@ -11,6 +11,8 @@ Google Search signals.
 
 - A responsive portrait-led About introduction, followed by Research,
   Experience, Materials, CV, and Contact sections.
+- A two-row mobile header that keeps the full `Victor Xucheng Chen` identity,
+  all four section links, and Contact visible on narrow screens.
 - A restrained academic research list with prominent dates, concise project
   highlights, expandable contribution details, and the original
   research-interest terminology.
@@ -20,7 +22,8 @@ Google Search signals.
 - A CV-backed Experience portfolio covering teaching, academic leadership,
   student media, debate, mentoring, campus leadership, all listed honors and
   awards, and a compact skills record. Honors remain visible while the three
-  experience areas open from large color-coded panels.
+  experience areas open from large color-coded panels; each record's detailed
+  contributions now use a matching tinted callout.
 - A two-part Materials exhibition with five locally hosted cover previews,
   full original descriptions, and direct links to each presentation or
   teaching deck; both material groups use expandable color-coded panels.
@@ -34,9 +37,12 @@ Google Search signals.
 - Existing Google Drive paper links preserved, with the verified `Beyond
   Patents` record linked directly to its SSRN preprint page.
 - Search metadata for `Xucheng Chen`, `Victor Xucheng Chen`, `Chen Xucheng`, and
-  `陈绪成`.
-- Schema.org `Person` data, crawl permissions, canonical URL, social-preview
-  metadata, honor data, and an image-aware XML sitemap.
+  `Victor Chen`, `陈绪成`.
+- Linked Schema.org `WebSite`, `ProfilePage`, and `Person` data, crawl
+  permissions, canonical URL, social-preview metadata, honor data, and an
+  image-aware XML sitemap.
+- Mobile research and experience records presented as clearly separated cards,
+  with dates shown as compact labels instead of repeated horizontal dividers.
 - GitHub Pages publication from a dedicated static `gh-pages` branch.
 
 The content was reconstructed from the public website at

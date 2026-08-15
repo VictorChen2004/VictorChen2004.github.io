@@ -2,6 +2,23 @@
 
 ## 2026-08-15
 
+- Added matching category-tinted callout frames around every Experience detail
+  list, carrying the Research highlight treatment into teaching, leadership,
+  communication, debate, and service records.
+- Rebuilt the Materials introduction in the same light, two-column editorial
+  format as Experience and removed the secondary descriptions from both large
+  Materials disclosure buttons.
+- Added `Victor Xucheng Chen` directly beneath the portrait and changed the
+  contact headline to the grammatically natural “Let’s talk about the future.”
+- Restored the full wordmark and all primary navigation links on mobile through
+  a compact two-row sticky header.
+- Replaced the mobile research and experience divider stacks with independent,
+  softly tinted cards; dates now appear as category-colored pills beside each
+  location so adjacent records are easier to distinguish.
+- Strengthened the exact `Victor Chen` identity signal in visible introductory
+  copy, titles, descriptions, keywords, image text, social metadata, and a
+  linked `WebSite` / `ProfilePage` / `Person` structured-data graph while
+  preserving `Xucheng Chen` as an alternate and searchable name.
 - Published Google's downloaded `google358bd2b17b05f0a0.html` ownership file at
   the website root for Search Console URL-prefix verification; retained the
   existing verification meta tag as a compatible secondary method.
