@@ -2,6 +2,9 @@
 
 ## 2026-08-15
 
+- Published Google's downloaded `google358bd2b17b05f0a0.html` ownership file at
+  the website root for Search Console URL-prefix verification; retained the
+  existing verification meta tag as a compatible secondary method.
 - Added the supplied Google Search Console ownership token as a homepage meta
   tag. Documented URL-prefix verification because the default `github.io`
   subdomain does not expose owner-controlled DNS records.
