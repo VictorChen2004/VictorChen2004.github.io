@@ -1,5 +1,17 @@
 # Change Log
 
+## 2026-08-22
+
+- Refined the desktop typography hierarchy without changing the site's visual
+  identity: reduced the largest About, Research, Experience, Materials, Honors,
+  and Contact headings by roughly 8–12 percent.
+- Reduced repeated Research, Experience, and Materials disclosure titles by
+  roughly 15–20 percent and tightened their panel heights and padding so more
+  content fits naturally within a desktop viewport.
+- Slightly reduced paper, experience, and material record titles while keeping
+  body copy, navigation, awards, and the dedicated mobile typography overrides
+  unchanged.
+
 ## 2026-08-15
 
 - Added matching category-tinted callout frames around every Experience detail

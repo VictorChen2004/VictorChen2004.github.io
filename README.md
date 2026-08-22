@@ -43,6 +43,10 @@ Google Search signals.
   image-aware XML sitemap.
 - Mobile research and experience records presented as clearly separated cards,
   with dates shown as compact labels instead of repeated horizontal dividers.
+- A desktop-specific typography scale that preserves the large editorial
+  section anchors while reducing repeated disclosure headings, record titles,
+  card heights, and excess visual density; the established mobile scale remains
+  unchanged.
 - GitHub Pages publication from a dedicated static `gh-pages` branch.
 
 The content was reconstructed from the public website at
