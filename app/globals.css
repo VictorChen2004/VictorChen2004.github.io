@@ -849,8 +849,8 @@ summary:focus-visible {
   gap: 1rem 2rem;
   grid-template-columns: minmax(0, 1fr) auto;
   list-style: none;
-  min-height: clamp(130px, 12vw, 165px);
-  padding: clamp(1.75rem, 3.2vw, 2.7rem);
+  min-height: clamp(112px, 10vw, 145px);
+  padding: clamp(1.4rem, 2.6vw, 2.25rem);
   transition: filter 180ms ease, transform 180ms ease;
 }
 
@@ -890,7 +890,7 @@ summary:focus-visible {
 
 .experience-group-heading h3 {
   font-family: var(--serif);
-  font-size: clamp(2.5rem, 4.2vw, 3.8rem);
+  font-size: clamp(2.35rem, 3.6vw, 3.35rem);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 0.98;
@@ -900,10 +900,16 @@ summary:focus-visible {
 .experience-group-heading p {
   color: color-mix(in srgb, var(--white) 80%, transparent);
   font-family: var(--serif);
-  font-size: 1rem;
-  line-height: 1.55;
-  margin: 1rem 0 0;
-  max-width: 760px;
+  font-size: clamp(0.86rem, 0.9vw, 0.95rem);
+  line-height: 1.4;
+  margin: 0.7rem 0 0;
+  max-width: none;
+}
+
+@media (min-width: 1100px) {
+  .experience-group-heading p {
+    white-space: nowrap;
+  }
 }
 
 .experience-list {

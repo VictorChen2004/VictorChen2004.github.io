@@ -11,6 +11,10 @@
 - Slightly reduced paper, experience, and material record titles while keeping
   body copy, navigation, awards, and the dedicated mobile typography overrides
   unchanged.
+- Further tightened the three Experience disclosure panels, reduced their
+  desktop title scale, and allowed each supporting sentence to use the full
+  card width so it stays on one line on wide screens while still wrapping on
+  narrower devices.
 
 ## 2026-08-15
 

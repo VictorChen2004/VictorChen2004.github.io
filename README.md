@@ -46,7 +46,8 @@ Google Search signals.
 - A desktop-specific typography scale that preserves the large editorial
   section anchors while reducing repeated disclosure headings, record titles,
   card heights, and excess visual density; the established mobile scale remains
-  unchanged.
+  unchanged. Wide-screen Experience summaries stay on one clean line while
+  retaining natural wrapping on narrower layouts.
 - GitHub Pages publication from a dedicated static `gh-pages` branch.
 
 The content was reconstructed from the public website at
