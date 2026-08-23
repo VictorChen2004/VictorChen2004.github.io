@@ -2,6 +2,14 @@
 
 ## 2026-08-23
 
+- Rebuilt Selected Coursework directly from the latest CV instead of applying
+  an inferred website taxonomy: the first three CV course bullets now form
+  Economics, Programming & Research Methods, and Other Economics, while the
+  two mathematics/statistics bullets and final interdisciplinary bullet are
+  combined in Mathematics, Statistics & Other Coursework.
+- Restored every parenthetical grade or rank note from the CV, removed the LSE
+  and UC Berkeley additions absent from its current course bullets, and placed
+  each course on its own bulleted line.
 - Expanded the debate role heading to `Selected Member for CUHK-Shenzhen
   English Debate Team` so it remains informative without relying on the small
   institutional label.

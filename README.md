@@ -25,7 +25,10 @@ Google Search signals.
   skills record. Honors remain
   visible while the three experience areas open from large color-coded panels;
   coursework follows Honors & Awards in a static four-part academic-preparation
-  module, while the research toolkit and languages share a separate skills band,
+  module transcribed from the latest CV, with one course per line and the CV's
+  original four-group logic: Economics; Programming & Research Methods; Other
+  Economics; and Mathematics, Statistics & Other Coursework. The research
+  toolkit and languages share a separate skills band,
   and each experience record's contributions use a matching tinted callout.
   Experience and honor headings are written to remain informative on their own,
   while institutions and programme context stay in the supporting small text;

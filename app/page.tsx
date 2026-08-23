@@ -666,49 +666,45 @@ const honors = [
 
 const courseworkGroups = [
   {
-    title: "Economic Theory & Political Economy",
+    title: "Economics",
     courses: [
       "Intermediate & Advanced (PhD-level) Microeconomics",
-      "Advanced Macroeconomics",
+      "Advanced Macroeconomics (Full marks in midterm exam)",
       "Game Theory",
+      "Intermediate & Advanced (PhD-level) Econometrics",
+    ],
+  },
+  {
+    title: "Programming & Research Methods",
+    courses: [
+      "Quantitative Methods for Policy Evaluation",
+      "Advanced Methods for Empirical Research (PhD-level)",
+      "Programming (Python)",
+      "Machine Learning (4/258 in total grades)",
+    ],
+  },
+  {
+    title: "Other Economics",
+    courses: [
       "China Economics",
       "Advanced (PhD-level) Political Economics",
       "Industrial Organization (PhD-level)",
     ],
   },
   {
-    title: "Econometrics, Policy & Computation",
+    title: "Mathematics, Statistics & Other Coursework",
     courses: [
-      "Intermediate & Advanced (PhD-level) Econometrics",
-      "Quantitative Methods for Policy Evaluation",
-      "Advanced Methods for Empirical Research (PhD-level)",
-      "Programming (Python)",
-      "Machine Learning",
-      "Time Series",
-    ],
-  },
-  {
-    title: "Mathematics & Statistics",
-    courses: [
-      "Calculus",
-      "Linear Algebra",
-      "Optimization",
+      "Calculus (Top 10 in Calculus Ⅱ –Multiple Calculus)",
+      "Linear Algebra (Full marks in final exam)",
+      "Optimization (13/358 in midterm exam and 96/100 in final exam)",
       "Ordinary Differential Equations",
       "Real Analysis",
       "Probability Theory",
       "Theory of Statistics",
-    ],
-  },
-  {
-    title: "Interdisciplinary & Visiting Coursework",
-    courses: [
+      "Time Series",
       "Gender Study",
       "Study of Logics",
       "Intro to Sociology",
-      "LSE Introductory Macroeconomics",
-      "UC Berkeley Real Analysis",
-      "UC Berkeley Advanced Econometrics II",
-      "UC Berkeley Advanced Political Science II",
     ],
   },
 ];
@@ -1106,7 +1102,11 @@ export default function Home() {
                 {courseworkGroups.map((group) => (
                   <article className="coursework-card" key={group.title}>
                     <h4>{group.title}</h4>
-                    <p>{group.courses.join(" · ")}</p>
+                    <ul>
+                      {group.courses.map((course) => (
+                        <li key={course}>{course}</li>
+                      ))}
+                    </ul>
                   </article>
                 ))}
               </div>
