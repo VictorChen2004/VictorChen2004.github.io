@@ -31,8 +31,10 @@ const researchProjects: ResearchProject[] = [
     category: "Working paper",
     year: "Aug 2026–present",
     title: "Robust Trust with Multiple Advisers",
-    role: "Working Paper · Sole Author",
+    role: "Working Paper · Independent Research",
+    collaborators: "Supervised by Prof. Bin Liu, CUHK-Shenzhen",
     location: "Shenzhen, China",
+    note: "Accepted by GBA AI Alliance Conference (GAAC 2026)",
     highlight:
       "A sharp one-half alignment threshold identifies when multiple advisers retain positive worst-case value against coordinated strategic misalignment.",
     details: [
@@ -81,6 +83,23 @@ const researchProjects: ResearchProject[] = [
   },
   {
     category: "Working paper",
+    year: "May 2025–present",
+    title:
+      "Who Moves Up? Entrepreneurial Risk Preferences and Small-Firm Trajectories",
+    role: "Working Paper · Undergraduate Author",
+    collaborators: "With Prof. Shaoshuang Yang, CUHK-Shenzhen",
+    location: "Shenzhen, China",
+    note: "Sponsored by the 31st Undergraduate Research Award (URA)",
+    highlight:
+      "Across 83,854 baseline merchants, owner risk ratings predict both greater upward sales-rank mobility and more movement in the upper and lower tails; the level relationships are interpreted as conditional rather than causal.",
+    details: [
+      "Co-developed an empirical study linking 4.37 million Alipay merchant-months for 100,000 micro-merchants from 2020–2023 to consequential financial-suitability risk ratings; constructed mobility, tail, volatility, credit, portfolio, and lockdown-exposure measures.",
+      "Designed the 2020-baseline trajectory analysis and documented a 1.24-percentile higher 2023 sales rank and a 1.87-percentage-point higher probability of entering the top quartile per rating unit, conditional on baseline rank.",
+      "Estimated merchant and province-month fixed-effects lockdown models and a leave-one-out IV sensitivity analysis; kept event and IV evidence diagnostic because of pre-trend and exclusion concerns.",
+    ],
+  },
+  {
+    category: "Working paper",
     year: "Jun–Aug 2025",
     title:
       "Beyond Patents: R&D, Capital, and the Productivity Puzzle in Early-Stage High-Tech Firms",
@@ -103,7 +122,7 @@ const researchProjects: ResearchProject[] = [
     year: "Aug 2026–present",
     title:
       "Who Gets Cut Out? Generative AI and the Reorganization of Knowledge Work inside Firms",
-    role: "Work in Progress · Undergraduate Researcher",
+    role: "Work in Progress · Undergraduate Author",
     location: "Shenzhen, China",
     highlight:
       "A China-first research design asks whether generative AI compresses organizational handoffs and reorganizes front-, middle-, and back-office knowledge work.",
@@ -226,6 +245,22 @@ const researchGroups = [
 
 const researchAssistantExperience = [
   {
+    dates: "Jun 2026–present",
+    title:
+      "Machine Learning for Chinese Court-Video Transcription and Role Attribution",
+    role: "Research Assistant",
+    organization:
+      "Supervised by Prof. Shaoda Wang, University of Chicago",
+    location: "Remote",
+    highlight:
+      "Audited and extended a two-stage pipeline for timestamped, speaker-diarized Chinese court-hearing transcripts and courtroom-role attribution, while keeping accuracy claims tied to a planned gold-set evaluation.",
+    details: [
+      "Audited and extended a two-stage machine-learning pipeline that converts Chinese court-hearing video and audio into timestamped, speaker-diarized transcripts and courtroom-role labels using ffmpeg, FunASR Paraformer, CAM++/3D-Speaker, and LLM-assisted classification.",
+      "Stabilized batch orchestration and model interfaces; added structured logging, cache controls, and restart-oriented processing, and diagnosed timestamp, runtime, speaker-mixing, and empty-output failure modes rather than treating file existence as validated accuracy.",
+      "Designed a 20–30-case pilot and an approximately 200-hearing gold-set evaluation plan covering CER, timestamp alignment, diarization error rate, role-attribution F1, runtime, failures, and cost; prepared a Windows/GPU handoff for scalable execution.",
+    ],
+  },
+  {
     dates: "May 2026–present",
     title: "Speech Recognition and Treatment-Compliance Analysis in Congo",
     role: "Research Assistant",
@@ -238,21 +273,6 @@ const researchAssistantExperience = [
       "Developed a workflow covering long-recording chunking, automatic speech recognition, language detection, and preparation for treatment-compliance analysis.",
       "Tested Whisper and Meta MMS for French and Tshiluba-related audio; evaluated a Luganda proxy when direct Tshiluba support was unavailable and documented model uncertainty and limitations.",
       "Translated administrative, collective, and individual treatment messages into coding dimensions covering tax communication, justice and poverty, prosperity, and individual responsibility.",
-    ],
-  },
-  {
-    dates: "May 2025–present",
-    title: "Who Moves Up? Entrepreneurial Risk Preferences and Small-Firm Trajectories",
-    role: "Research Assistant and Co-author",
-    organization:
-      "Supervised by Prof. Shaoshuang Yang, CUHK-Shenzhen",
-    location: "Shenzhen, China",
-    highlight:
-      "Across 83,854 baseline merchants, owner risk ratings predict both greater upward sales-rank mobility and more movement in the upper and lower tails; the level relationships are intentionally interpreted as conditional rather than causal.",
-    details: [
-      "Co-developed an empirical study linking 4.37 million Alipay merchant-months for 100,000 micro-merchants from 2020–2023 to consequential financial-suitability risk ratings; constructed mobility, tail, volatility, credit, portfolio, and lockdown-exposure measures.",
-      "Designed the 2020-baseline trajectory analysis and documented a 1.24-percentile higher 2023 sales rank and a 1.87-percentage-point higher probability of entering the top quartile per rating unit, conditional on baseline rank.",
-      "Estimated merchant and province-month fixed-effects lockdown models and a leave-one-out IV sensitivity analysis; kept event and IV evidence diagnostic because of pre-trend and exclusion concerns.",
     ],
   },
   {
@@ -550,8 +570,18 @@ const experienceGroups: ExperienceGroup[] = [
 const honors = [
   {
     year: "2026",
+    title: "31st Undergraduate Research Award",
+    detail: "CUHK-Shenzhen",
+  },
+  {
+    year: "2026",
     title: "30th Undergraduate Research Award",
     detail: "CUHK-Shenzhen",
+  },
+  {
+    year: "2026",
+    title: "Ling College Leadership Scholarships Award",
+    detail: "Ling College, CUHK-Shenzhen",
   },
   {
     year: "2025",
@@ -586,8 +616,8 @@ const honors = [
   },
   {
     year: "2025",
-    title: "Ling College Volunteer Award",
-    detail: "Ling College Scholarships Award",
+    title: "Ling College Volunteer Scholarships Award",
+    detail: "Ling College, CUHK-Shenzhen",
   },
   {
     year: "2025",
@@ -605,12 +635,12 @@ const honors = [
     detail: "Guangdong Contemporary Undergraduate Mathematical Contest in Modeling",
   },
   {
-    year: "Ongoing",
+    year: "2023–present",
     title: "SME Top-2% Academic Performance Scholarship",
     detail: "CUHK-Shenzhen · Awarded every academic year",
   },
   {
-    year: "Ongoing",
+    year: "2023–present",
     title: "Dean’s List for Academic Excellence",
     detail: "CUHK-Shenzhen · Awarded every academic year",
   },
@@ -1061,16 +1091,19 @@ export default function Home() {
               <div>
                 <p>Selected coursework</p>
                 <span>
-                  Intermediate Microeconomics · Advanced Macroeconomics · Game
-                  Theory · Intermediate &amp; PhD-level Econometrics · China
-                  Economics · PhD-level Political Economics · Gender Studies ·
-                  Quantitative Methods for Policy Evaluation · Python · Machine
-                  Learning · Calculus · Linear Algebra · Optimization ·
-                  Ordinary Differential Equations · Real Analysis · Probability
-                  Theory · Statistics
-                  · LSE Introductory Macroeconomics · UC Berkeley Real Analysis ·
-                  UC Berkeley Advanced Econometrics II · UC Berkeley Advanced
-                  Political Science II
+                  Intermediate &amp; Advanced (PhD-level) Microeconomics ·
+                  Advanced Macroeconomics · Game Theory · Intermediate &amp;
+                  Advanced (PhD-level) Econometrics · Quantitative Methods for
+                  Policy Evaluation · Advanced Methods for Empirical Research
+                  (PhD-level) · Programming (Python) · Machine Learning · China
+                  Economics · Advanced (PhD-level) Political Economics ·
+                  Industrial Organization (PhD-level) · Calculus · Linear
+                  Algebra · Optimization · Ordinary Differential Equations ·
+                  Real Analysis · Probability Theory · Theory of Statistics ·
+                  Time Series · Gender Study · Study of Logics · Intro to
+                  Sociology · LSE Introductory Macroeconomics · UC Berkeley Real
+                  Analysis · UC Berkeley Advanced Econometrics II · UC Berkeley
+                  Advanced Political Science II
                 </span>
               </div>
               <div>
@@ -1085,8 +1118,9 @@ export default function Home() {
                 <p>Languages & interests</p>
                 <span>
                   Mandarin Chinese · English (full professional proficiency) ·
-                  Writing (city-level first prize) · English & Mandarin Debate ·
-                  Badminton · Feminist & Existentialist Philosophy
+                  French (working language for the Congo project) · Writing
+                  (city-level first prize) · English &amp; Mandarin Debate ·
+                  Badminton · Feminist &amp; Existentialist Philosophy
                 </span>
               </div>
             </aside>

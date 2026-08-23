@@ -38,10 +38,10 @@ Google Search signals.
   Management, and Machine Learning materials by email.
 - A web-optimized professional portrait derived from the supplied original;
   the original photograph remains unchanged outside the project.
-- A locally hosted six-page CV, clearly labeled as the August 2026 version, so
+- A locally hosted seven-page CV, clearly labeled as the August 2026 version, so
   visitors do not depend on an external Drive link.
-- A locally hosted version 3.0 of the sole-authored `Robust Trust with Multiple
-  Advisers` working paper, linked directly from its Research record.
+- A locally hosted version 3.0 of `Robust Trust with Multiple Advisers`, linked
+  directly from its Research record.
 - Existing Google Drive paper links preserved, with the verified `Beyond
   Patents` record linked directly to its SSRN preprint page.
 - Search metadata for `Xucheng Chen`, `Victor Xucheng Chen`, `Chen Xucheng`, and

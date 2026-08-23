@@ -2,6 +2,16 @@
 
 ## 2026-08-23
 
+- Synchronized the website with the owner's latest CV without rewriting other
+  site copy: added the Shaoda Wang court-video/role-attribution RA record,
+  moved `Who Moves Up?` from RA Experience to Working Papers, updated the
+  current Robust Trust supervision and GAAC 2026 status, and changed the AI
+  Shock project role to Undergraduate Author.
+- Added the 31st Undergraduate Research Award, Ling College Leadership
+  Scholarships Award, current award-year wording, expanded coursework, and
+  French working-language record from the latest CV.
+- Replaced the August CV download with the visually verified seven-page
+  version while retaining the July file as a legacy asset.
 - Rewrote the Experience record headings so each one identifies the field or
   activity at a glance instead of relying on generic titles such as `Selected
   Member`, while preserving institutions and programme names in supporting
@@ -23,14 +33,14 @@
   the compact skills band, where the courses now read as a concise CV-style
   list beside the research toolkit and languages, including the retained LSE
   and UC Berkeley coursework.
-- Replaced the outdated SME-lending Working Paper record with the current
-  `Who Moves Up? Entrepreneurial Risk Preferences and Small-Firm Trajectories`
-  Research Assistant/co-author record. Updated its sample, trajectory results,
-  fixed-effects work, sensitivity analysis, and explicit causal limitations
-  from the current project archive.
-- Added the sole-authored `Robust Trust with Multiple Advisers` as the newest
-  Working Paper, with its sharp alignment threshold, exact symmetric-case
-  margin-ladder result, audit boundary, and a locally hosted version 3.0 PDF.
+- Replaced the outdated SME-lending title with `Who Moves Up? Entrepreneurial
+  Risk Preferences and Small-Firm Trajectories`; the latest CV sync places it
+  under Working Papers and preserves its updated sample, trajectory results,
+  fixed-effects work, sensitivity analysis, and explicit causal limitations.
+- Added `Robust Trust with Multiple Advisers` as the newest Working Paper, with
+  its sharp alignment threshold, exact symmetric-case margin-ladder result,
+  audit boundary, current supervision and conference status, and a locally
+  hosted version 3.0 PDF.
 - Added `Who Gets Cut Out? Generative AI and the Reorganization of Knowledge
   Work inside Firms` to Work in Progress. The copy presents the current
   China-first measurement and empirical design without claiming completed
@@ -40,8 +50,8 @@
   political economy, gender studies, LSE, and UC Berkeley coursework.
 - Expanded the Teaching Assistant portfolio and request actions to include
   Machine Learning.
-- Published the visually verified six-page August 2026 CV and updated the About
-  button and version label while preserving the July file as a legacy asset.
+- Published the August 2026 CV and updated the About button and version label;
+  the latest seven-page sync preserves the July file as a legacy asset.
 - Added current decision-theory, robust-decision-making, generative-AI, and
   machine-learning topics to structured identity and search metadata; refreshed
   the sitemap modification date.
