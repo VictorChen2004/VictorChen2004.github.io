@@ -571,6 +571,18 @@ const experienceGroups: ExperienceGroup[] = [
 const honors = [
   {
     year: "2026",
+    title: "GAAC 2026 Conference Acceptance",
+    detail:
+      "Robust Trust with Multiple Advisers · GBA AI Alliance Conference",
+  },
+  {
+    year: "2026",
+    title: "2nd Chinese Educational Year Seminar Acceptance",
+    detail:
+      "Factory Parents, Classroom Outcomes · 2nd Chinese Educational Year Seminar",
+  },
+  {
+    year: "2026",
     title: "31st Undergraduate Research Award",
     detail: "CUHK-Shenzhen",
   },
@@ -1067,8 +1079,8 @@ export default function Home() {
                 <p className="eyebrow">Selected recognition</p>
                 <h3 id="honors-title">Honors & Awards</h3>
                 <p>
-                  Recognition across academic performance, research, debate,
-                  modeling, student media, and service.
+                  Recognition across academic performance, research and paper
+                  acceptances, debate, modeling, student media, and service.
                 </p>
               </header>
               <div className="honors-grid">

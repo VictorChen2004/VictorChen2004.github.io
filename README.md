@@ -21,7 +21,8 @@ Google Search signals.
   color-coded expandable panels.
 - A CV-backed Experience portfolio covering teaching, academic leadership,
   student media, debate, mentoring, campus leadership, all listed honors and
-  awards, selected coursework, and a compact skills record. Honors remain
+  awards, two current paper acceptances, selected coursework, and a compact
+  skills record. Honors remain
   visible while the three experience areas open from large color-coded panels;
   coursework follows Honors & Awards in a static four-part academic-preparation
   module, while the research toolkit and languages share a separate skills band,

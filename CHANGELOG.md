@@ -2,6 +2,10 @@
 
 ## 2026-08-23
 
+- Added the GAAC 2026 acceptance of `Robust Trust with Multiple Advisers` and
+  the 2nd Chinese Educational Year Seminar acceptance of `Factory Parents,
+  Classroom Outcomes` as two visible Honors & Awards cards while preserving
+  both acceptance records in Research.
 - Moved Selected Coursework directly after Honors & Awards and rebuilt it as a
   static four-part academic-preparation module covering economic theory and
   political economy; econometrics, policy, and computation; mathematics and
