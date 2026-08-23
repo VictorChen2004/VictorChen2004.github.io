@@ -2,6 +2,9 @@
 
 ## 2026-08-23
 
+- Standardized the teaching and coursework labels by displaying `Machine
+  Learning` without a course code, matching the other course names throughout
+  the page and its material-request action.
 - Moved Selected Coursework out of the expandable Experience panels and into
   the compact skills band, where the courses now read as a concise CV-style
   list beside the research toolkit and languages, including the retained LSE
@@ -19,10 +22,10 @@
   China-first measurement and empirical design without claiming completed
   adoption data or causal findings.
 - Added a concise Selected Coursework record covering economics, econometrics,
-  quantitative methods, programming, ECON3080 Machine Learning, mathematics,
+  quantitative methods, programming, Machine Learning, mathematics,
   political economy, gender studies, LSE, and UC Berkeley coursework.
 - Expanded the Teaching Assistant portfolio and request actions to include
-  ECON3080 Machine Learning.
+  Machine Learning.
 - Published the visually verified six-page August 2026 CV and updated the About
   button and version label while preserving the July file as a legacy asset.
 - Added current decision-theory, robust-decision-making, generative-AI, and

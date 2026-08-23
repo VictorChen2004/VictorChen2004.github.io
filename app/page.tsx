@@ -400,11 +400,11 @@ const experienceGroups: ExperienceGroup[] = [
         dates: "Sep 2024–present",
         title: "Teaching Assistant",
         role:
-          "Microeconomics · Financial Management · Econometrics · ECON3080 Machine Learning",
+          "Microeconomics · Financial Management · Econometrics · Machine Learning",
         organization:
           "School of Management and Economics, CUHK-Shenzhen",
         materialNote:
-          "Selected Econometrics review materials are available in the Materials section. Other teaching materials, including ECON3080 Machine Learning, can be shared upon request.",
+          "Selected Econometrics review materials are available in the Materials section. Other teaching materials, including Machine Learning, can be shared upon request.",
         courses: [
           {
             name: "Microeconomics",
@@ -422,9 +422,9 @@ const experienceGroups: ExperienceGroup[] = [
             href: "#materials",
           },
           {
-            name: "ECON3080 Machine Learning",
+            name: "Machine Learning",
             action: "Available upon request",
-            href: "mailto:xuchengchen@link.cuhk.edu.cn?subject=ECON3080%20Machine%20Learning%20teaching%20materials%20request",
+            href: "mailto:xuchengchen@link.cuhk.edu.cn?subject=Machine%20Learning%20teaching%20materials%20request",
           },
         ],
         details: [
@@ -1036,8 +1036,8 @@ export default function Home() {
                   Intermediate Microeconomics · Advanced Macroeconomics · Game
                   Theory · Intermediate &amp; PhD-level Econometrics · China
                   Economics · PhD-level Political Economics · Gender Studies ·
-                  Quantitative Methods for Policy Evaluation · Python · ECON3080
-                  Machine Learning · Calculus · Linear Algebra · Optimization ·
+                  Quantitative Methods for Policy Evaluation · Python · Machine
+                  Learning · Calculus · Linear Algebra · Optimization ·
                   Ordinary Differential Equations · Real Analysis · Probability
                   Theory · Statistics
                   · LSE Introductory Macroeconomics · UC Berkeley Real Analysis ·

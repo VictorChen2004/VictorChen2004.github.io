@@ -30,7 +30,7 @@ Google Search signals.
   teaching deck; both material groups use expandable color-coded panels.
 - Course-specific actions in the Teaching Assistant record: visitors can jump
   to the public Econometrics decks or request Microeconomics, Financial
-  Management, and ECON3080 Machine Learning materials by email.
+  Management, and Machine Learning materials by email.
 - A web-optimized professional portrait derived from the supplied original;
   the original photograph remains unchanged outside the project.
 - A locally hosted six-page CV, clearly labeled as the August 2026 version, so
