@@ -2,6 +2,11 @@
 
 ## 2026-08-23
 
+- Expanded the debate role heading to `Selected Member for CUHK-Shenzhen
+  English Debate Team` so it remains informative without relying on the small
+  institutional label.
+- Added the same color-matched leading bullet to every Experience organization
+  and context line, while retaining the bullets on every contribution detail.
 - Consolidated the website CV assets into one clearly named public edition,
   `v2026-08-23`; removed the July legacy PDF and the complete-GPA PDF from the
   public site while preserving the complete source CV outside the repository.

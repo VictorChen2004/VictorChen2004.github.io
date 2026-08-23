@@ -28,7 +28,8 @@ Google Search signals.
   module, while the research toolkit and languages share a separate skills band,
   and each experience record's contributions use a matching tinted callout.
   Experience and honor headings are written to remain informative on their own,
-  while institutions and programme context stay in the supporting small text.
+  while institutions and programme context stay in the supporting small text;
+  every Experience supporting line begins with the same color-matched bullet.
 - A two-part Materials exhibition with seven locally hosted cover previews,
   full original descriptions, and direct links to each presentation or
   teaching deck; both material groups use expandable color-coded panels.

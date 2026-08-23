@@ -532,7 +532,7 @@ const experienceGroups: ExperienceGroup[] = [
     items: [
       {
         dates: "Oct 2023–present",
-        title: "Selected Member",
+        title: "Selected Member for CUHK-Shenzhen English Debate Team",
         role: "CUHK-Shenzhen English Debate Team",
         organization: "British Parliamentary Debate",
         details: [

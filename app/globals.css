@@ -969,6 +969,19 @@ summary:focus-visible {
   font-family: var(--serif);
   font-size: 1rem;
   margin: 0.55rem 0 1.45rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.experience-organization::before {
+  color: var(--experience-color);
+  content: "•";
+  font-size: 1.05em;
+  font-weight: 700;
+  left: 0;
+  line-height: inherit;
+  position: absolute;
+  top: 0;
 }
 
 .teaching-materials {
