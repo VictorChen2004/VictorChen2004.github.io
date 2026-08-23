@@ -29,6 +29,22 @@ type ResearchProject = {
 const researchProjects: ResearchProject[] = [
   {
     category: "Working paper",
+    year: "Aug 2026–present",
+    title: "Robust Trust with Multiple Advisers",
+    role: "Working Paper · Sole Author",
+    location: "Shenzhen, China",
+    highlight:
+      "A sharp one-half alignment threshold identifies when multiple advisers retain positive worst-case value against coordinated strategic misalignment.",
+    details: [
+      "Developed a robust decision model in which a decision-maker consults K potentially misaligned advisers who observe common evidence and may coordinate strategically.",
+      "Proved that positive worst-case value is possible if and only if each adviser is aligned with probability above one half for any finite K.",
+      "Under symmetric posteriors and quadratic loss, derived the exact margin-ladder aggregation rule and arbitrary-K saddle point; built a deterministic 24-case audit with independent linear-programming cross-checks for K ≤ 3 and explicit theorem boundaries.",
+    ],
+    href: "/papers/robust-trust-with-multiple-advisers-v3.pdf",
+    linkLabel: "Paper v3.0 · 20 Aug 2026",
+  },
+  {
+    category: "Working paper",
     year: "Dec 2025–present",
     title:
       "Factory Parents, Classroom Outcomes: Occupational Networks and Peer Effects in Education",
@@ -44,24 +60,6 @@ const researchProjects: ResearchProject[] = [
       "The effect is robust across specifications and appears in mathematics, Chinese, and English. Parent questionnaire data show declines in engagement with children’s friendship networks, inter-family connections, peer-relationship communication, school discussion, confidence in children’s academic futures, and parent-initiated teacher contact.",
       "Parents in classrooms with more working-class families also report lower evaluations of the educational environment. Falsification tests using business and service-sector workers yield null effects, pointing to the role of occupationally shaped social-capital networks in educational inequality.",
     ],
-  },
-  {
-    category: "Working paper",
-    year: "May 2025–present",
-    title: "The Macroeconomic Impact of SME Lending",
-    role: "Working Paper · Undergraduate Author",
-    collaborators: "With Prof. Shaoshuang Yang, CUHK-Shenzhen",
-    location: "Shenzhen, China",
-    highlight:
-      "A 4.27-million-observation merchant–month panel reveals how credit constraints, firm size, and entrepreneurial risk preferences jointly shape SME growth and volatility.",
-    details: [
-      "Co-authored an empirical paper using a 4.27-million-observation merchant–month panel to study how SME credit lines, entrepreneurial risk preferences, and firm size jointly shape sales growth on a large digital-payment platform.",
-      "Constructed a linked merchant-level dataset from internal credit, transaction, wealth, and loan tables covering approximately 100,000 merchants; engineered credit limits, utilization ratios, liquidity-constraint indicators, growth measures, and volatility statistics.",
-      "Designed and implemented the Stata empirical strategy, including AR(1) persistence tests, fixed-effects growth regressions with province and year fixed effects, and interactions among risk preference, firm size, and credit conditions.",
-      "Built event-style measures of downturn and quasi-exit, including a 90% sales drop and three-month low-activity spells, and documented how risk tolerance and credit constraints relate to both faster growth and higher volatility among larger SMEs.",
-    ],
-    href: "https://drive.google.com/file/d/10iCuUzlnKLX-rwIK2E_3p3-wIJR4wDCJ/view",
-    linkLabel: "Paper · 26 Nov 2025",
   },
   {
     category: "Working paper",
@@ -99,6 +97,21 @@ const researchProjects: ResearchProject[] = [
     ],
     href: "https://ssrn.com/abstract=5365829",
     linkLabel: "SSRN preprint · 11 Aug 2025",
+  },
+  {
+    category: "Work in progress",
+    year: "Aug 2026–present",
+    title:
+      "Who Gets Cut Out? Generative AI and the Reorganization of Knowledge Work inside Firms",
+    role: "Work in Progress · Undergraduate Researcher",
+    location: "Shenzhen, China",
+    highlight:
+      "A China-first research design asks whether generative AI compresses organizational handoffs and reorganizes front-, middle-, and back-office knowledge work.",
+    details: [
+      "Developing a framework for how generative AI may change task bundles, handoffs, decision rights, and management layers by lowering knowledge-acquisition, execution, and coordination costs.",
+      "Designed an observable-responsibility taxonomy for front/product-facing, middle/intermediary, and back-office work while keeping potential exposure, actual adoption, task change, and labor outcomes analytically distinct.",
+      "Building a zero-new-cost empirical plan around verified adoption events, public listed-firm outcomes, and historical full-text vacancies only where lawful licensed access is confirmed; validation, pre-trend, placebo, and alternative-taxonomy tests are specified before causal claims.",
+    ],
   },
   {
     category: "Work in progress",
@@ -228,6 +241,21 @@ const researchAssistantExperience = [
     ],
   },
   {
+    dates: "May 2025–present",
+    title: "Who Moves Up? Entrepreneurial Risk Preferences and Small-Firm Trajectories",
+    role: "Research Assistant and Co-author",
+    organization:
+      "Supervised by Prof. Shaoshuang Yang, CUHK-Shenzhen",
+    location: "Shenzhen, China",
+    highlight:
+      "Across 83,854 baseline merchants, owner risk ratings predict both greater upward sales-rank mobility and more movement in the upper and lower tails; the level relationships are intentionally interpreted as conditional rather than causal.",
+    details: [
+      "Co-developed an empirical study linking 4.37 million Alipay merchant-months for 100,000 micro-merchants from 2020–2023 to consequential financial-suitability risk ratings; constructed mobility, tail, volatility, credit, portfolio, and lockdown-exposure measures.",
+      "Designed the 2020-baseline trajectory analysis and documented a 1.24-percentile higher 2023 sales rank and a 1.87-percentage-point higher probability of entering the top quartile per rating unit, conditional on baseline rank.",
+      "Estimated merchant and province-month fixed-effects lockdown models and a leave-one-out IV sensitivity analysis; kept event and IV evidence diagnostic because of pre-trend and exclusion concerns.",
+    ],
+  },
+  {
     dates: "Jul–Sep 2025",
     title: "Technology-Driven Market Concentration through Idea Allocation",
     role: "Research Assistant",
@@ -345,7 +373,24 @@ const materialSections: { title: string; items: Material[] }[] = [
   },
 ];
 
-const experienceGroups = [
+type ExperienceItem = {
+  dates: string;
+  title: string;
+  role: string;
+  organization: string;
+  location?: string;
+  materialNote?: string;
+  courses?: { name: string; action: string; href: string }[];
+  details: string[];
+};
+
+type ExperienceGroup = {
+  title: string;
+  intro: string;
+  items: ExperienceItem[];
+};
+
+const experienceGroups: ExperienceGroup[] = [
   {
     title: "Teaching & Mentorship",
     intro:
@@ -354,11 +399,12 @@ const experienceGroups = [
       {
         dates: "Sep 2024–present",
         title: "Teaching Assistant",
-        role: "Microeconomics · Financial Management · Econometrics",
+        role:
+          "Microeconomics · Financial Management · Econometrics · ECON3080 Machine Learning",
         organization:
           "School of Management and Economics, CUHK-Shenzhen",
         materialNote:
-          "Selected Econometrics review materials are available in the Materials section. Other teaching materials can be shared upon request.",
+          "Selected Econometrics review materials are available in the Materials section. Other teaching materials, including ECON3080 Machine Learning, can be shared upon request.",
         courses: [
           {
             name: "Microeconomics",
@@ -374,6 +420,11 @@ const experienceGroups = [
             name: "Econometrics",
             action: "See materials below",
             href: "#materials",
+          },
+          {
+            name: "ECON3080 Machine Learning",
+            action: "Available upon request",
+            href: "mailto:xuchengchen@link.cuhk.edu.cn?subject=ECON3080%20Machine%20Learning%20teaching%20materials%20request",
           },
         ],
         details: [
@@ -463,6 +514,45 @@ const experienceGroups = [
         details: [
           "Hosted the college-wide First Lesson and welcomed the residential community at the beginning of the academic year.",
           "Organize student events and peer-support initiatives, including the Studying for 21 Days programme designed to encourage perseverance and durable study habits.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Selected Coursework",
+    intro:
+      "Formal training across economic theory, econometrics, programming, machine learning, mathematics, political economy, and social inquiry.",
+    items: [
+      {
+        dates: "2023–present",
+        title: "Economics & Econometrics",
+        role: "CUHK-Shenzhen · A in all SME courses",
+        organization: "Undergraduate and PhD-level coursework",
+        location: "Shenzhen, China",
+        details: [
+          "Intermediate Microeconomics; Advanced Macroeconomics; Game Theory; Intermediate Econometrics; Advanced Econometrics at the PhD level.",
+          "China Economics; Advanced Political Economics at the PhD level; Gender Studies; Introductory Macroeconomics at LSE, ranked first in the course.",
+        ],
+      },
+      {
+        dates: "2023–present",
+        title: "Quantitative Methods, Computing & Mathematics",
+        role: "CUHK-Shenzhen",
+        organization: "Methods and technical foundations",
+        location: "Shenzhen, China",
+        details: [
+          "Quantitative Methods for Policy Evaluation; Programming Methodology in Python; ECON3080 Machine Learning.",
+          "Calculus; Linear Algebra; Optimization; Ordinary Differential Equations; Real Analysis; Probability Theory; Statistics.",
+        ],
+      },
+      {
+        dates: "Jan–May 2026",
+        title: "UC Berkeley Visiting Coursework",
+        role: "Berkeley Global Access",
+        organization: "University of California, Berkeley",
+        location: "Berkeley, United States",
+        details: [
+          "Real Analysis (A); Advanced Econometrics II at the PhD level (A-); Advanced Political Science II at the PhD level (A).",
         ],
       },
     ],
@@ -568,6 +658,10 @@ const personSchema = {
     "Gender Economics",
     "Economics of Education",
     "Financial Economics",
+    "Decision Theory",
+    "Robust Decision Making",
+    "Generative AI and Organizations",
+    "Machine Learning",
   ],
   award: honors.map((honor) => `${honor.title} (${honor.year})`),
   sameAs: [
@@ -663,13 +757,13 @@ export default function Home() {
                   <span className="cv-action">
                     <a
                       className="button button-secondary"
-                      href="/cv/xucheng-chen-cv-july-2026.pdf"
+                      href="/cv/xucheng-chen-cv-august-2026.pdf"
                       target="_blank"
                       rel="noreferrer"
                     >
                       View CV <span aria-hidden="true">↗</span>
                     </a>
-                    <span className="cv-version">Updated July 2026</span>
+                    <span className="cv-version">Updated August 2026</span>
                   </span>
                 </div>
               </div>
@@ -933,7 +1027,11 @@ export default function Home() {
                       <article className="experience-card" key={item.title}>
                         <div className="experience-card-side">
                           <p>{item.dates}</p>
-                          <span>Shenzhen, China</span>
+                          <span>
+                            {"location" in item
+                              ? item.location
+                              : "Shenzhen, China"}
+                          </span>
                         </div>
                         <div className="experience-card-copy">
                           <p className="experience-role">{item.role}</p>

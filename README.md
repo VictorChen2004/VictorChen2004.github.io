@@ -20,20 +20,22 @@ Google Search signals.
   Selected Writing, with RA Experience alongside them in four large
   color-coded expandable panels.
 - A CV-backed Experience portfolio covering teaching, academic leadership,
-  student media, debate, mentoring, campus leadership, all listed honors and
-  awards, and a compact skills record. Honors remain visible while the three
-  experience areas open from large color-coded panels; each record's detailed
-  contributions now use a matching tinted callout.
+  student media, debate, mentoring, campus leadership, selected coursework,
+  all listed honors and awards, and a compact skills record. Honors remain
+  visible while the four experience areas open from large color-coded panels;
+  each record's detailed contributions use a matching tinted callout.
 - A two-part Materials exhibition with five locally hosted cover previews,
   full original descriptions, and direct links to each presentation or
   teaching deck; both material groups use expandable color-coded panels.
 - Course-specific actions in the Teaching Assistant record: visitors can jump
-  to the public Econometrics decks or request Microeconomics and Financial
-  Management materials by email.
+  to the public Econometrics decks or request Microeconomics, Financial
+  Management, and ECON3080 Machine Learning materials by email.
 - A web-optimized professional portrait derived from the supplied original;
   the original photograph remains unchanged outside the project.
-- A locally hosted six-page CV, clearly labeled as the July 2026 version, so
+- A locally hosted six-page CV, clearly labeled as the August 2026 version, so
   visitors do not depend on an external Drive link.
+- A locally hosted version 3.0 of the sole-authored `Robust Trust with Multiple
+  Advisers` working paper, linked directly from its Research record.
 - Existing Google Drive paper links preserved, with the verified `Beyond
   Patents` record linked directly to its SSRN preprint page.
 - Search metadata for `Xucheng Chen`, `Victor Xucheng Chen`, `Chen Xucheng`, and
@@ -104,9 +106,9 @@ from the owner's public Google Drive decks. Their links continue to point to
 the original Drive files; if a deck is replaced, refresh both its preview and
 its description.
 
-The current downloadable CV is `public/cv/xucheng-chen-cv-july-2026.pdf`. Its
-version label follows the PDF file's embedded creation and modification date
-(11 July 2026), rather than the website deployment date.
+The current downloadable CV is `public/cv/xucheng-chen-cv-august-2026.pdf`.
+It was regenerated from the verified six-page DOCX on 23 August 2026. The July
+2026 PDF remains in the repository as a preserved legacy version.
 
 Google Scholar author-profile links should be added to the Contact section and
 the Schema.org `sameAs` list only after the exact public profile URL is

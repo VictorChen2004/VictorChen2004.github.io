@@ -1,5 +1,30 @@
 # Change Log
 
+## 2026-08-23
+
+- Replaced the outdated SME-lending Working Paper record with the current
+  `Who Moves Up? Entrepreneurial Risk Preferences and Small-Firm Trajectories`
+  Research Assistant/co-author record. Updated its sample, trajectory results,
+  fixed-effects work, sensitivity analysis, and explicit causal limitations
+  from the current project archive.
+- Added the sole-authored `Robust Trust with Multiple Advisers` as the newest
+  Working Paper, with its sharp alignment threshold, exact symmetric-case
+  margin-ladder result, audit boundary, and a locally hosted version 3.0 PDF.
+- Added `Who Gets Cut Out? Generative AI and the Reorganization of Knowledge
+  Work inside Firms` to Work in Progress. The copy presents the current
+  China-first measurement and empirical design without claiming completed
+  adoption data or causal findings.
+- Added Selected Coursework as a fourth Experience panel, covering economics,
+  econometrics, quantitative methods, programming, ECON3080 Machine Learning,
+  mathematics, political economy, gender studies, LSE, and UC Berkeley work.
+- Expanded the Teaching Assistant portfolio and request actions to include
+  ECON3080 Machine Learning.
+- Published the visually verified six-page August 2026 CV and updated the About
+  button and version label while preserving the July file as a legacy asset.
+- Added current decision-theory, robust-decision-making, generative-AI, and
+  machine-learning topics to structured identity and search metadata; refreshed
+  the sitemap modification date.
+
 ## 2026-08-22
 
 - Refined the desktop typography hierarchy without changing the site's visual
