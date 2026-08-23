@@ -518,45 +518,6 @@ const experienceGroups: ExperienceGroup[] = [
       },
     ],
   },
-  {
-    title: "Selected Coursework",
-    intro:
-      "Formal training across economic theory, econometrics, programming, machine learning, mathematics, political economy, and social inquiry.",
-    items: [
-      {
-        dates: "2023–present",
-        title: "Economics & Econometrics",
-        role: "CUHK-Shenzhen · A in all SME courses",
-        organization: "Undergraduate and PhD-level coursework",
-        location: "Shenzhen, China",
-        details: [
-          "Intermediate Microeconomics; Advanced Macroeconomics; Game Theory; Intermediate Econometrics; Advanced Econometrics at the PhD level.",
-          "China Economics; Advanced Political Economics at the PhD level; Gender Studies; Introductory Macroeconomics at LSE, ranked first in the course.",
-        ],
-      },
-      {
-        dates: "2023–present",
-        title: "Quantitative Methods, Computing & Mathematics",
-        role: "CUHK-Shenzhen",
-        organization: "Methods and technical foundations",
-        location: "Shenzhen, China",
-        details: [
-          "Quantitative Methods for Policy Evaluation; Programming Methodology in Python; ECON3080 Machine Learning.",
-          "Calculus; Linear Algebra; Optimization; Ordinary Differential Equations; Real Analysis; Probability Theory; Statistics.",
-        ],
-      },
-      {
-        dates: "Jan–May 2026",
-        title: "UC Berkeley Visiting Coursework",
-        role: "Berkeley Global Access",
-        organization: "University of California, Berkeley",
-        location: "Berkeley, United States",
-        details: [
-          "Real Analysis (A); Advanced Econometrics II at the PhD level (A-); Advanced Political Science II at the PhD level (A).",
-        ],
-      },
-    ],
-  },
 ];
 
 const honors = [
@@ -1065,7 +1026,25 @@ export default function Home() {
               ))}
             </div>
 
-            <aside className="skills-band" aria-label="Skills and languages">
+            <aside
+              className="skills-band"
+              aria-label="Selected coursework, skills, and languages"
+            >
+              <div>
+                <p>Selected coursework</p>
+                <span>
+                  Intermediate Microeconomics · Advanced Macroeconomics · Game
+                  Theory · Intermediate &amp; PhD-level Econometrics · China
+                  Economics · PhD-level Political Economics · Gender Studies ·
+                  Quantitative Methods for Policy Evaluation · Python · ECON3080
+                  Machine Learning · Calculus · Linear Algebra · Optimization ·
+                  Ordinary Differential Equations · Real Analysis · Probability
+                  Theory · Statistics
+                  · LSE Introductory Macroeconomics · UC Berkeley Real Analysis ·
+                  UC Berkeley Advanced Econometrics II · UC Berkeley Advanced
+                  Political Science II
+                </span>
+              </div>
               <div>
                 <p>Research toolkit</p>
                 <span>

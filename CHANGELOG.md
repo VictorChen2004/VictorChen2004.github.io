@@ -2,6 +2,10 @@
 
 ## 2026-08-23
 
+- Moved Selected Coursework out of the expandable Experience panels and into
+  the compact skills band, where the courses now read as a concise CV-style
+  list beside the research toolkit and languages, including the retained LSE
+  and UC Berkeley coursework.
 - Replaced the outdated SME-lending Working Paper record with the current
   `Who Moves Up? Entrepreneurial Risk Preferences and Small-Firm Trajectories`
   Research Assistant/co-author record. Updated its sample, trajectory results,
@@ -14,9 +18,9 @@
   Work inside Firms` to Work in Progress. The copy presents the current
   China-first measurement and empirical design without claiming completed
   adoption data or causal findings.
-- Added Selected Coursework as a fourth Experience panel, covering economics,
-  econometrics, quantitative methods, programming, ECON3080 Machine Learning,
-  mathematics, political economy, gender studies, LSE, and UC Berkeley work.
+- Added a concise Selected Coursework record covering economics, econometrics,
+  quantitative methods, programming, ECON3080 Machine Learning, mathematics,
+  political economy, gender studies, LSE, and UC Berkeley coursework.
 - Expanded the Teaching Assistant portfolio and request actions to include
   ECON3080 Machine Learning.
 - Published the visually verified six-page August 2026 CV and updated the About

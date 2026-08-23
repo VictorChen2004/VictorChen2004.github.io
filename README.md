@@ -20,10 +20,11 @@ Google Search signals.
   Selected Writing, with RA Experience alongside them in four large
   color-coded expandable panels.
 - A CV-backed Experience portfolio covering teaching, academic leadership,
-  student media, debate, mentoring, campus leadership, selected coursework,
-  all listed honors and awards, and a compact skills record. Honors remain
-  visible while the four experience areas open from large color-coded panels;
-  each record's detailed contributions use a matching tinted callout.
+  student media, debate, mentoring, campus leadership, all listed honors and
+  awards, selected coursework, and a compact skills record. Honors remain
+  visible while the three experience areas open from large color-coded panels;
+  coursework is presented concisely beside the research toolkit and languages,
+  and each experience record's contributions use a matching tinted callout.
 - A two-part Materials exhibition with five locally hosted cover previews,
   full original descriptions, and direct links to each presentation or
   teaching deck; both material groups use expandable color-coded panels.
