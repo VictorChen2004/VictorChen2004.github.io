@@ -2,6 +2,12 @@
 
 ## 2026-08-23
 
+- Added two Cornell University micro-theory slide decks to Materials → Paper
+  Presentations: `Robust Trust` (29 May 2026) and `Friend or Foe: Delegating to
+  an AI Whose Alignment is Unknown` (28 May 2026).
+- Added locally hosted, unchanged copies of both presentation PDFs, rendered
+  their title slides as responsive cover previews, and wrote concise summaries
+  of each presentation's main question and result.
 - Standardized the teaching and coursework labels by displaying `Machine
   Learning` without a course code, matching the other course names throughout
   the page and its material-request action.

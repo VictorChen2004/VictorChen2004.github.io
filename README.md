@@ -25,9 +25,12 @@ Google Search signals.
   visible while the three experience areas open from large color-coded panels;
   coursework is presented concisely beside the research toolkit and languages,
   and each experience record's contributions use a matching tinted callout.
-- A two-part Materials exhibition with five locally hosted cover previews,
+- A two-part Materials exhibition with seven locally hosted cover previews,
   full original descriptions, and direct links to each presentation or
   teaching deck; both material groups use expandable color-coded panels.
+- Two Cornell University micro-theory presentations are hosted locally with
+  their original PDFs: `Robust Trust` and `Friend or Foe: Delegating to an AI
+  Whose Alignment is Unknown`.
 - Course-specific actions in the Teaching Assistant record: visitors can jump
   to the public Econometrics decks or request Microeconomics, Financial
   Management, and Machine Learning materials by email.
@@ -102,10 +105,12 @@ the public address `https://victorchen2004.github.io`.
 Whenever biography, dates, paper status, or links change, update both the page
 and `CHANGELOG.md` so future collaborators can understand what changed.
 
-The material preview images under `public/materials` are cached cover images
-from the owner's public Google Drive decks. Their links continue to point to
-the original Drive files; if a deck is replaced, refresh both its preview and
-its description.
+The material preview images under `public/materials` include five cached cover
+images from the owner's public Google Drive decks and two covers rendered from
+the supplied Cornell presentation PDFs. The Cornell entries link to local,
+unchanged copies of their source PDFs; the other entries continue to point to
+their original Drive files. If a deck is replaced, refresh its preview,
+description, and locally hosted PDF where applicable.
 
 The current downloadable CV is `public/cv/xucheng-chen-cv-august-2026.pdf`.
 It was regenerated from the verified six-page DOCX on 23 August 2026. The July

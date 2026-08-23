@@ -310,12 +310,39 @@ type Material = {
   image: string;
   imageAlt: string;
   href: string;
+  imageWidth?: number;
+  imageHeight?: number;
 };
 
 const materialSections: { title: string; items: Material[] }[] = [
   {
     title: "Paper Presentations",
     items: [
+      {
+        label: "Cornell University Presentation · May 29, 2026",
+        title: "Robust Trust",
+        description:
+          "This presentation studies Robust Trust by Piotr Dworczak and Alex Smolin (2026). I explain how a decision-maker should use advice when an expert may be aligned or adversarial, focusing on trust-region strategies that follow reports inside a trusted set and clip extreme recommendations through Bregman projection.",
+        image: "/materials/robust-trust.png",
+        imageAlt:
+          "Cover slide for a Cornell University presentation on Robust Trust",
+        href: "/materials/robust-trust-presentation.pdf",
+        imageWidth: 945,
+        imageHeight: 532,
+      },
+      {
+        label: "Cornell University Presentation · May 28, 2026",
+        title:
+          "Friend or Foe: Delegating to an AI Whose Alignment is Unknown",
+        description:
+          "This presentation studies Friend or Foe by Fudenberg and Liang (2025). I trace how a designer should choose what information to reveal to an AI whose alignment is uncertain, highlighting the efficient frontier between best- and worst-case payoffs and the result that greater distrust withdraws AI access subgroup by subgroup.",
+        image: "/materials/friend-or-foe-ai-alignment.png",
+        imageAlt:
+          "Cover slide for a Cornell University presentation on delegating to an AI whose alignment is unknown",
+        href: "/materials/friend-or-foe-ai-alignment-presentation.pdf",
+        imageWidth: 945,
+        imageHeight: 532,
+      },
       {
         label: "Chinese Economy · September 2025",
         title: "Presentation for Chinese Economy Course",
@@ -1103,8 +1130,8 @@ export default function Home() {
                           <Image
                             src={material.image}
                             alt={material.imageAlt}
-                            width="1024"
-                            height="768"
+                            width={material.imageWidth ?? 1024}
+                            height={material.imageHeight ?? 768}
                             sizes="(max-width: 900px) 90vw, 47vw"
                           />
                           <span>Open full material ↗</span>
