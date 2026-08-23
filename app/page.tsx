@@ -838,13 +838,13 @@ export default function Home() {
                   <span className="cv-action">
                     <a
                       className="button button-secondary"
-                      href="/cv/xucheng-chen-cv-august-2026.pdf"
+                      href="/cv/xucheng-chen-cv-august-2026-cgpa-hidden.pdf"
                       target="_blank"
                       rel="noreferrer"
                     >
                       View CV <span aria-hidden="true">↗</span>
                     </a>
-                    <span className="cv-version">Updated August 2026</span>
+                    <span className="cv-version">Public CV · August 2026</span>
                   </span>
                 </div>
               </div>

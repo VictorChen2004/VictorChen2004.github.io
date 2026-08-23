@@ -40,7 +40,8 @@ Google Search signals.
   Management, and Machine Learning materials by email.
 - A web-optimized professional portrait derived from the supplied original;
   the original photograph remains unchanged outside the project.
-- A locally hosted seven-page CV, clearly labeled as the August 2026 version, so
+- A locally hosted seven-page public CV, clearly labeled as the August 2026
+  version, which omits the cumulative GPA while retaining the major GPA so
   visitors do not depend on an external Drive link.
 - A locally hosted version 3.0 of `Robust Trust with Multiple Advisers`, linked
   directly from its Research record.
@@ -116,9 +117,13 @@ unchanged copies of their source PDFs; the other entries continue to point to
 their original Drive files. If a deck is replaced, refresh its preview,
 description, and locally hosted PDF where applicable.
 
-The current downloadable CV is `public/cv/xucheng-chen-cv-august-2026.pdf`.
-It was regenerated from the verified seven-page DOCX on 23 August 2026. The July
-2026 PDF remains in the repository as a preserved legacy version.
+The current downloadable CV is
+`public/cv/xucheng-chen-cv-august-2026-cgpa-hidden.pdf`. It was regenerated from
+the verified seven-page DOCX on 23 August 2026, removes only the cumulative-GPA
+line and its adjacent rank note, and retains the major GPA. The complete August
+PDF and the July 2026 PDF remain in the repository as preserved source and
+legacy versions. The public copy can be regenerated with
+`scripts/create_cgpa_hidden_cv.py` before running the documented render checks.
 
 Google Scholar author-profile links should be added to the Contact section and
 the Schema.org `sameAs` list only after the exact public profile URL is

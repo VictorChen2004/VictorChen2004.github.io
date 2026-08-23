@@ -2,6 +2,11 @@
 
 ## 2026-08-23
 
+- Created and visually verified a seven-page public CV that removes the
+  cumulative GPA and its adjacent rank note while retaining the major GPA;
+  preserved the complete August PDF and the July legacy version.
+- Switched the website's View CV action to the CGPA-hidden public PDF and added
+  a reproducible generator for future updates from the owner's source DOCX.
 - Added the GAAC 2026 acceptance of `Robust Trust with Multiple Advisers` and
   the 2nd Chinese Educational Year Seminar acceptance of `Factory Parents,
   Classroom Outcomes` as two visible Honors & Awards cards while preserving
