@@ -2,9 +2,18 @@
 
 ## 2026-08-23
 
+- Consolidated the website CV assets into one clearly named public edition,
+  `v2026-08-23`; removed the July legacy PDF and the complete-GPA PDF from the
+  public site while preserving the complete source CV outside the repository.
+- Documented the CV retention rule: additive updates replace their predecessor,
+  while redacted editions keep a complete source outside the public website.
+- Normalized the owner's source CV filenames to the same `v2026-08-23` label
+  and moved two superseded pre-update backup pairs plus an older redacted PDF
+  to the macOS Trash, leaving only the current full DOCX, full PDF, and public
+  PDF in the source folder.
 - Created and visually verified a seven-page public CV that removes the
   cumulative GPA and its adjacent rank note while retaining the major GPA;
-  preserved the complete August PDF and the July legacy version.
+  preserved the complete source outside the public website.
 - Switched the website's View CV action to the CGPA-hidden public PDF and added
   a reproducible generator for future updates from the owner's source DOCX.
 - Added the GAAC 2026 acceptance of `Robust Trust with Multiple Advisers` and

@@ -117,13 +117,25 @@ unchanged copies of their source PDFs; the other entries continue to point to
 their original Drive files. If a deck is replaced, refresh its preview,
 description, and locally hosted PDF where applicable.
 
-The current downloadable CV is
-`public/cv/xucheng-chen-cv-august-2026-cgpa-hidden.pdf`. It was regenerated from
-the verified seven-page DOCX on 23 August 2026, removes only the cumulative-GPA
-line and its adjacent rank note, and retains the major GPA. The complete August
-PDF and the July 2026 PDF remain in the repository as preserved source and
-legacy versions. The public copy can be regenerated with
-`scripts/create_cgpa_hidden_cv.py` before running the documented render checks.
+The only CV stored in the website's public asset directory is
+`public/cv/xucheng-chen-cv-public-v2026-08-23.pdf`. It was regenerated from the
+verified seven-page DOCX on 23 August 2026, removes only the cumulative-GPA
+line and its adjacent rank note, and retains the major GPA. The complete source
+CV remains outside the website repository in the owner's CV source folder
+because this public edition intentionally removes information. The public copy
+can be regenerated with `scripts/create_cgpa_hidden_cv.py` before running the
+documented render checks.
+
+The owner's CV source folder keeps exactly three current files for this release:
+`CV_Xucheng_Chen_Full_v2026-08-23.docx`,
+`CV_Xucheng_Chen_Full_v2026-08-23.pdf`, and
+`CV_Xucheng_Chen_Public_v2026-08-23.pdf`.
+
+CV version rule: for a content-only additive update, replace the previous
+public PDF and keep only the new clearly labeled version. If an update removes
+substantive information, preserve the previous complete source outside the
+public website while publishing only the redacted public edition. Do not keep
+legacy CV PDFs in `public/cv`; Git history already preserves deployed versions.
 
 Google Scholar author-profile links should be added to the Contact section and
 the Schema.org `sameAs` list only after the exact public profile URL is
