@@ -689,10 +689,13 @@ const courseworkGroups = [
       "China Economics",
       "Advanced (PhD-level) Political Economics",
       "Industrial Organization (PhD-level)",
+      "Gender Study",
+      "Study of Logics",
+      "Intro to Sociology",
     ],
   },
   {
-    title: "Mathematics, Statistics & Other Coursework",
+    title: "Mathematics & Statistics",
     courses: [
       "Calculus (Top 10 in Calculus Ⅱ –Multiple Calculus)",
       "Linear Algebra (Full marks in final exam)",
@@ -702,9 +705,6 @@ const courseworkGroups = [
       "Probability Theory",
       "Theory of Statistics",
       "Time Series",
-      "Gender Study",
-      "Study of Logics",
-      "Intro to Sociology",
     ],
   },
 ];

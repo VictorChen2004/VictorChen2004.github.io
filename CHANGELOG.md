@@ -2,6 +2,8 @@
 
 ## 2026-08-23
 
+- Moved Gender Study, Study of Logics, and Intro to Sociology into Other
+  Economics, and renamed the final coursework group Mathematics & Statistics.
 - Rebuilt Selected Coursework directly from the latest CV instead of applying
   an inferred website taxonomy: the first three CV course bullets now form
   Economics, Programming & Research Methods, and Other Economics, while the

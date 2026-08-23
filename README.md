@@ -27,7 +27,8 @@ Google Search signals.
   coursework follows Honors & Awards in a static four-part academic-preparation
   module transcribed from the latest CV, with one course per line and the CV's
   original four-group logic: Economics; Programming & Research Methods; Other
-  Economics; and Mathematics, Statistics & Other Coursework. The research
+  Economics; and Mathematics & Statistics. Gender Study, Study of Logics, and
+  Intro to Sociology are grouped under Other Economics. The research
   toolkit and languages share a separate skills band,
   and each experience record's contributions use a matching tinted callout.
   Experience and honor headings are written to remain informative on their own,
