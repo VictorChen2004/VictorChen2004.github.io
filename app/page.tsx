@@ -445,7 +445,7 @@ const experienceGroups: ExperienceGroup[] = [
     items: [
       {
         dates: "Sep 2024–present",
-        title: "Teaching Assistant in Economics & Machine Learning",
+        title: "Teaching Assistant in SME",
         role:
           "Microeconomics · Financial Management · Econometrics · Machine Learning",
         organization:
@@ -483,9 +483,9 @@ const experienceGroups: ExperienceGroup[] = [
       },
       {
         dates: "Jan 2025–Feb 2026",
-        title: "Economics Academic Mentor & Student Lecturer",
+        title: "Academic Mentor & Student Lecturer in SME",
         role:
-          "SME Academic Advisory Programme · 2026 Winter Camp for High School Students",
+          "Academic Advisory Programme · Winter Camp for High School Students",
         organization:
           "School of Management and Economics, CUHK-Shenzhen",
         details: [
@@ -514,7 +514,7 @@ const experienceGroups: ExperienceGroup[] = [
       },
       {
         dates: "Sep 2023–present",
-        title: "Economics News Editor & Student Reporter",
+        title: "SME News Editor & Student Reporter",
         role: "CUHK-Shenzhen SME News",
         organization: "School of Management and Economics",
         details: [
@@ -532,7 +532,7 @@ const experienceGroups: ExperienceGroup[] = [
     items: [
       {
         dates: "Oct 2023–present",
-        title: "English Debate Team Member & Tournament Debater",
+        title: "Selected Member",
         role: "CUHK-Shenzhen English Debate Team",
         organization: "British Parliamentary Debate",
         details: [
@@ -544,8 +544,9 @@ const experienceGroups: ExperienceGroup[] = [
       },
       {
         dates: "Aug 2023 & Aug 2025",
-        title: "Pre-sessional Course Representative, Mentor & Class Leader",
-        role: "English Pre-sessional Course",
+        title:
+          "Representative, Mentor & Class Leader for CUHK-Shenzhen Freshmen",
+        role: "Freshman Orientation & Peer Mentorship",
         organization: "Office of Student Affairs, CUHK-Shenzhen",
         details: [
           "Selected through competitive English assessments as the official student representative in both 2023 and 2025.",
@@ -555,9 +556,9 @@ const experienceGroups: ExperienceGroup[] = [
       },
       {
         dates: "Sep 2023–present",
-        title: "First Lesson Host & Residential College Committee Member",
-        role: "Ling College, CUHK-Shenzhen",
-        organization: "Residential College Community",
+        title: "First Lesson Host & Committee Member at Ling College",
+        role: "Residential College Community",
+        organization: "CUHK-Shenzhen",
         details: [
           "Hosted the college-wide First Lesson and welcomed the residential community at the beginning of the academic year.",
           "Organize student events and peer-support initiatives, including the Studying for 21 Days programme designed to encourage perseverance and durable study habits.",

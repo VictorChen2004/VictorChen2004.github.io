@@ -2,6 +2,12 @@
 
 ## 2026-08-23
 
+- Rebalanced six Experience headings so they name the role and its immediate
+  institutional context without repeating every programme label: SME teaching,
+  SME mentoring, SME News, debate-team membership, CUHK-Shenzhen freshman
+  leadership, and Ling College service.
+- Replaced the understated Experience-detail markers with visible,
+  color-matched bullet dots on both desktop and mobile layouts.
 - Synchronized the website with the owner's latest CV without rewriting other
   site copy: added the Shaoda Wang court-video/role-attribution RA record,
   moved `Who Moves Up?` from RA Experience to Working Papers, updated the

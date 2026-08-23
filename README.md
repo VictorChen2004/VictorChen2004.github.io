@@ -115,7 +115,7 @@ their original Drive files. If a deck is replaced, refresh its preview,
 description, and locally hosted PDF where applicable.
 
 The current downloadable CV is `public/cv/xucheng-chen-cv-august-2026.pdf`.
-It was regenerated from the verified six-page DOCX on 23 August 2026. The July
+It was regenerated from the verified seven-page DOCX on 23 August 2026. The July
 2026 PDF remains in the repository as a preserved legacy version.
 
 Google Scholar author-profile links should be added to the Contact section and
