@@ -2,6 +2,14 @@
 
 ## 2026-08-23
 
+- Rewrote the Experience record headings so each one identifies the field or
+  activity at a glance instead of relying on generic titles such as `Selected
+  Member`, while preserving institutions and programme names in supporting
+  text.
+- Clarified the Honors & Awards headings by naming the award context directly,
+  including the Excellent Student Award, Cambridge programme Best Paper,
+  debate distinction, mathematical-modeling prize, journalism recognition,
+  magazine profile, academic scholarship, and Dean's List record.
 - Added two Cornell University micro-theory slide decks to Materials → Paper
   Presentations: `Robust Trust` (29 May 2026) and `Friend or Foe: Delegating to
   an AI Whose Alignment is Unknown` (28 May 2026).

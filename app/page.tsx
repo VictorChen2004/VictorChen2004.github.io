@@ -425,7 +425,7 @@ const experienceGroups: ExperienceGroup[] = [
     items: [
       {
         dates: "Sep 2024–present",
-        title: "Teaching Assistant",
+        title: "Teaching Assistant in Economics & Machine Learning",
         role:
           "Microeconomics · Financial Management · Econometrics · Machine Learning",
         organization:
@@ -463,7 +463,7 @@ const experienceGroups: ExperienceGroup[] = [
       },
       {
         dates: "Jan 2025–Feb 2026",
-        title: "Academic Mentor & Student Lecturer",
+        title: "Economics Academic Mentor & Student Lecturer",
         role:
           "SME Academic Advisory Programme · 2026 Winter Camp for High School Students",
         organization:
@@ -483,7 +483,7 @@ const experienceGroups: ExperienceGroup[] = [
     items: [
       {
         dates: "Mar 2024–present",
-        title: "Vice President & Head of Academic Department",
+        title: "Economics Club Vice President & Head of Academic Department",
         role: "CUHK-Shenzhen Economics Club",
         organization: "School of Management and Economics",
         details: [
@@ -494,7 +494,7 @@ const experienceGroups: ExperienceGroup[] = [
       },
       {
         dates: "Sep 2023–present",
-        title: "Editor & Student Reporter",
+        title: "Economics News Editor & Student Reporter",
         role: "CUHK-Shenzhen SME News",
         organization: "School of Management and Economics",
         details: [
@@ -512,7 +512,7 @@ const experienceGroups: ExperienceGroup[] = [
     items: [
       {
         dates: "Oct 2023–present",
-        title: "Selected Member",
+        title: "English Debate Team Member & Tournament Debater",
         role: "CUHK-Shenzhen English Debate Team",
         organization: "British Parliamentary Debate",
         details: [
@@ -524,7 +524,7 @@ const experienceGroups: ExperienceGroup[] = [
       },
       {
         dates: "Aug 2023 & Aug 2025",
-        title: "Student Representative, Mentor & Class Leader",
+        title: "Pre-sessional Course Representative, Mentor & Class Leader",
         role: "English Pre-sessional Course",
         organization: "Office of Student Affairs, CUHK-Shenzhen",
         details: [
@@ -535,7 +535,7 @@ const experienceGroups: ExperienceGroup[] = [
       },
       {
         dates: "Sep 2023–present",
-        title: "First Lesson Host & Committee Member",
+        title: "First Lesson Host & Residential College Committee Member",
         role: "Ling College, CUHK-Shenzhen",
         organization: "Residential College Community",
         details: [
@@ -555,13 +555,13 @@ const honors = [
   },
   {
     year: "2025",
-    title: "National Scholarship",
+    title: "China National Scholarship",
     detail: "Highest national honor for undergraduates in China",
   },
   {
     year: "2025",
-    title: "University Honors",
-    detail: "Excellent Student Award",
+    title: "Excellent Student Award",
+    detail: "CUHK-Shenzhen · University Honors",
   },
   {
     year: "2025",
@@ -575,12 +575,13 @@ const honors = [
   },
   {
     year: "2025",
-    title: "Best Paper",
-    detail: "Cambridge Online Summer Research Programme",
+    title: "Best Paper — Cambridge Summer Research Programme",
+    detail:
+      "Awarded for Beyond Patents: R&D, Capital, and the Productivity Puzzle",
   },
   {
     year: "2025",
-    title: "4th Best Speaker & Semifinalist",
+    title: "4th Best Speaker & Semifinalist in BP Debate",
     detail: "Greater Bay Area Novice Championship · Open Group",
   },
   {
@@ -590,33 +591,33 @@ const honors = [
   },
   {
     year: "2025",
-    title: "Annual Hot Search Award",
-    detail: "SME News",
+    title: "SME News Annual Hot Search Award",
+    detail: "CUHK-Shenzhen · Annual recognition",
   },
   {
     year: "2025",
-    title: "Person of the Year",
-    detail: "Profiled by Lakeside Magazine",
+    title: "Lakeside Magazine Person of the Year",
+    detail: "Annual student profile recognition",
   },
   {
     year: "2024",
-    title: "Second Prize",
+    title: "Second Prize in Mathematical Modeling",
     detail: "Guangdong Contemporary Undergraduate Mathematical Contest in Modeling",
   },
   {
     year: "Ongoing",
-    title: "SME Academic Performance Scholarship",
-    detail: "Every academic year · Top 2% in SME",
+    title: "SME Top-2% Academic Performance Scholarship",
+    detail: "CUHK-Shenzhen · Awarded every academic year",
   },
   {
     year: "Ongoing",
-    title: "Dean’s List",
-    detail: "Every academic year",
+    title: "Dean’s List for Academic Excellence",
+    detail: "CUHK-Shenzhen · Awarded every academic year",
   },
   {
     year: "2023–2026",
     title: "Ling Inspirational & Bowen II Scholarships",
-    detail: "Multi-year scholarship support",
+    detail: "Ling College · Multi-year scholarship support",
   },
 ];
 

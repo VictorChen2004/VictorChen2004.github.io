@@ -25,6 +25,8 @@ Google Search signals.
   visible while the three experience areas open from large color-coded panels;
   coursework is presented concisely beside the research toolkit and languages,
   and each experience record's contributions use a matching tinted callout.
+  Experience and honor headings are written to remain informative on their own,
+  while institutions and programme context stay in the supporting small text.
 - A two-part Materials exhibition with seven locally hosted cover previews,
   full original descriptions, and direct links to each presentation or
   teaching deck; both material groups use expandable color-coded panels.
