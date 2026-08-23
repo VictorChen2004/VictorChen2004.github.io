@@ -23,7 +23,8 @@ Google Search signals.
   student media, debate, mentoring, campus leadership, all listed honors and
   awards, selected coursework, and a compact skills record. Honors remain
   visible while the three experience areas open from large color-coded panels;
-  coursework is presented concisely beside the research toolkit and languages,
+  coursework follows Honors & Awards in a static four-part academic-preparation
+  module, while the research toolkit and languages share a separate skills band,
   and each experience record's contributions use a matching tinted callout.
   Experience and honor headings are written to remain informative on their own,
   while institutions and programme context stay in the supporting small text.

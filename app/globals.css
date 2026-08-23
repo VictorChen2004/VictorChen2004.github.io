@@ -1117,12 +1117,63 @@ summary:focus-visible {
   margin-top: 0.35rem;
 }
 
+.coursework-section {
+  background: var(--brown-deep);
+  color: var(--white);
+  display: grid;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  grid-template-columns: minmax(250px, 0.5fr) minmax(0, 1.5fr);
+  margin: 0 0 clamp(4rem, 7vw, 6rem);
+  padding: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.coursework-heading .eyebrow {
+  color: #e1c5b5;
+}
+
+.coursework-heading h3 {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 4vw, 4rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+  margin: 0;
+}
+
+.coursework-grid {
+  display: grid;
+  gap: 0 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.coursework-card {
+  border-top: 1px solid color-mix(in srgb, var(--white) 38%, transparent);
+  padding: 1.25rem 0 1.6rem;
+}
+
+.coursework-card h4 {
+  color: #e1c5b5;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1.45;
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+}
+
+.coursework-card p {
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
 .skills-band {
   background: var(--brown-deep);
   color: var(--white);
   display: grid;
   gap: 2.5rem;
-  grid-template-columns: minmax(0, 1.35fr) repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 1.5rem;
   padding: clamp(2rem, 4vw, 3.25rem);
 }
@@ -1499,6 +1550,7 @@ footer a {
 
   .experience-heading,
   .honors-section,
+  .coursework-section,
   .materials-heading {
     grid-template-columns: 1fr;
   }
@@ -1626,6 +1678,7 @@ footer a {
 
   .experience-card,
   .honors-grid,
+  .coursework-grid,
   .skills-band,
   .course-buttons {
     grid-template-columns: 1fr;

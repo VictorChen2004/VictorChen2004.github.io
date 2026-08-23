@@ -652,6 +652,55 @@ const honors = [
   },
 ];
 
+const courseworkGroups = [
+  {
+    title: "Economic Theory & Political Economy",
+    courses: [
+      "Intermediate & Advanced (PhD-level) Microeconomics",
+      "Advanced Macroeconomics",
+      "Game Theory",
+      "China Economics",
+      "Advanced (PhD-level) Political Economics",
+      "Industrial Organization (PhD-level)",
+    ],
+  },
+  {
+    title: "Econometrics, Policy & Computation",
+    courses: [
+      "Intermediate & Advanced (PhD-level) Econometrics",
+      "Quantitative Methods for Policy Evaluation",
+      "Advanced Methods for Empirical Research (PhD-level)",
+      "Programming (Python)",
+      "Machine Learning",
+      "Time Series",
+    ],
+  },
+  {
+    title: "Mathematics & Statistics",
+    courses: [
+      "Calculus",
+      "Linear Algebra",
+      "Optimization",
+      "Ordinary Differential Equations",
+      "Real Analysis",
+      "Probability Theory",
+      "Theory of Statistics",
+    ],
+  },
+  {
+    title: "Interdisciplinary & Visiting Coursework",
+    courses: [
+      "Gender Study",
+      "Study of Logics",
+      "Intro to Sociology",
+      "LSE Introductory Macroeconomics",
+      "UC Berkeley Real Analysis",
+      "UC Berkeley Advanced Econometrics II",
+      "UC Berkeley Advanced Political Science II",
+    ],
+  },
+];
+
 const personSchema = {
   "@type": "Person",
   "@id": `${SITE_URL}/#person`,
@@ -1033,6 +1082,24 @@ export default function Home() {
               </div>
             </section>
 
+            <section
+              className="coursework-section"
+              aria-labelledby="coursework-title"
+            >
+              <header className="coursework-heading">
+                <p className="eyebrow">Academic preparation</p>
+                <h3 id="coursework-title">Selected Coursework</h3>
+              </header>
+              <div className="coursework-grid">
+                {courseworkGroups.map((group) => (
+                  <article className="coursework-card" key={group.title}>
+                    <h4>{group.title}</h4>
+                    <p>{group.courses.join(" · ")}</p>
+                  </article>
+                ))}
+              </div>
+            </section>
+
             <div className="experience-groups">
               {experienceGroups.map((group) => (
                 <details className="experience-group" key={group.title}>
@@ -1087,26 +1154,8 @@ export default function Home() {
 
             <aside
               className="skills-band"
-              aria-label="Selected coursework, skills, and languages"
+              aria-label="Research skills, languages, and interests"
             >
-              <div>
-                <p>Selected coursework</p>
-                <span>
-                  Intermediate &amp; Advanced (PhD-level) Microeconomics ·
-                  Advanced Macroeconomics · Game Theory · Intermediate &amp;
-                  Advanced (PhD-level) Econometrics · Quantitative Methods for
-                  Policy Evaluation · Advanced Methods for Empirical Research
-                  (PhD-level) · Programming (Python) · Machine Learning · China
-                  Economics · Advanced (PhD-level) Political Economics ·
-                  Industrial Organization (PhD-level) · Calculus · Linear
-                  Algebra · Optimization · Ordinary Differential Equations ·
-                  Real Analysis · Probability Theory · Theory of Statistics ·
-                  Time Series · Gender Study · Study of Logics · Intro to
-                  Sociology · LSE Introductory Macroeconomics · UC Berkeley Real
-                  Analysis · UC Berkeley Advanced Econometrics II · UC Berkeley
-                  Advanced Political Science II
-                </span>
-              </div>
               <div>
                 <p>Research toolkit</p>
                 <span>

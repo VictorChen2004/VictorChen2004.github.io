@@ -2,6 +2,13 @@
 
 ## 2026-08-23
 
+- Moved Selected Coursework directly after Honors & Awards and rebuilt it as a
+  static four-part academic-preparation module covering economic theory and
+  political economy; econometrics, policy, and computation; mathematics and
+  statistics; and interdisciplinary and visiting coursework.
+- Removed the duplicated continuous course paragraph from the Skills band;
+  every course remains represented once in the new grouped module, while the
+  separate band now focuses on the research toolkit, languages, and interests.
 - Rebalanced six Experience headings so they name the role and its immediate
   institutional context without repeating every programme label: SME teaching,
   SME mentoring, SME News, debate-team membership, CUHK-Shenzhen freshman
