@@ -339,6 +339,20 @@ const materialSections: { title: string; items: Material[] }[] = [
     title: "Paper Presentations",
     items: [
       {
+        label: "GAAC 2026 · 20-Minute Presentation",
+        title: "Robust Trust with Multiple Advisers",
+        description:
+          "This 20-minute GAAC 2026 presentation introduces my working paper Robust Trust with Multiple Advisers. It explains the aggregation problem with multiple potentially misaligned advisers, the sharp one-half alignment threshold, and the margin-ladder rule that protects worst-case value even when advisers coordinate.",
+        image:
+          "/materials/robust-trust-with-multiple-advisers-gaac-2026.png",
+        imageAlt:
+          "Cover slide for the GAAC 2026 presentation Robust Trust with Multiple Advisers",
+        href:
+          "/materials/robust-trust-with-multiple-advisers-gaac-2026-20min.pdf",
+        imageWidth: 1134,
+        imageHeight: 638,
+      },
+      {
         label: "Cornell University Presentation · May 29, 2026",
         title: "Robust Trust",
         description:
@@ -1084,7 +1098,7 @@ export default function Home() {
                   <article className="honor-card" key={`${honor.year}-${honor.title}`}>
                     <p>{honor.year}</p>
                     <h4>{honor.title}</h4>
-                    <span>{honor.detail}</span>
+                    <span className="detail-line">{honor.detail}</span>
                   </article>
                 ))}
               </div>
@@ -1140,7 +1154,7 @@ export default function Home() {
                           </p>
                           {item.courses && (
                             <div className="teaching-materials">
-                              <p>{item.materialNote}</p>
+                              <p className="detail-line">{item.materialNote}</p>
                               <div className="course-buttons">
                                 {item.courses.map((course) => (
                                   <a href={course.href} key={course.name}>
@@ -1236,7 +1250,7 @@ export default function Home() {
                         <div className="material-copy">
                           <p className="material-label">{material.label}</p>
                           <h4>{material.title}</h4>
-                          <p>{material.description}</p>
+                          <p className="detail-line">{material.description}</p>
                           <a
                             className="material-link"
                             href={material.href}

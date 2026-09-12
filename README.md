@@ -34,9 +34,12 @@ Google Search signals.
   Experience and honor headings are written to remain informative on their own,
   while institutions and programme context stay in the supporting small text;
   every Experience supporting line begins with the same color-matched bullet.
-- A two-part Materials exhibition with seven locally hosted cover previews,
+- A two-part Materials exhibition with eight locally hosted cover previews,
   full original descriptions, and direct links to each presentation or
   teaching deck; both material groups use expandable color-coded panels.
+- A locally hosted 20-minute GAAC 2026 presentation of `Robust Trust with
+  Multiple Advisers`, shown with its own cover preview and linked from Paper
+  Presentations.
 - Two Cornell University micro-theory presentations are hosted locally with
   their original PDFs: `Robust Trust` and `Friend or Foe: Delegating to an AI
   Whose Alignment is Unknown`.
@@ -64,6 +67,9 @@ Google Search signals.
   card heights, and excess visual density; the established mobile scale remains
   unchanged. Wide-screen Experience summaries stay on one clean line while
   retaining natural wrapping on narrower layouts.
+- Consistent color-matched point markers on record-level supporting copy and
+  expanded details across Research, Experience, Honors, Coursework, and
+  Materials, while leaving section introductions as prose.
 - GitHub Pages publication from a dedicated static `gh-pages` branch.
 
 The content was reconstructed from the public website at
@@ -116,11 +122,12 @@ Whenever biography, dates, paper status, or links change, update both the page
 and `CHANGELOG.md` so future collaborators can understand what changed.
 
 The material preview images under `public/materials` include five cached cover
-images from the owner's public Google Drive decks and two covers rendered from
-the supplied Cornell presentation PDFs. The Cornell entries link to local,
-unchanged copies of their source PDFs; the other entries continue to point to
-their original Drive files. If a deck is replaced, refresh its preview,
-description, and locally hosted PDF where applicable.
+images from the owner's public Google Drive decks and three covers rendered
+from supplied presentation PDFs. The Cornell entries and the 20-minute GAAC
+2026 presentation link to local, unchanged copies of their source PDFs; the
+other entries continue to point to their original Drive files. If a deck is
+replaced, refresh its preview, description, and locally hosted PDF where
+applicable.
 
 The only CV stored in the website's public asset directory is
 `public/cv/xucheng-chen-cv-public-v2026-08-23.pdf`. It was regenerated from the

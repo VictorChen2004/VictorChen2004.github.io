@@ -984,6 +984,27 @@ summary:focus-visible {
   top: 0;
 }
 
+.detail-line {
+  --detail-color: var(--terracotta);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.detail-line::before {
+  color: var(--detail-color);
+  content: "•";
+  font-size: 1.05em;
+  font-weight: 700;
+  left: 0;
+  line-height: inherit;
+  position: absolute;
+  top: 0;
+}
+
+.experience-card .detail-line {
+  --detail-color: var(--experience-color);
+}
+
 .teaching-materials {
   background: color-mix(in srgb, var(--experience-color) 8%, var(--paper));
   border-left: 4px solid var(--experience-color);
@@ -1128,6 +1149,10 @@ summary:focus-visible {
   font-size: 0.84rem;
   line-height: 1.45;
   margin-top: 0.35rem;
+}
+
+.honor-card .detail-line {
+  --detail-color: var(--terracotta);
 }
 
 .coursework-section {
@@ -1412,6 +1437,10 @@ summary:focus-visible {
   font-size: clamp(1.05rem, 1.55vw, 1.3rem);
   line-height: 1.62;
   margin: 1.5rem 0;
+}
+
+.material-copy .detail-line {
+  --detail-color: var(--material-color);
 }
 
 .material-link {

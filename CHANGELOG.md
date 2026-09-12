@@ -1,5 +1,14 @@
 # Change Log
 
+## 2026-09-13
+
+- Added the supplied 20-minute `Robust Trust with Multiple Advisers`
+  presentation to Paper Presentations with a locally rendered cover preview
+  and a byte-identical hosted PDF.
+- Standardized color-matched leading points on record-level supporting text in
+  Honors, Teaching notes, and Materials descriptions; Research, Experience,
+  and Coursework retain their existing bulleted detail treatments.
+
 ## 2026-08-23
 
 - Moved Gender Study, Study of Logics, and Intro to Sociology into Other
