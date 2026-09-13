@@ -70,9 +70,10 @@ Google Search signals.
   card heights, and excess visual density; the established mobile scale remains
   unchanged. Wide-screen Experience summaries stay on one clean line while
   retaining natural wrapping on narrower layouts.
-- Consistent color-matched point markers on record-level supporting copy and
-  expanded details across Research, Experience, Honors, Coursework, and
-  Materials, while leaving section introductions as prose.
+- Explicit color-matched point markers before every sentence in the expanded
+  Research and RA detail lists. Experience and Coursework retain their own
+  bulleted lists, while Honors, teaching notes, and Materials descriptions
+  remain unbulleted supporting copy.
 - GitHub Pages publication from a dedicated static `gh-pages` branch.
 
 The content was reconstructed from the public website at

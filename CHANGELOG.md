@@ -8,9 +8,9 @@
 - Added the supplied 20-minute `Robust Trust with Multiple Advisers`
   presentation to Paper Presentations with a locally rendered cover preview
   and a byte-identical hosted PDF.
-- Standardized color-matched leading points on record-level supporting text in
-  Honors, Teaching notes, and Materials descriptions; Research, Experience,
-  and Coursework retain their existing bulleted detail treatments.
+- Corrected the detail-point treatment: removed the unintended points from
+  Honors, teaching notes, and Materials descriptions, and added explicit
+  color-matched points before every expanded Research and RA detail sentence.
 
 ## 2026-08-23
 

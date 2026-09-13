@@ -1106,7 +1106,7 @@ export default function Home() {
                   <article className="honor-card" key={`${honor.year}-${honor.title}`}>
                     <p>{honor.year}</p>
                     <h4>{honor.title}</h4>
-                    <span className="detail-line">{honor.detail}</span>
+                    <span>{honor.detail}</span>
                   </article>
                 ))}
               </div>
@@ -1162,7 +1162,7 @@ export default function Home() {
                           </p>
                           {item.courses && (
                             <div className="teaching-materials">
-                              <p className="detail-line">{item.materialNote}</p>
+                              <p>{item.materialNote}</p>
                               <div className="course-buttons">
                                 {item.courses.map((course) => (
                                   <a href={course.href} key={course.name}>
@@ -1258,7 +1258,7 @@ export default function Home() {
                         <div className="material-copy">
                           <p className="material-label">{material.label}</p>
                           <h4>{material.title}</h4>
-                          <p className="detail-line">{material.description}</p>
+                          <p>{material.description}</p>
                           <a
                             className="material-link"
                             href={material.href}
