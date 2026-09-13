@@ -11,6 +11,9 @@ Google Search signals.
 
 - A responsive portrait-led About introduction, followed by Research,
   Experience, Materials, CV, and Contact sections.
+- A restrained Fall 2027 opportunity note at the beginning of the homepage,
+  stating interest in North American PhD and predoctoral opportunities and
+  welcoming advice, guidance, support, and conversation.
 - A two-row mobile header that keeps the full `Victor Xucheng Chen` identity,
   all four section links, and Contact visible on narrow screens.
 - A restrained academic research list with prominent dates, concise project

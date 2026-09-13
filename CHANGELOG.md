@@ -2,6 +2,9 @@
 
 ## 2026-09-13
 
+- Added a responsive Fall 2027 opportunity note directly below the navigation,
+  with a compact label and italic academic-style message on desktop and a
+  readable stacked layout on mobile.
 - Added the supplied 20-minute `Robust Trust with Multiple Advisers`
   presentation to Paper Presentations with a locally rendered cover preview
   and a byte-identical hosted PDF.

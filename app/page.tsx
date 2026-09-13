@@ -811,6 +811,14 @@ export default function Home() {
       </header>
 
       <main id="top">
+        <p className="opportunity-note">
+          <strong>Fall 2027</strong>
+          <span>
+            I am preparing for PhD applications and predoctoral opportunities
+            in North America, and I warmly welcome advice, guidance, support,
+            and conversation.
+          </span>
+        </p>
         <section className="about-hero" id="about" aria-labelledby="hero-title">
           <div className="about-hero-inner">
             <aside className="about-profile" aria-label="Academic profile summary">
