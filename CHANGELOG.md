@@ -2,6 +2,10 @@
 
 ## 2026-09-21
 
+- Added the owner's `Doing Sociology in the Field` methods talk to Materials
+  with an unchanged, locally hosted PDF and a cover rendered from its title
+  slide. Renamed the panel from `Paper Presentations` to `Presentations` to
+  include both paper talks and this fieldwork-methods presentation accurately.
 - Added the owner's presentation of Kim, Tertilt, and Yum's `Status
   Externalities in Education and Low Birth Rates in Korea` to Materials → Paper
   Presentations. Hosted the supplied PDF unchanged, rendered its title slide

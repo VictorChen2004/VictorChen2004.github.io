@@ -336,8 +336,19 @@ type Material = {
 
 const materialSections: { title: string; items: Material[] }[] = [
   {
-    title: "Paper Presentations",
+    title: "Presentations",
     items: [
+      {
+        label: "Sociological Methods · September 2026",
+        title: "Doing Sociology in the Field",
+        description:
+          "This talk draws on my participant observation in a Wuhan gay bar and semi-structured interviews with four gay students at CUHK-Shenzhen. I focus on field access, note-taking, interview design, consent, and how I revised my approach when methods failed. These small samples illuminate particular settings and perspectives rather than population-level patterns.",
+        image: "/materials/doing-sociology-in-the-field.png",
+        imageAlt: "Title slide for Doing Sociology in the Field",
+        href: "/materials/doing-sociology-in-the-field-presentation.pdf",
+        imageWidth: 945,
+        imageHeight: 532,
+      },
       {
         label: "Economics Paper Presentation",
         title: "Status Externalities in Education and Low Birth Rates in Korea",

@@ -37,11 +37,11 @@ Google Search signals.
   Experience and honor headings are written to remain informative on their own,
   while institutions and programme context stay in the supporting small text;
   every Experience supporting line begins with the same color-matched bullet.
-- A two-part Materials exhibition with nine locally hosted cover previews,
+- A two-part Materials exhibition with ten locally hosted cover previews,
   full original descriptions, and direct links to each presentation or
   teaching deck; both material groups use expandable color-coded panels.
 - A locally hosted 20-minute GAAC 2026 presentation of `Robust Trust with
-  Multiple Advisers`, shown with its own cover preview and linked from Paper
+  Multiple Advisers`, shown with its own cover preview and linked from
   Presentations.
 - Two Cornell University micro-theory presentations are hosted locally with
   their original PDFs: `Robust Trust` and `Friend or Foe: Delegating to an AI
@@ -49,6 +49,10 @@ Google Search signals.
 - A presentation of Kim, Tertilt, and Yum's 2024 paper `Status Externalities in
   Education and Low Birth Rates in Korea`, with an unchanged PDF and a locally
   rendered cover. The entry identifies Victor as presenter, not paper author.
+- `Doing Sociology in the Field`, a sociological-methods talk on participant
+  observation and interviews, with the owner's unchanged PDF and a rendered
+  cover. The former `Paper Presentations` panel is now `Presentations` so this
+  talk is not misclassified as a paper presentation.
 - Course-specific actions in the Teaching Assistant record: visitors can jump
   to the public Econometrics decks or request Microeconomics, Financial
   Management, and Machine Learning materials by email.
@@ -129,12 +133,13 @@ Whenever biography, dates, paper status, or links change, update both the page
 and `CHANGELOG.md` so future collaborators can understand what changed.
 
 The material preview images under `public/materials` include five cached cover
-images from the owner's public Google Drive decks and four covers rendered
+images from the owner's public Google Drive decks and five covers rendered
 from supplied presentation PDFs. The Cornell entries, the 20-minute GAAC
-2026 presentation, and the Korea education presentation link to local,
-unchanged copies of their source PDFs; the other entries continue to point to
-their original Drive files. If a deck is replaced, refresh its preview,
-description, and locally hosted PDF where applicable.
+2026 presentation, the Korea education presentation, and the sociology
+fieldwork talk link to local, unchanged copies of their source PDFs; the other
+entries continue to point to their original Drive files. If a deck is
+replaced, refresh its preview, description, and locally hosted PDF where
+applicable.
 
 The only CV stored in the website's public asset directory is
 `public/cv/xucheng-chen-cv-public-v2026-08-23.pdf`. It was regenerated from the
