@@ -339,6 +339,18 @@ const materialSections: { title: string; items: Material[] }[] = [
     title: "Paper Presentations",
     items: [
       {
+        label: "Economics Paper Presentation",
+        title: "Status Externalities in Education and Low Birth Rates in Korea",
+        description:
+          "I present Kim, Tertilt, and Yum’s 2024 American Economic Review paper on how competition over children's education may affect fertility in Korea. The slides explain the evidence on education-spending spillovers, the calibrated household model, and policy counterfactuals that raise fertility while potentially reducing educational investment and future welfare.",
+        image: "/materials/status-externalities-education-korea.png",
+        imageAlt:
+          "Title slide for a presentation on status externalities in education and low birth rates in Korea",
+        href: "/materials/status-externalities-education-korea-presentation.pdf",
+        imageWidth: 945,
+        imageHeight: 532,
+      },
+      {
         label: "GAAC 2026 · 20-Minute Presentation",
         title: "Robust Trust with Multiple Advisers",
         description:

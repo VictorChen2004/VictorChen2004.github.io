@@ -1,5 +1,12 @@
 # Change Log
 
+## 2026-09-21
+
+- Added the owner's presentation of Kim, Tertilt, and Yum's `Status
+  Externalities in Education and Low Birth Rates in Korea` to Materials → Paper
+  Presentations. Hosted the supplied PDF unchanged, rendered its title slide
+  for the preview, and identified the original paper authors in the summary.
+
 ## 2026-09-13
 
 - Added a responsive Fall 2027 opportunity note directly below the navigation,
