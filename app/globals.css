@@ -394,11 +394,11 @@ summary:focus-visible {
 
 .section {
   display: grid;
-  gap: clamp(3rem, 8vw, 8rem);
+  gap: clamp(2.5rem, 6vw, 6rem);
   grid-template-columns: minmax(180px, 0.42fr) minmax(0, 1.58fr);
   margin: 0 auto;
   max-width: 1420px;
-  padding: clamp(5.5rem, 10vw, 9rem) 5vw;
+  padding: clamp(4rem, 7vw, 6.5rem) 5vw;
 }
 
 .section-heading {
@@ -409,7 +409,7 @@ summary:focus-visible {
 
 .section-heading h2 {
   font-family: var(--serif);
-  font-size: clamp(2.7rem, 5vw, 5.4rem);
+  font-size: clamp(2.45rem, 4.4vw, 4.6rem);
   font-weight: 400;
   letter-spacing: -0.045em;
   line-height: 0.95;
@@ -427,7 +427,7 @@ summary:focus-visible {
 
 .research-section {
   background: var(--rose-paper);
-  padding: clamp(5.5rem, 9vw, 8rem) 5vw;
+  padding: clamp(4rem, 7vw, 6rem) 5vw;
 }
 
 .research-section-inner {
@@ -444,7 +444,7 @@ summary:focus-visible {
 .research-heading h2 {
   color: var(--ink);
   font-family: var(--serif);
-  font-size: clamp(3rem, 5.3vw, 4.6rem);
+  font-size: clamp(2.7rem, 4.6vw, 4rem);
   font-weight: 400;
   letter-spacing: -0.045em;
   line-height: 1;
@@ -463,8 +463,8 @@ summary:focus-visible {
 
 .research-groups {
   display: grid;
-  gap: clamp(1.25rem, 2.5vw, 2rem);
-  padding-top: clamp(4rem, 7vw, 6rem);
+  gap: clamp(0.9rem, 1.8vw, 1.35rem);
+  padding-top: clamp(2.5rem, 4.5vw, 4rem);
 }
 
 .research-group {
@@ -493,8 +493,8 @@ summary:focus-visible {
   gap: 0.8rem 2rem;
   grid-template-columns: minmax(0, 1fr) auto;
   list-style: none;
-  min-height: clamp(125px, 11vw, 145px);
-  padding: clamp(1.5rem, 2.5vw, 2.15rem) clamp(1.5rem, 3vw, 2.6rem);
+  min-height: clamp(94px, 8vw, 112px);
+  padding: clamp(1.15rem, 2vw, 1.65rem) clamp(1.4rem, 2.5vw, 2.25rem);
   transition: filter 180ms ease, transform 180ms ease;
 }
 
@@ -514,14 +514,14 @@ summary:focus-visible {
   content: "+";
   display: flex;
   font-family: var(--sans);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 400;
   grid-column: 2;
   grid-row: 1 / span 2;
-  height: 48px;
+  height: 40px;
   justify-content: center;
   line-height: 1;
-  width: 48px;
+  width: 40px;
 }
 
 .research-group[open] > .research-group-heading {
@@ -534,7 +534,7 @@ summary:focus-visible {
 
 .research-group-title {
   font-family: "Times New Roman", Times, serif;
-  font-size: clamp(3rem, 4.4vw, 3.9rem);
+  font-size: clamp(2.3rem, 3.5vw, 3.15rem);
   font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 0.95;
@@ -557,7 +557,7 @@ summary:focus-visible {
   display: grid;
   gap: 2rem;
   grid-template-columns: minmax(110px, 0.3fr) 1.7fr;
-  padding: clamp(2.25rem, 4vw, 3.25rem) 0;
+  padding: clamp(1.6rem, 3vw, 2.45rem) 0;
 }
 
 .research-card:first-child {
@@ -589,7 +589,7 @@ summary:focus-visible {
 .research-card h3 {
   color: #000;
   font-family: var(--serif);
-  font-size: clamp(1.65rem, 2.3vw, 2.12rem);
+  font-size: clamp(1.5rem, 2.05vw, 1.9rem);
   font-weight: 400;
   line-height: 1.22;
   margin: 0 0 1.1rem;
@@ -787,7 +787,7 @@ summary:focus-visible {
 
 .experience-section {
   background: var(--paper);
-  padding: clamp(5.5rem, 9vw, 8rem) 5vw;
+  padding: clamp(4rem, 7vw, 6rem) 5vw;
 }
 
 .experience-inner {
@@ -801,7 +801,7 @@ summary:focus-visible {
   display: grid;
   gap: 3rem;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.85fr);
-  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+  padding-bottom: clamp(2rem, 3.5vw, 3rem);
 }
 
 .experience-heading .eyebrow {
@@ -811,7 +811,7 @@ summary:focus-visible {
 .experience-heading h2,
 .materials-heading h2 {
   font-family: var(--serif);
-  font-size: clamp(4rem, 7vw, 6.7rem);
+  font-size: clamp(3.2rem, 5.5vw, 5.2rem);
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 0.9;
@@ -829,7 +829,7 @@ summary:focus-visible {
 .experience-stats {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin: clamp(3rem, 6vw, 5rem) 0;
+  margin: clamp(2rem, 4vw, 3.5rem) 0;
 }
 
 .experience-stats div {
@@ -837,7 +837,7 @@ summary:focus-visible {
   color: var(--white);
   display: flex;
   flex-direction: column;
-  min-height: 160px;
+  min-height: 132px;
   padding: 1.5rem;
 }
 
@@ -855,7 +855,7 @@ summary:focus-visible {
 
 .experience-stats strong {
   font-family: var(--serif);
-  font-size: clamp(2.7rem, 4.5vw, 4.5rem);
+  font-size: clamp(2.35rem, 3.8vw, 3.65rem);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -871,7 +871,7 @@ summary:focus-visible {
 
 .experience-groups {
   display: grid;
-  gap: clamp(1.1rem, 2.2vw, 1.75rem);
+  gap: clamp(0.9rem, 1.8vw, 1.35rem);
 }
 
 .experience-group {
@@ -896,8 +896,8 @@ summary:focus-visible {
   gap: 1rem 2rem;
   grid-template-columns: minmax(0, 1fr) auto;
   list-style: none;
-  min-height: clamp(112px, 10vw, 145px);
-  padding: clamp(1.4rem, 2.6vw, 2.25rem);
+  min-height: clamp(94px, 8vw, 112px);
+  padding: clamp(1.15rem, 2vw, 1.65rem);
   transition: filter 180ms ease, transform 180ms ease;
 }
 
@@ -917,14 +917,14 @@ summary:focus-visible {
   content: "+";
   display: flex;
   font-family: var(--sans);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 400;
   grid-column: 2;
   grid-row: 1;
-  height: 48px;
+  height: 40px;
   justify-content: center;
   line-height: 1;
-  width: 48px;
+  width: 40px;
 }
 
 .experience-group[open] > .experience-group-heading {
@@ -937,7 +937,7 @@ summary:focus-visible {
 
 .experience-group-heading h3 {
   font-family: var(--serif);
-  font-size: clamp(2.35rem, 3.6vw, 3.35rem);
+  font-size: clamp(2rem, 3vw, 2.8rem);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 0.98;
@@ -970,7 +970,7 @@ summary:focus-visible {
   display: grid;
   gap: clamp(1.5rem, 4vw, 4rem);
   grid-template-columns: minmax(145px, 0.36fr) minmax(0, 1.64fr);
-  padding: clamp(2.5rem, 5vw, 4rem) 0;
+  padding: clamp(1.8rem, 3.2vw, 2.7rem) 0;
 }
 
 .experience-card:last-child {
@@ -1005,7 +1005,7 @@ summary:focus-visible {
 .experience-card h4 {
   color: #000;
   font-family: var(--serif);
-  font-size: clamp(1.7rem, 2.6vw, 2.4rem);
+  font-size: clamp(1.55rem, 2.25vw, 2.05rem);
   font-weight: 400;
   line-height: 1.15;
   margin: 0;
@@ -1121,14 +1121,14 @@ summary:focus-visible {
   display: grid;
   gap: clamp(2.5rem, 5vw, 5rem);
   grid-template-columns: minmax(250px, 0.5fr) minmax(0, 1.5fr);
-  margin: 0 0 clamp(4rem, 7vw, 6rem);
-  padding: clamp(2.5rem, 5vw, 4.5rem);
+  margin: 0 0 clamp(3rem, 5vw, 4rem);
+  padding: clamp(2rem, 4vw, 3.5rem);
 }
 
 .honors-heading h3 {
   color: var(--terracotta);
   font-family: var(--serif);
-  font-size: clamp(2.8rem, 4.4vw, 4.5rem);
+  font-size: clamp(2.5rem, 3.7vw, 3.7rem);
   font-weight: 400;
   letter-spacing: -0.045em;
   line-height: 0.95;
@@ -1183,8 +1183,8 @@ summary:focus-visible {
   display: grid;
   gap: clamp(2.5rem, 5vw, 5rem);
   grid-template-columns: minmax(250px, 0.5fr) minmax(0, 1.5fr);
-  margin: 0 0 clamp(4rem, 7vw, 6rem);
-  padding: clamp(2.5rem, 5vw, 4.5rem);
+  margin: 0 0 clamp(3rem, 5vw, 4rem);
+  padding: clamp(2rem, 4vw, 3.5rem);
 }
 
 .coursework-heading .eyebrow {
@@ -1193,7 +1193,7 @@ summary:focus-visible {
 
 .coursework-heading h3 {
   font-family: var(--serif);
-  font-size: clamp(2.6rem, 4vw, 4rem);
+  font-size: clamp(2.35rem, 3.5vw, 3.45rem);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 0.98;
@@ -1272,7 +1272,7 @@ summary:focus-visible {
 
 .materials-section {
   background: var(--paper);
-  padding: clamp(5.5rem, 9vw, 8rem) 5vw;
+  padding: clamp(3.5rem, 5vw, 4.75rem) 5vw;
 }
 
 .materials-inner {
@@ -1281,12 +1281,12 @@ summary:focus-visible {
 }
 
 .materials-heading {
-  align-items: end;
+  align-items: center;
   border-bottom: 1px solid var(--brown-soft);
   display: grid;
-  gap: 3rem;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.85fr);
-  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+  gap: clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  padding-bottom: clamp(1.5rem, 2.5vw, 2.25rem);
 }
 
 .materials-heading .eyebrow {
@@ -1307,8 +1307,8 @@ summary:focus-visible {
 
 .material-sections {
   display: grid;
-  gap: clamp(1.1rem, 2.2vw, 1.75rem);
-  margin-top: clamp(1.1rem, 2.2vw, 1.75rem);
+  gap: clamp(0.9rem, 1.8vw, 1.35rem);
+  margin-top: clamp(1rem, 2vw, 1.5rem);
 }
 
 .material-section {
@@ -1325,13 +1325,21 @@ summary:focus-visible {
   gap: 1rem 2rem;
   grid-template-columns: minmax(0, 1fr) auto;
   list-style: none;
-  min-height: clamp(130px, 12.5vw, 175px);
-  padding: clamp(1.75rem, 3.25vw, 2.75rem);
+  min-height: clamp(94px, 8vw, 116px);
+  padding: clamp(1.15rem, 2vw, 1.65rem);
   transition: filter 180ms ease, transform 180ms ease;
 }
 
 .material-section:nth-child(2) {
   --material-color: var(--brown);
+}
+
+.material-section:nth-child(3) {
+  --material-color: #745058;
+}
+
+.material-section:nth-child(4) {
+  --material-color: #5d644e;
 }
 
 .material-section-heading::-webkit-details-marker {
@@ -1350,14 +1358,14 @@ summary:focus-visible {
   content: "+";
   display: flex;
   font-family: var(--sans);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 400;
   grid-column: 2;
   grid-row: 1;
-  height: 48px;
+  height: 40px;
   justify-content: center;
   line-height: 1;
-  width: 48px;
+  width: 40px;
 }
 
 .material-section[open] > .material-section-heading {
@@ -1370,11 +1378,20 @@ summary:focus-visible {
 
 .material-section-heading h3 {
   font-family: var(--serif);
-  font-size: clamp(2.8rem, 4.3vw, 4.4rem);
+  font-size: clamp(2.05rem, 3.15vw, 3.05rem);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 0.95;
   margin: 0;
+}
+
+.material-section-count {
+  color: color-mix(in srgb, var(--white) 78%, transparent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  grid-column: 1;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
 }
 
 .material-features {
@@ -1387,9 +1404,9 @@ summary:focus-visible {
   align-items: stretch;
   border-bottom: 1px dashed color-mix(in srgb, var(--brown) 28%, var(--line));
   display: grid;
-  gap: clamp(2rem, 4vw, 4rem);
+  gap: clamp(1.5rem, 3vw, 3rem);
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
-  padding: clamp(2rem, 5vw, 4.5rem) 0;
+  padding: clamp(1.5rem, 3vw, 2.8rem) 0;
 }
 
 .material-feature:last-child {
@@ -1446,7 +1463,7 @@ summary:focus-visible {
 .material-copy h4 {
   color: var(--terracotta);
   font-family: var(--serif);
-  font-size: clamp(2.4rem, 4vw, 4.1rem);
+  font-size: clamp(1.8rem, 2.7vw, 2.65rem);
   font-weight: 400;
   letter-spacing: -0.035em;
   line-height: 1.02;
@@ -1456,7 +1473,7 @@ summary:focus-visible {
 .material-copy > p:not(.material-label) {
   color: var(--ink);
   font-family: var(--serif);
-  font-size: clamp(1.05rem, 1.55vw, 1.3rem);
+  font-size: clamp(0.98rem, 1.3vw, 1.12rem);
   line-height: 1.62;
   margin: 1.5rem 0;
 }
@@ -1477,10 +1494,97 @@ summary:focus-visible {
   color: var(--terracotta);
 }
 
+.code-directory {
+  background: color-mix(in srgb, var(--rose-paper) 44%, var(--white));
+  border: 1px solid color-mix(in srgb, #5d644e 35%, var(--line));
+  border-top: 0;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.code-directory-intro {
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: minmax(180px, 0.4fr) minmax(0, 1fr);
+  padding: 0.5rem 0 1.5rem;
+}
+
+.code-directory-intro p {
+  margin: 0;
+}
+
+.code-directory-intro > p:last-child {
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.code-file-list {
+  border-top: 1px solid var(--line);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.code-file {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 2.5rem minmax(0, 1fr) 1.5rem;
+  padding: 1.2rem 0.4rem;
+  transition: background 180ms ease, padding 180ms ease;
+}
+
+.code-file:hover {
+  background: color-mix(in srgb, #5d644e 7%, transparent);
+  padding-left: 0.85rem;
+}
+
+.code-file-number {
+  color: #5d644e;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+}
+
+.code-file-main {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.code-file-kind {
+  color: var(--muted);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.code-file-main strong {
+  color: var(--ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: clamp(0.94rem, 1.2vw, 1.12rem);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.code-file-description {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.code-file-open {
+  color: #5d644e;
+  font-size: 1.3rem;
+  justify-self: end;
+}
+
 .contact-section {
   background: var(--brown);
   color: var(--white);
-  padding: clamp(5rem, 10vw, 8rem) 5vw;
+  padding: clamp(4rem, 7vw, 6rem) 5vw;
   text-align: center;
 }
 
@@ -1490,7 +1594,7 @@ summary:focus-visible {
 
 .contact-section h2 {
   font-family: var(--serif);
-  font-size: clamp(3rem, 6.1vw, 5.8rem);
+  font-size: clamp(2.7rem, 5vw, 4.7rem);
   font-weight: 400;
   letter-spacing: -0.05em;
   line-height: 1;
@@ -1812,13 +1916,13 @@ footer a {
 
   .experience-group-heading,
   .material-section-heading {
-    min-height: 125px;
-    padding: 1.5rem 1.25rem;
+    min-height: 96px;
+    padding: 1.15rem 1.25rem;
   }
 
   .experience-group-heading h3,
   .material-section-heading h3 {
-    font-size: clamp(2.1rem, 10vw, 3.15rem);
+    font-size: clamp(1.8rem, 7.6vw, 2.45rem);
   }
 
   .experience-group-heading::after,
@@ -1861,12 +1965,26 @@ footer a {
   }
 
   .research-group-heading {
-    min-height: 108px;
-    padding: 1.4rem 1.25rem;
+    min-height: 92px;
+    padding: 1.15rem 1.25rem;
   }
 
   .research-group-title {
-    font-size: clamp(2.15rem, 11vw, 3.2rem);
+    font-size: clamp(1.9rem, 8vw, 2.6rem);
+  }
+
+  .code-directory-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .code-file {
+    gap: 0.8rem;
+    grid-template-columns: 1.6rem minmax(0, 1fr) 1.2rem;
+    padding: 1rem 0.1rem;
+  }
+
+  .code-file-description {
+    font-size: 0.8rem;
   }
 
   .research-group-heading::after {

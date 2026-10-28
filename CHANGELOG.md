@@ -1,5 +1,18 @@
 # Change Log
 
+## 2026-10-29
+
+- Reduced oversized spacing and type across the Research, Experience,
+  coursework, Materials, and Contact sections, including their disclosure
+  panels and record cards.
+- Reorganized Materials into Paper Reading & Learning, Presentations & Talks,
+  Course Reviews & Lecture Notes, and Code & Data. The GAAC presentation and
+  sociology talk now sit together under Presentations & Talks; all existing
+  PDF links, cover images, and descriptions were retained.
+- Added a numbered Code & Data directory with a synthetic Stata event-study
+  example, a Python text-rule validation example, fictional CSV input, and a
+  short guide. No original task data or submitted assessment files are hosted.
+
 ## 2026-09-21
 
 - Added the owner's `Doing Sociology in the Field` methods talk to Materials

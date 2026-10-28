@@ -336,19 +336,8 @@ type Material = {
 
 const materialSections: { title: string; items: Material[] }[] = [
   {
-    title: "Presentations",
+    title: "Paper Reading & Learning",
     items: [
-      {
-        label: "Sociological Methods · September 2026",
-        title: "Doing Sociology in the Field",
-        description:
-          "This talk draws on my participant observation in a Wuhan gay bar and semi-structured interviews with four gay students at CUHK-Shenzhen. I focus on field access, note-taking, interview design, consent, and how I revised my approach when methods failed. These small samples illuminate particular settings and perspectives rather than population-level patterns.",
-        image: "/materials/doing-sociology-in-the-field.png",
-        imageAlt: "Title slide for Doing Sociology in the Field",
-        href: "/materials/doing-sociology-in-the-field-presentation.pdf",
-        imageWidth: 945,
-        imageHeight: 532,
-      },
       {
         label: "Economics Paper Presentation",
         title: "Status Externalities in Education and Low Birth Rates in Korea",
@@ -360,20 +349,6 @@ const materialSections: { title: string; items: Material[] }[] = [
         href: "/materials/status-externalities-education-korea-presentation.pdf",
         imageWidth: 945,
         imageHeight: 532,
-      },
-      {
-        label: "GAAC 2026 · 20-Minute Presentation",
-        title: "Robust Trust with Multiple Advisers",
-        description:
-          "This 20-minute GAAC 2026 presentation introduces my working paper Robust Trust with Multiple Advisers. It explains the aggregation problem with multiple potentially misaligned advisers, the sharp one-half alignment threshold, and the margin-ladder rule that protects worst-case value even when advisers coordinate.",
-        image:
-          "/materials/robust-trust-with-multiple-advisers-gaac-2026.png",
-        imageAlt:
-          "Cover slide for the GAAC 2026 presentation Robust Trust with Multiple Advisers",
-        href:
-          "/materials/robust-trust-with-multiple-advisers-gaac-2026-20min.pdf",
-        imageWidth: 1134,
-        imageHeight: 638,
       },
       {
         label: "Cornell University Presentation · May 29, 2026",
@@ -433,7 +408,37 @@ const materialSections: { title: string; items: Material[] }[] = [
     ],
   },
   {
-    title: "Materials I Compiled and Used to Teach",
+    title: "Presentations & Talks",
+    items: [
+      {
+        label: "GAAC 2026 · 20-Minute Presentation",
+        title: "Robust Trust with Multiple Advisers",
+        description:
+          "This 20-minute GAAC 2026 presentation introduces my working paper Robust Trust with Multiple Advisers. It explains the aggregation problem with multiple potentially misaligned advisers, the sharp one-half alignment threshold, and the margin-ladder rule that protects worst-case value even when advisers coordinate.",
+        image:
+          "/materials/robust-trust-with-multiple-advisers-gaac-2026.png",
+        imageAlt:
+          "Cover slide for the GAAC 2026 presentation Robust Trust with Multiple Advisers",
+        href:
+          "/materials/robust-trust-with-multiple-advisers-gaac-2026-20min.pdf",
+        imageWidth: 1134,
+        imageHeight: 638,
+      },
+      {
+        label: "Sociological Methods · September 2026",
+        title: "Doing Sociology in the Field",
+        description:
+          "This talk draws on my participant observation in a Wuhan gay bar and semi-structured interviews with four gay students at CUHK-Shenzhen. I focus on field access, note-taking, interview design, consent, and how I revised my approach when methods failed. These small samples illuminate particular settings and perspectives rather than population-level patterns.",
+        image: "/materials/doing-sociology-in-the-field.png",
+        imageAlt: "Title slide for Doing Sociology in the Field",
+        href: "/materials/doing-sociology-in-the-field-presentation.pdf",
+        imageWidth: 945,
+        imageHeight: 532,
+      },
+    ],
+  },
+  {
+    title: "Course Reviews & Lecture Notes",
     items: [
       {
         label: "ECON3121 · Midterm Review · Spring 2025",
@@ -456,6 +461,36 @@ const materialSections: { title: string; items: Material[] }[] = [
     ],
   },
 ];
+
+const codeSamples = [
+  {
+    name: "event_study_demo.do",
+    kind: "Stata · synthetic panel",
+    description:
+      "An event-time specification with an explicit reference period, individual and wave effects, and clustered inference.",
+  },
+  {
+    name: "validation_metrics.py",
+    kind: "Python · text-data validation",
+    description:
+      "Compares frozen and revised extraction rules against hand-coded labels, keeping out-of-sample and in-sample results separate.",
+  },
+  {
+    name: "synthetic_validation.csv",
+    kind: "Data · synthetic example",
+    description:
+      "A small, fictional input table for the validation script; no original obituary or survey records are included.",
+  },
+  {
+    name: "README.md",
+    kind: "Documentation",
+    description:
+      "How to read and run these examples, with their scope and data limitations.",
+  },
+];
+
+const CODE_REPO_URL =
+  "https://github.com/VictorChen2004/VictorChen2004.github.io/blob/main/public/code";
 
 type ExperienceItem = {
   dates: string;
@@ -1238,13 +1273,13 @@ export default function Home() {
           <div className="materials-inner">
             <header className="materials-heading">
               <div>
-                <p className="eyebrow">Presentations · Slides · Teaching</p>
+                <p className="eyebrow">Reading · Talks · Teaching · Code</p>
                 <h2>Materials</h2>
               </div>
               <p>
-                This section collects materials I found especially interesting,
-                together with presentations and teaching resources I prepared.
-                The collection may be incomplete and will be updated over time.
+                This section brings together paper readings, talks, course
+                reviews, and selected code examples. The collection may be
+                incomplete and will be updated over time.
                 Please do not redistribute or cite my original slides or notes
                 without permission; copyright in cited papers and other
                 third-party works remains with their original owners. Comments,
@@ -1258,6 +1293,9 @@ export default function Home() {
                 <details className="material-section" key={section.title}>
                   <summary className="material-section-heading">
                     <h3>{section.title}</h3>
+                    <span className="material-section-count">
+                      {section.items.length} materials
+                    </span>
                   </summary>
                   <div className="material-features">
                     {section.items.map((material) => (
@@ -1288,7 +1326,7 @@ export default function Home() {
                             target="_blank"
                             rel="noreferrer"
                           >
-                            View presentation <span aria-hidden="true">↗</span>
+                            Open material <span aria-hidden="true">↗</span>
                           </a>
                         </div>
                       </article>
@@ -1296,6 +1334,52 @@ export default function Home() {
                   </div>
                 </details>
               ))}
+              <details className="material-section">
+                <summary className="material-section-heading">
+                  <h3>Code &amp; Data</h3>
+                  <span className="material-section-count">
+                    {codeSamples.length} files
+                  </span>
+                </summary>
+                <div className="code-directory">
+                  <div className="code-directory-intro">
+                    <p className="material-label">Selected research coding examples</p>
+                    <p>
+                      These compact examples show event-study design and
+                      text-data validation using synthetic inputs. Original
+                      survey data, obituary texts, hand-coded records, and the
+                      assessment package are not published.
+                    </p>
+                  </div>
+                  <ol className="code-file-list">
+                    {codeSamples.map((sample, index) => (
+                      <li key={sample.name}>
+                        <a
+                          className="code-file"
+                          href={`${CODE_REPO_URL}/${sample.name}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label={`Open ${sample.name} on GitHub`}
+                        >
+                          <span className="code-file-number">
+                            {String(index + 1).padStart(2, "0")}
+                          </span>
+                          <span className="code-file-main">
+                            <span className="code-file-kind">{sample.kind}</span>
+                            <strong>{sample.name}</strong>
+                            <span className="code-file-description">
+                              {sample.description}
+                            </span>
+                          </span>
+                          <span className="code-file-open" aria-hidden="true">
+                            ↗
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              </details>
             </div>
           </div>
         </section>

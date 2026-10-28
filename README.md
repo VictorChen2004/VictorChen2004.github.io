@@ -37,12 +37,17 @@ Google Search signals.
   Experience and honor headings are written to remain informative on their own,
   while institutions and programme context stay in the supporting small text;
   every Experience supporting line begins with the same color-matched bullet.
-- A two-part Materials exhibition with ten locally hosted cover previews,
-  full original descriptions, and direct links to each presentation or
-  teaching deck; both material groups use expandable color-coded panels.
+- Four compact Materials collections: Paper Reading & Learning,
+  Presentations & Talks, Course Reviews & Lecture Notes, and Code & Data.
+  The ten existing material previews and descriptions remain available in
+  expandable panels; code files appear in a numbered directory list.
+- Selected, runnable Stata and Python examples adapted from a predoc coding
+  exercise, accompanied only by fictional input data and a file-level guide.
+  The original survey, obituary, hand-coded, and assessment files are not
+  distributed through this website.
 - A locally hosted 20-minute GAAC 2026 presentation of `Robust Trust with
   Multiple Advisers`, shown with its own cover preview and linked from
-  Presentations.
+  Presentations & Talks.
 - Two Cornell University micro-theory presentations are hosted locally with
   their original PDFs: `Robust Trust` and `Friend or Foe: Delegating to an AI
   Whose Alignment is Unknown`.
@@ -51,8 +56,7 @@ Google Search signals.
   rendered cover. The entry identifies Victor as presenter, not paper author.
 - `Doing Sociology in the Field`, a sociological-methods talk on participant
   observation and interviews, with the owner's unchanged PDF and a rendered
-  cover. The former `Paper Presentations` panel is now `Presentations` so this
-  talk is not misclassified as a paper presentation.
+  cover in Presentations & Talks.
 - Course-specific actions in the Teaching Assistant record: visitors can jump
   to the public Econometrics decks or request Microeconomics, Financial
   Management, and Machine Learning materials by email.
@@ -72,11 +76,9 @@ Google Search signals.
   image-aware XML sitemap.
 - Mobile research and experience records presented as clearly separated cards,
   with dates shown as compact labels instead of repeated horizontal dividers.
-- A desktop-specific typography scale that preserves the large editorial
-  section anchors while reducing repeated disclosure headings, record titles,
-  card heights, and excess visual density; the established mobile scale remains
-  unchanged. Wide-screen Experience summaries stay on one clean line while
-  retaining natural wrapping on narrower layouts.
+- A restrained typography and spacing scale across sections, accordion
+  headings, statistics, cards, and material previews, while retaining readable
+  wrapping on narrow screens.
 - Explicit color-matched point markers before every sentence in the expanded
   Research and RA detail lists. Experience and Coursework retain their own
   bulleted lists, while Honors, teaching notes, and Materials descriptions
@@ -126,6 +128,7 @@ the public address `https://victorchen2004.github.io`.
 
 - Main text and project records: `app/page.tsx`
 - Colors and layout: `app/globals.css`
+- Public synthetic code examples: `public/code/`
 - Search and sharing metadata: `app/layout.tsx`
 - Chronological project record: `CHANGELOG.md`
 
