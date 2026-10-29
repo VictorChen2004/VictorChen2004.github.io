@@ -2,6 +2,20 @@
 
 ## 2026-10-29
 
+- Added the ECO2011 midterm-review presentation and reading edition as
+  teaching-only public PDFs, retaining all lecture pages while omitting the
+  private personal introduction with GPA and rank. Added the reproducible
+  export script and a cover preview.
+- Added four Advanced Industrial Organization study-note PDFs under one
+  Materials entry, each with its own lecture link; the instructor's original
+  slide decks remain outside the public site.
+- Added the *International Power* presentation and companion handout under
+  one talk entry, clearly attributing Liu and Yang and dating the underlying
+  paper draft to June 9, 2026.
+- Brought RA Experience into line with the 2026-10-22 full CV by adding
+  David Yang's *International Power* project and updating the Congo project
+  to Jonathan Weigel's current field-data/compliance description. Other
+  website records and the older hosted public CV were not rewritten.
 - Reduced oversized spacing and type across the Research, Experience,
   coursework, Materials, and Contact sections, including their disclosure
   panels and record cards.

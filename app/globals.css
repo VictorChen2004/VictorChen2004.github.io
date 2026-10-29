@@ -1478,6 +1478,12 @@ summary:focus-visible {
   margin: 1.5rem 0;
 }
 
+.material-links {
+  display: grid;
+  gap: 0.8rem;
+  justify-items: start;
+}
+
 .material-link {
   border-bottom: 1px solid var(--brown);
   color: var(--brown);

@@ -245,6 +245,20 @@ const researchGroups = [
 
 const researchAssistantExperience = [
   {
+    dates: "Sep 2026–present",
+    title: "International Power",
+    role: "Research Assistant",
+    organization: "Supervised by Prof. David Y. Yang, Harvard University",
+    location: "Shenzhen, China (Remote)",
+    highlight:
+      "Maintain empirical and replication workflows for research on how economic interdependence shapes geopolitical power.",
+    details: [
+      "Maintain and extend Python and Stata workflows linking bilateral trade, ICEWS events, Gallup and Pew surveys, and input-output data.",
+      "Implement and validate shift-share instruments on complete sectoral support; reconcile 2SLS estimates with Rotemberg decompositions and examine robustness across specifications.",
+      "Reproduce latent geopolitical-preference estimates and pairwise Wasserstein distances using numerical optimization and optimal transport; cross-check tables and figures against the manuscript and prepare documented public and restricted-data replication packages.",
+    ],
+  },
+  {
     dates: "Jun 2026–present",
     title:
       "Machine Learning for Chinese Court-Video Transcription and Role Attribution",
@@ -265,14 +279,15 @@ const researchAssistantExperience = [
     title: "Speech Recognition and Treatment-Compliance Analysis in Congo",
     role: "Research Assistant",
     organization:
-      "Supervised by Prof. Clotaire Weigel, University of California, Berkeley",
+      "Supervised by Prof. Jonathan Weigel, University of California, Berkeley",
     location: "Berkeley, United States",
     highlight:
-      "Built an end-to-end speech-processing workflow for long, low-resource field-sermon recordings and prepared treatment-compliance coding for downstream analysis.",
+      "Coordinate field-data quality checks and treatment-compliance preparation for a church-level randomized experiment in Kananga.",
     details: [
-      "Developed a workflow covering long-recording chunking, automatic speech recognition, language detection, and preparation for treatment-compliance analysis.",
-      "Tested Whisper and Meta MMS for French and Tshiluba-related audio; evaluated a Luganda proxy when direct Tshiluba support was unavailable and documented model uncertainty and limitations.",
-      "Translated administrative, collective, and individual treatment messages into coding dimensions covering tax communication, justice and poverty, prosperity, and individual responsibility.",
+      "Reconcile recruitment, pastor-delivery, sermon-coding, and endline records with treatment assignments, documenting church replacements and field exceptions for the research team.",
+      "Prepare and verify two endline cohorts of 444 eligible property owners across 42 churches using actual treatment-delivery dates and four subsequent Sundays; preserve 1,255 existing records and match 444 respondent photographs to the field case list.",
+      "Audit sermon coverage by church and Sunday against SurveyCTO submissions, Dropbox audio, and independent observation recordings, distinguishing files not found in checked folders from confirmed missing recordings.",
+      "Assess French–Tshiluba speech-recognition limitations using Whisper and Meta MMS, and review a separate sermon-transcription pipeline for methods potentially reusable in treatment-compliance analysis.",
     ],
   },
   {
@@ -330,6 +345,7 @@ type Material = {
   image: string;
   imageAlt: string;
   href: string;
+  links?: { label: string; href: string }[];
   imageWidth?: number;
   imageHeight?: number;
 };
@@ -411,6 +427,21 @@ const materialSections: { title: string; items: Material[] }[] = [
     title: "Presentations & Talks",
     items: [
       {
+        label: "Paper Presentation · October 2026",
+        title: "International Power",
+        description:
+          "My presentation of Ernest Liu and David Y. Yang’s International Power, based on the June 9, 2026 paper draft. The slides cover the model, measurement, empirical evidence, and technical methods; a separate handout develops the derivations and research design in more detail. These materials describe that draft, not later manuscript revisions.",
+        image: "/materials/international-power-slides.png",
+        imageAlt: "Cover of the International Power paper presentation",
+        href: "/materials/international-power-slides.pdf",
+        links: [
+          { label: "Presentation slides (PDF)", href: "/materials/international-power-slides.pdf" },
+          { label: "Audience handout (PDF)", href: "/materials/international-power-handout.pdf" },
+        ],
+        imageWidth: 1200,
+        imageHeight: 675,
+      },
+      {
         label: "GAAC 2026 · 20-Minute Presentation",
         title: "Robust Trust with Multiple Advisers",
         description:
@@ -440,6 +471,38 @@ const materialSections: { title: string; items: Material[] }[] = [
   {
     title: "Course Reviews & Lecture Notes",
     items: [
+      {
+        label: "ECO2011 · Midterm Review · October 2026",
+        title: "Microeconomics Midterm Review",
+        description:
+          "A step-by-step review of principles, comparative advantage, supply and demand, elasticity, welfare, policy interventions, and introductory trade. The presentation PDF retains the progressive classroom reveals; the reading edition shows each completed slide once. These public teaching editions omit the personal introduction.",
+        image: "/materials/eco2011-midterm-review.png",
+        imageAlt: "Cover of the ECO2011 microeconomics midterm review",
+        href: "/materials/eco2011-midterm-review-presentation.pdf",
+        links: [
+          { label: "Presentation PDF", href: "/materials/eco2011-midterm-review-presentation.pdf" },
+          { label: "Reading edition PDF", href: "/materials/eco2011-midterm-review-reading.pdf" },
+        ],
+        imageWidth: 1200,
+        imageHeight: 675,
+      },
+      {
+        label: "Advanced Industrial Organization · October 2026",
+        title: "Advanced IO Study Notes",
+        description:
+          "Four separate portrait-format study notes based on Hui Shen’s course lectures: firms and consumers, static imperfect competition, dynamic competition, and product differentiation. Each lecture has its own PDF, with worked derivations and diagrams.",
+        image: "/materials/advanced-io-lecture-01.png",
+        imageAlt: "Cover of the first Advanced Industrial Organization study note",
+        href: "/materials/advanced-io-lecture-01.pdf",
+        links: [
+          { label: "Lecture 1 · Firms & consumers", href: "/materials/advanced-io-lecture-01.pdf" },
+          { label: "Lecture 2 · Static competition", href: "/materials/advanced-io-lecture-02.pdf" },
+          { label: "Lecture 3 · Dynamic competition", href: "/materials/advanced-io-lecture-03.pdf" },
+          { label: "Lecture 4 · Product differentiation", href: "/materials/advanced-io-lecture-04.pdf" },
+        ],
+        imageWidth: 850,
+        imageHeight: 1200,
+      },
       {
         label: "ECON3121 · Midterm Review · Spring 2025",
         title: "Midterm Review for Introductory Econometrics",
@@ -1320,14 +1383,19 @@ export default function Home() {
                           <p className="material-label">{material.label}</p>
                           <h4>{material.title}</h4>
                           <p>{material.description}</p>
-                          <a
-                            className="material-link"
-                            href={material.href}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            Open material <span aria-hidden="true">↗</span>
-                          </a>
+                          <div className="material-links">
+                            {(material.links ?? [{ label: "Open material", href: material.href }]).map((link) => (
+                              <a
+                                className="material-link"
+                                href={link.href}
+                                target="_blank"
+                                rel="noreferrer"
+                                key={link.href}
+                              >
+                                {link.label} <span aria-hidden="true">↗</span>
+                              </a>
+                            ))}
+                          </div>
                         </div>
                       </article>
                     ))}

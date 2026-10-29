@@ -39,8 +39,22 @@ Google Search signals.
   every Experience supporting line begins with the same color-matched bullet.
 - Four compact Materials collections: Paper Reading & Learning,
   Presentations & Talks, Course Reviews & Lecture Notes, and Code & Data.
-  The ten existing material previews and descriptions remain available in
-  expandable panels; code files appear in a numbered directory list.
+  Thirteen material previews and descriptions are available in expandable
+  panels; related PDF editions appear as compact links within one entry,
+  while code files appear in a numbered directory list.
+- An October 2026 ECO2011 microeconomics midterm-review presentation and
+  completed-slide reading edition. The public teaching copies omit the
+  personal introduction containing GPA and rank; the original PDFs remain
+  unchanged in the course project.
+- Four separate Advanced Industrial Organization study-note PDFs based on
+  Hui Shen's lectures, grouped under one Materials entry with a link to
+  each lecture. The supplied instructor slides are not hosted.
+- A presentation and audience handout for Ernest Liu and David Y. Yang's
+  *International Power*, explicitly identified as a reading of the June 9,
+  2026 draft rather than a representation of later manuscript revisions.
+- RA Experience aligned with the 2026-10-22 full CV: the David Yang
+  *International Power* project is included, and the Congo project names
+  Jonathan Weigel and describes field-data quality and compliance work.
 - Selected, runnable Stata and Python examples adapted from a predoc coding
   exercise, accompanied only by fictional input data and a file-level guide.
   The original survey, obituary, hand-coded, and assessment files are not
@@ -135,14 +149,19 @@ the public address `https://victorchen2004.github.io`.
 Whenever biography, dates, paper status, or links change, update both the page
 and `CHANGELOG.md` so future collaborators can understand what changed.
 
-The material preview images under `public/materials` include five cached cover
-images from the owner's public Google Drive decks and five covers rendered
-from supplied presentation PDFs. The Cornell entries, the 20-minute GAAC
-2026 presentation, the Korea education presentation, and the sociology
-fieldwork talk link to local, unchanged copies of their source PDFs; the other
-entries continue to point to their original Drive files. If a deck is
-replaced, refresh its preview, description, and locally hosted PDF where
-applicable.
+The material preview images under `public/materials` include covers from
+the owner's public Google Drive decks and locally hosted PDFs. The ECO2011
+public PDFs are derived teaching-only editions made with
+`scripts/create_public_course_review_pdfs.py`; all four Advanced IO notes
+and both *International Power* presentation documents are hosted as separate
+PDF files. Other locally hosted presentations retain their original PDF
+bytes; some older entries continue to point to their Drive files. If a
+document is replaced, refresh its preview, description, and linked PDF.
+
+The website's RA text uses `CV_Xucheng_Chen_Full_v2026-10-22.docx` and its
+paired PDF in the owner's Basic CV folder. This content update does not
+replace the separately hosted August 2026 public CV, which still requires
+its own redacted regeneration before a newer edition can be published.
 
 The only CV stored in the website's public asset directory is
 `public/cv/xucheng-chen-cv-public-v2026-08-23.pdf`. It was regenerated from the
