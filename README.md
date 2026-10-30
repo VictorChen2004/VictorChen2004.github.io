@@ -39,7 +39,7 @@ Google Search signals.
   every Experience supporting line begins with the same color-matched bullet.
 - Four compact Materials collections: Paper Reading & Learning,
   Presentations & Talks, Course Reviews & Lecture Notes, and Code & Data.
-  Thirteen material previews and descriptions are available in expandable
+  Fourteen material previews and descriptions are available in expandable
   panels; related PDF editions appear as compact links within one entry,
   while code files appear in a numbered directory list.
 - An October 2026 ECO2011 microeconomics midterm-review presentation and
@@ -52,6 +52,9 @@ Google Search signals.
 - A presentation and audience handout for Ernest Liu and David Y. Yang's
   *International Power*, explicitly identified as a reading of the June 9,
   2026 draft rather than a representation of later manuscript revisions.
+- The owner's 21-page *A Bayesian Game of Online Accusations* course paper,
+  linked from its Selected Writing record and Paper Reading & Learning, with
+  an unchanged PDF dated October 30, 2026 and a rendered first-page preview.
 - RA Experience aligned with the 2026-10-22 full CV: the David Yang
   *International Power* project is included, and the Congo project names
   Jonathan Weigel and describes field-data quality and compliance work.

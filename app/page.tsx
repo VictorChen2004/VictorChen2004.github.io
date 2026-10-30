@@ -163,6 +163,8 @@ const researchProjects: ResearchProject[] = [
       "Characterized Perfect Bayesian Equilibria under pooling and separating accusation strategies, identifying conditions under which platform amplification and weak reputational penalties generate self-reinforcing digital witch-hunt equilibria despite substantial uncertainty about guilt.",
       "Extended the model to competing KOLs with independent signals and pile-on complementarities, as well as dynamic reputational penalties that accumulate over time, showing how corroboration, attention competition, and forward-looking discipline reshape accusation standards and crowd behavior.",
     ],
+    href: "/materials/a-bayesian-game-of-online-accusations.pdf",
+    linkLabel: "Read paper · 30 Oct 2026",
   },
   {
     category: "Selected writing",
@@ -354,6 +356,17 @@ const materialSections: { title: string; items: Material[] }[] = [
   {
     title: "Paper Reading & Learning",
     items: [
+      {
+        label: "Original Game Theory Paper · October 2026",
+        title: "A Bayesian Game of Online Accusations",
+        description:
+          "My ECON3160 course paper models how an accusation by a Key Opinion Leader can trigger collective attacks under uncertainty. It studies pooling and separating equilibria, then extends the model to private user signals, multiple opinion leaders, and reputational penalties.",
+        image: "/materials/a-bayesian-game-of-online-accusations.png",
+        imageAlt: "First page of A Bayesian Game of Online Accusations by Victor Xucheng Chen",
+        href: "/materials/a-bayesian-game-of-online-accusations.pdf",
+        imageWidth: 928,
+        imageHeight: 1200,
+      },
       {
         label: "Economics Paper Presentation",
         title: "Status Externalities in Education and Low Birth Rates in Korea",

@@ -1,5 +1,12 @@
 # Change Log
 
+## 2026-10-30
+
+- Attached the owner's October 30, 2026 *A Bayesian Game of Online
+  Accusations* PDF to its existing Selected Writing record and added a
+  corresponding Materials card with a first-page preview. The 21-page PDF
+  is hosted unchanged; the existing research description was preserved.
+
 ## 2026-10-29
 
 - Added the ECO2011 midterm-review presentation and reading edition as
