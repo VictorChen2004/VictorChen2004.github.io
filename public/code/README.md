@@ -1,6 +1,6 @@
-# Selected Code & Data Examples
+# 2026 UC Berkeley Predoc Coding Task — Selected Examples
 
-These small examples illustrate two research workflows: estimating an event-time model and checking a text-extraction rule against hand-coded labels. They are adapted from a larger empirical coding exercise, but use only synthetic inputs. They are not the submitted analysis, and their numerical results are not research findings.
+These small examples are adapted from the 2026 data task for Professor Ulrike Malmendier's Junior/Assistant Specialist application at UC Berkeley. They illustrate two research workflows: estimating an event-time model and checking a text-extraction rule against hand-coded labels. They are shared as a reference for similar predoc coding tasks, use only synthetic inputs, and are not the original submission or an answer key. Their numerical results are not research findings.
 
 | File | Purpose | Run |
 |---|---|---|

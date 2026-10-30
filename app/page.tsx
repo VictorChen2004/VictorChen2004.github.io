@@ -357,15 +357,19 @@ const materialSections: { title: string; items: Material[] }[] = [
     title: "Paper Reading & Learning",
     items: [
       {
-        label: "Original Game Theory Paper · October 2026",
-        title: "A Bayesian Game of Online Accusations",
+        label: "Paper Presentation · October 2026",
+        title: "International Power",
         description:
-          "My ECON3160 course paper models how an accusation by a Key Opinion Leader can trigger collective attacks under uncertainty. It studies pooling and separating equilibria, then extends the model to private user signals, multiple opinion leaders, and reputational penalties.",
-        image: "/materials/a-bayesian-game-of-online-accusations.png",
-        imageAlt: "First page of A Bayesian Game of Online Accusations by Victor Xucheng Chen",
-        href: "/materials/a-bayesian-game-of-online-accusations.pdf",
-        imageWidth: 928,
-        imageHeight: 1200,
+          "My presentation of Ernest Liu and David Y. Yang’s International Power, based on the June 9, 2026 paper draft. The slides cover the model, measurement, empirical evidence, and technical methods; a separate handout develops the derivations and research design in more detail. These materials describe that draft, not later manuscript revisions.",
+        image: "/materials/international-power-slides.png",
+        imageAlt: "Cover of the International Power paper presentation",
+        href: "/materials/international-power-slides.pdf",
+        links: [
+          { label: "Presentation slides (PDF)", href: "/materials/international-power-slides.pdf" },
+          { label: "Audience handout (PDF)", href: "/materials/international-power-handout.pdf" },
+        ],
+        imageWidth: 1200,
+        imageHeight: 675,
       },
       {
         label: "Economics Paper Presentation",
@@ -439,21 +443,6 @@ const materialSections: { title: string; items: Material[] }[] = [
   {
     title: "Presentations & Talks",
     items: [
-      {
-        label: "Paper Presentation · October 2026",
-        title: "International Power",
-        description:
-          "My presentation of Ernest Liu and David Y. Yang’s International Power, based on the June 9, 2026 paper draft. The slides cover the model, measurement, empirical evidence, and technical methods; a separate handout develops the derivations and research design in more detail. These materials describe that draft, not later manuscript revisions.",
-        image: "/materials/international-power-slides.png",
-        imageAlt: "Cover of the International Power paper presentation",
-        href: "/materials/international-power-slides.pdf",
-        links: [
-          { label: "Presentation slides (PDF)", href: "/materials/international-power-slides.pdf" },
-          { label: "Audience handout (PDF)", href: "/materials/international-power-handout.pdf" },
-        ],
-        imageWidth: 1200,
-        imageHeight: 675,
-      },
       {
         label: "GAAC 2026 · 20-Minute Presentation",
         title: "Robust Trust with Multiple Advisers",
@@ -542,26 +531,18 @@ const codeSamples = [
   {
     name: "event_study_demo.do",
     kind: "Stata · synthetic panel",
-    description:
-      "An event-time specification with an explicit reference period, individual and wave effects, and clustered inference.",
   },
   {
     name: "validation_metrics.py",
     kind: "Python · text-data validation",
-    description:
-      "Compares frozen and revised extraction rules against hand-coded labels, keeping out-of-sample and in-sample results separate.",
   },
   {
     name: "synthetic_validation.csv",
     kind: "Data · synthetic example",
-    description:
-      "A small, fictional input table for the validation script; no original obituary or survey records are included.",
   },
   {
     name: "README.md",
     kind: "Documentation",
-    description:
-      "How to read and run these examples, with their scope and data limitations.",
   },
 ];
 
@@ -1419,46 +1400,55 @@ export default function Home() {
                 <summary className="material-section-heading">
                   <h3>Code &amp; Data</h3>
                   <span className="material-section-count">
-                    {codeSamples.length} files
+                    1 collection · {codeSamples.length} files
                   </span>
                 </summary>
-                <div className="code-directory">
-                  <div className="code-directory-intro">
-                    <p className="material-label">Selected research coding examples</p>
-                    <p>
-                      These compact examples show event-study design and
-                      text-data validation using synthetic inputs. Original
-                      survey data, obituary texts, hand-coded records, and the
-                      assessment package are not published.
-                    </p>
-                  </div>
-                  <ol className="code-file-list">
-                    {codeSamples.map((sample, index) => (
-                      <li key={sample.name}>
-                        <a
-                          className="code-file"
-                          href={`${CODE_REPO_URL}/${sample.name}`}
-                          target="_blank"
-                          rel="noreferrer"
-                          aria-label={`Open ${sample.name} on GitHub`}
-                        >
-                          <span className="code-file-number">
-                            {String(index + 1).padStart(2, "0")}
-                          </span>
-                          <span className="code-file-main">
-                            <span className="code-file-kind">{sample.kind}</span>
-                            <strong>{sample.name}</strong>
-                            <span className="code-file-description">
-                              {sample.description}
-                            </span>
-                          </span>
-                          <span className="code-file-open" aria-hidden="true">
-                            ↗
-                          </span>
-                        </a>
-                      </li>
-                    ))}
-                  </ol>
+                <div className="material-features">
+                  <article className="material-feature code-feature">
+                    <a
+                      className="code-cover"
+                      href={`${CODE_REPO_URL}/README.md`}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label="Open the coding examples guide on GitHub"
+                    >
+                      <span>UC Berkeley · 2026</span>
+                      <strong>Predoc Coding Task</strong>
+                      <span>Stata / Python / Synthetic data</span>
+                      <span className="code-cover-action">Open the guide ↗</span>
+                    </a>
+                    <div className="material-copy code-collection-copy">
+                      <p className="material-label">2026 · UC Berkeley</p>
+                      <h4>Predoc Coding Task: Selected Examples</h4>
+                      <p>
+                        Adapted from the data task for Prof. Ulrike Malmendier’s
+                        Junior/Assistant Specialist application. I share these
+                        short Stata and Python examples as a reference for
+                        students preparing similar research coding tasks. They
+                        use synthetic inputs and are not my original submission
+                        or an answer key; the supplied data and full assessment
+                        package are not posted here.
+                      </p>
+                      <ol className="code-collection-files">
+                        {codeSamples.map((sample) => (
+                          <li key={sample.name}>
+                            <a
+                              href={`${CODE_REPO_URL}/${sample.name}`}
+                              target="_blank"
+                              rel="noreferrer"
+                              aria-label={`Open ${sample.name} on GitHub`}
+                            >
+                              <span>
+                                <strong>{sample.name}</strong>
+                                <small>{sample.kind}</small>
+                              </span>
+                              <span aria-hidden="true">↗</span>
+                            </a>
+                          </li>
+                        ))}
+                      </ol>
+                    </div>
+                  </article>
                 </div>
               </details>
             </div>

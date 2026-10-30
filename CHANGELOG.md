@@ -2,6 +2,13 @@
 
 ## 2026-10-30
 
+- At Victor's request, removed the Bayesian-game card and its now-unused
+  cover preview from Materials while retaining the unchanged PDF link in
+  Research → Selected Writing. Moved *International Power* to the first
+  Paper Reading & Learning entry, preserving both presentation and handout
+  links. Recast Code & Data as one Berkeley 2026 predoc-application coding
+  collection with four individually linked synthetic examples and an explicit
+  distinction from the original task submission.
 - Attached the owner's October 30, 2026 *A Bayesian Game of Online
   Accusations* PDF to its existing Selected Writing record and added a
   corresponding Materials card with a first-page preview. The 21-page PDF

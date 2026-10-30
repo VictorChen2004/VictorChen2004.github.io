@@ -39,9 +39,9 @@ Google Search signals.
   every Experience supporting line begins with the same color-matched bullet.
 - Four compact Materials collections: Paper Reading & Learning,
   Presentations & Talks, Course Reviews & Lecture Notes, and Code & Data.
-  Fourteen material previews and descriptions are available in expandable
-  panels; related PDF editions appear as compact links within one entry,
-  while code files appear in a numbered directory list.
+  Thirteen material previews and descriptions are available in expandable
+  panels; related PDF editions appear as compact links within one entry.
+  Code & Data presents four files within one application-task collection.
 - An October 2026 ECO2011 microeconomics midterm-review presentation and
   completed-slide reading edition. The public teaching copies omit the
   personal introduction containing GPA and rank; the original PDFs remain
@@ -52,16 +52,19 @@ Google Search signals.
 - A presentation and audience handout for Ernest Liu and David Y. Yang's
   *International Power*, explicitly identified as a reading of the June 9,
   2026 draft rather than a representation of later manuscript revisions.
+  This entry appears first in Paper Reading & Learning.
 - The owner's 21-page *A Bayesian Game of Online Accusations* course paper,
-  linked from its Selected Writing record and Paper Reading & Learning, with
-  an unchanged PDF dated October 30, 2026 and a rendered first-page preview.
+  linked only from its Selected Writing record, with an unchanged PDF dated
+  October 30, 2026. It is not a Materials card.
 - RA Experience aligned with the 2026-10-22 full CV: the David Yang
   *International Power* project is included, and the Congo project names
   Jonathan Weigel and describes field-data quality and compliance work.
-- Selected, runnable Stata and Python examples adapted from a predoc coding
-  exercise, accompanied only by fictional input data and a file-level guide.
-  The original survey, obituary, hand-coded, and assessment files are not
-  distributed through this website.
+- One Code & Data collection of selected, runnable Stata and Python examples
+  adapted from Prof. Ulrike Malmendier's 2026 UC Berkeley Junior/Assistant
+  Specialist application data task. The examples are shared for reference
+  with fictional inputs and a guide, not as the original submission or an
+  answer key. The original survey, obituary, hand-coded, and assessment files
+  are not distributed through this website.
 - A locally hosted 20-minute GAAC 2026 presentation of `Robust Trust with
   Multiple Advisers`, shown with its own cover preview and linked from
   Presentations & Talks.
