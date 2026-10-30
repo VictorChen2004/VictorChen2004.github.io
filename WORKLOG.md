@@ -1,5 +1,15 @@
 # Internal Work Log
 
+### 2026-10-30 — Codex — Bayesian game paper attachment and publication
+
+- **Request:** Victor supplied `A_Bayesian_Game_of_Online_Accusations.pdf` and asked to attach it in the corresponding places.
+- **Done:** Read the 21-page PDF and the existing website record; copied the original unchanged to `public/materials/a-bayesian-game-of-online-accusations.pdf`, rendered its first page to the paired PNG, added a direct PDF link to the existing Selected Writing item and a clearly labeled original-paper card under Paper Reading & Learning, and updated `README.md` and `CHANGELOG.md`. The source was `/Users/victor_chen/Downloads/A_Bayesian_Game_of_Online_Accusations.pdf`; no original file was edited.
+- **Results:** Source PDF SHA-256 `a23a3bac91f3306639550b7ef99bb8937f756acb73ab17cc2cb63ab25006241a`; local and published PDFs match it. The 928×1200 cover was inspected. Lint and static build passed in an isolated copy. Desktop and 390-pixel Materials views, plus the Research link, were inspected locally. Source commit `0ccee63` is on `main`; static commit `2398230` is on `gh-pages`. GitHub Pages reported that exact static commit `built`; the live PDF and cover returned HTTP 200 (309,924 and 188,730 bytes), and the new card was visible in the live browser.
+- **Decisions & why:** Attached the same document in Research and Materials, the two relevant site locations. Labeled it an original ECON3160 course paper rather than a presentation of someone else's paper. Preserved the existing research wording and project-date range; the new link identifies the PDF's October 30, 2026 date. No private contact detail, student ID, GPA, or confidentiality marking was found in the PDF text.
+- **Problems & caveats:** The source worktree's cloud-backed `node_modules` was unsuitable for a direct build, so verification used an isolated temporary copy. `npm ci` reported seven dependency advisories (six high, one critical), not investigated or changed in this scoped content task. The Materials grouping is the closest existing category for original writing; no site-wide taxonomy redesign was attempted.
+- **Next steps / handoff:** If the PDF is revised, replace the asset, refresh its preview and version label, then repeat checksum, build, mobile/desktop, and live checks. Review dependency advisories separately before future package upgrades. The hosted public CV remains the older August redacted edition.
+- **Cleanup:** Stopped the local preview server and moved the own `/tmp/victor-site-paper.R8tDMi` build directory and `/tmp/victor-site-deploy.q3ggGT` deployment clone to recoverable macOS Trash. Kept no scratch files; the source PDF, website assets, and other project files were not deleted.
+
 ### 2026-10-29 — Codex — Course materials, International Power, and RA update
 
 - **Request:** Victor asked to upload the PDF from the other chat's microeconomics midterm-review lecture, the IO-folder course materials, and the David Yang paper presentation plus handout; update the website RA section from his newest CV and publish everything.
