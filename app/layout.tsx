@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import VisitorAnalytics from "./visitor-analytics";
 
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://victorchen2004.github.io";
@@ -79,7 +80,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <VisitorAnalytics />
+      </body>
     </html>
   );
 }

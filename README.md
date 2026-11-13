@@ -104,6 +104,10 @@ Google Search signals.
   bulleted lists, while Honors, teaching notes, and Materials descriptions
   remain unbulleted supporting copy.
 - GitHub Pages publication from a dedicated static `gh-pages` branch.
+- Optional Google Analytics 4 visitor statistics with consent-first loading,
+  a privacy note, and page, section, document, code, contact, and external-link
+  events. The integration remains inactive until a GA4 web-stream Measurement
+  ID is supplied at build time; see `docs/analytics-setup.md`.
 
 The content was reconstructed from the public website at
 `https://sites.google.com/view/xuchengchen/` and updated against the owner's
@@ -150,6 +154,8 @@ the public address `https://victorchen2004.github.io`.
 - Colors and layout: `app/globals.css`
 - Public synthetic code examples: `public/code/`
 - Search and sharing metadata: `app/layout.tsx`
+- Visitor statistics and consent: `app/visitor-analytics.tsx`,
+  `app/privacy/page.tsx`, and `docs/analytics-setup.md`
 - Chronological project record: `CHANGELOG.md`
 
 Whenever biography, dates, paper status, or links change, update both the page

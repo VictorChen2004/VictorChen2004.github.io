@@ -1487,7 +1487,10 @@ export default function Home() {
           <span>Victor Chen · 陈绪成</span>
         </div>
         <p>Economics · CUHK-Shenzhen</p>
-        <a href="#top">Back to top ↑</a>
+        <div className="footer-links">
+          <a href="/privacy/">Privacy & Analytics</a>
+          <a href="#top">Back to top ↑</a>
+        </div>
       </footer>
     </>
   );

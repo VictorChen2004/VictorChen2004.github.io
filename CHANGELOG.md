@@ -1,5 +1,14 @@
 # Change Log
 
+## 2026-11-13
+
+- Prepared an optional GA4 integration for aggregate visitor statistics with
+  an explicit visitor choice. No analytics tag loads without both a valid
+  `G-...` Measurement ID at build time and the visitor's acceptance. Added a
+  privacy note and scoped events for page views, section views and navigation,
+  document/code opens, email-contact actions, and external links. The account and ID are not
+  yet available, so no live visitor tracking has been activated.
+
 ## 2026-10-30
 
 - At Victor's request, removed the Bayesian-game card and its now-unused

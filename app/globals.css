@@ -1674,6 +1674,124 @@ footer a {
   justify-self: end;
 }
 
+footer .footer-links {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.privacy-page {
+  margin: 0 auto;
+  max-width: 760px;
+  min-height: 100vh;
+  padding: clamp(2rem, 7vw, 5rem) 1.5rem;
+}
+
+.privacy-page h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  margin: 0.5rem 0 2rem;
+}
+
+.privacy-page p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 1rem;
+  margin: 0 0 1.3rem;
+}
+
+.privacy-page a {
+  color: var(--brown);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.privacy-page .privacy-back {
+  display: inline-block;
+  font-size: 0.83rem;
+  margin-bottom: 3rem;
+}
+
+.analytics-preferences {
+  background: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  bottom: 1rem;
+  color: var(--white);
+  cursor: pointer;
+  font: 600 0.75rem var(--sans);
+  padding: 0.6rem 0.9rem;
+  position: fixed;
+  right: 1rem;
+  z-index: 29;
+}
+
+.analytics-consent {
+  align-items: center;
+  background: var(--paper);
+  border: 1px solid var(--brown-soft);
+  border-radius: 12px;
+  bottom: 3.8rem;
+  box-shadow: 0 10px 35px #1e1b1926;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  left: 50%;
+  max-width: min(900px, calc(100vw - 2rem));
+  padding: 1rem 1.2rem;
+  position: fixed;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 30;
+}
+
+.analytics-consent p {
+  color: var(--ink);
+  font-size: 0.84rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.analytics-consent a {
+  color: var(--brown);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.analytics-consent-actions {
+  display: flex;
+  flex: none;
+  gap: 0.45rem;
+}
+
+.analytics-consent-actions button {
+  background: transparent;
+  border: 1px solid var(--brown);
+  border-radius: 999px;
+  color: var(--brown);
+  cursor: pointer;
+  font: 700 0.75rem var(--sans);
+  padding: 0.55rem 0.8rem;
+}
+
+.analytics-consent-actions button:last-child {
+  background: var(--brown);
+  color: var(--white);
+}
+
+@media (max-width: 700px) {
+  .analytics-consent {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .analytics-consent-actions button {
+    flex: 1;
+  }
+}
+
 @media (max-width: 900px) {
   html {
     scroll-padding-top: 128px;
